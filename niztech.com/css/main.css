@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Arbutus+Slab|Arvo:400,700,400italic,700italic);
+
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -95,20 +97,164 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+font-family: 'Arvo', serif;
+font-family: 'Arbutus Slab', serif;
 
 
+Color:
+Light Color: #f9f9f9 -- rgba(247, 247, 237, .87);
+Purplish Color: #231B23 -- rgba(35,27,36, .93)
+*/
 
+body{
+   background-image: url('../img/blur.jpg');
+   background-size: cover;
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-position: center;
+}
 
+#wrapper{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
 
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  overflow: hidden;
+}
 
+a{
+  text-decoration: none;
+}
 
+header.mast{
+  background-color: rgba(35,27,36, .93);
+  color: white;
+  height: 18em;
+}
 
+#wrapper > footer{
+  height: 1em;
+  text-align: center;
+  background-color: rgba(35,27,36, .93);
+  color: rgb(247, 247, 237);
+  padding: 2em;
+  font-family: 'Arvo', serif;
+  border-top: 1px dashed #f9f9f9;
+}
 
+#nav {
+  position: absolute;
+  right:0px;
+  display: inline-block;
+}
 
+#nav ul{
+  /*display:none;*/
+  background-color: rgba(247, 247, 237, .97);
+  width: auto;
+  font-family: 'Arvo', serif;
+  padding: .5em 0em .5em 0em;
+}
 
+#nav li{
+  display: inline-block;
+  list-style: none;
+  margin: 0em .8em 0em .8em;
+}
 
+#nav li:last-child{
+  margin-right: 4em;
+}
 
+#nav li:first-child{
+  margin-left: 1.5em;
+}
 
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  text-align: center;
+}
+
+#brand {
+  display: block;
+  padding: 1em 0em 0em 0em;
+  font-size: 5.3em;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  border-bottom: 3px dashed white;
+}
+
+#tagline{
+  display: block;
+  font-size: 1.5em;
+  font-family: 'Arbutus Slab', serif;
+  margin: .5em 0em 0em 0em;
+}
+
+.section{
+  padding: 4.5em 6em 4.5em 6em;
+  font-family: 'Arbutus Slab', serif;
+  font-size: 12pt;
+}
+
+.section:nth-child(2n){
+  background-color: rgba(35,27,36, .93);
+  color: #f9f9f9;
+  /*transform:skew(-.5deg,.5deg);*/
+}
+
+.section:nth-child(2n+1){
+  background-color: rgba(247, 247, 237, .87);
+  color: #231B23;
+  /*transform:skew(.5deg,-.5deg);*/
+}
+
+.section > header{
+  text-align: center;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+#contact label{
+  display: block;
+  margin-top: 1em;
+  text-align: center;
+}
+
+#contact input,
+#contact textarea{
+  width: 98%;
+  border: 0px none;
+  padding: .5em;
+  color: inherit;
+}
+
+#contact textarea{
+  height: 5em;
+}
+
+.step{
+  font-weight: 700;
+}
+
+.half{
+  width: 40%;
+  display: inline-block;
+  /*background-color: red;*/
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 15px -6px #000;
+  -webkit-box-shadow: 3px 3px 15px -6px #000;
+  box-shadow:         3px 3px 15px -6px #000;
+}
 
 
 /* ==========================================================================
