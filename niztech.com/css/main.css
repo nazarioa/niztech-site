@@ -98,8 +98,8 @@ textarea {
    ========================================================================== */
 
 /*
-font-family: 'Arvo', serif;
-font-family: 'Arbutus Slab', serif;
+font-family: 'Arvo', serif; /*BLOCK
+font-family: 'Arbutus Slab', serif; /*PARAGRAPH
 
 
 Color:
@@ -202,6 +202,7 @@ header.mast{
   padding: 4.5em 6em 4.5em 6em;
   font-family: 'Arbutus Slab', serif;
   font-size: 12pt;
+  line-height: 2em;
 }
 
 .section:nth-child(2n){
@@ -238,6 +239,22 @@ header.mast{
 
 #contact textarea{
   height: 5em;
+}
+
+.drop-cap{
+  display:inline-block;
+  width: 1.2em;
+  height: .5em;
+  float:left;
+  /*vertical-align: top;*/
+  /*margin-top: .5em;*/
+  padding-top: .3em;
+  margin-left: -.3em;
+  font-weight: 700;
+  font-family: 'Arvo', serif !important;
+  font-size: 4em;
+  text-align: center;
+  /*background-color: red;*/
 }
 
 .step{
