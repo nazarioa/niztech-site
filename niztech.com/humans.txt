@@ -4,10 +4,15 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Nazario A. Ayala -- WebDev
+    Nazario A. Ayala -- Owner
+    Martin Maldonado -- Graphic Artist
 
 # THANKS
 
-    <name>
+    Marisela Castañeda
+    Jodi Freedman
+    Marianne Utulo
 
 # TECHNOLOGY COLOPHON
 
