@@ -104,7 +104,7 @@ font-family: 'Arbutus Slab', serif; /*PARAGRAPH
 
 Color:
 Light Color: #f9f9f9 -- rgba(247, 247, 237, .87);
-Purplish Color: #231B23 -- rgba(35,27,36, .93)
+Purplish Color: #231B23 -- rgba(35,27,36, .93);
 */
 
 body{
@@ -134,16 +134,17 @@ a{
 header.mast{
   background-color: rgba(35,27,36, .93);
   color: white;
-  height: 18em;
+  height: 30em;
+
 }
 
 #wrapper > footer{
   height: 1em;
   text-align: center;
+  font-family: 'Arvo', serif;
   background-color: rgba(35,27,36, .93);
   color: rgb(247, 247, 237);
   padding: 2em;
-  font-family: 'Arvo', serif;
   border-top: 1px dashed #f9f9f9;
 }
 
@@ -178,24 +179,25 @@ header.mast{
 #logo{
   margin-left: auto;
   margin-right: auto;
-  width: 30em;
+  width: 23em;
   text-align: center;
 }
 
 #brand {
   display: block;
-  padding: 1em 0em 0em 0em;
-  font-size: 5.3em;
+  padding: 2.5em 0em .5em 0em;
+  /*margin-bottom: 2em;*/
+  font-size: 3.3em;
   font-family: 'Arvo', serif;
   font-weight: 700;
-  border-bottom: 3px dashed white;
+  border-bottom: 2px dashed white;
 }
 
 #tagline{
   display: block;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Arbutus Slab', serif;
-  margin: .5em 0em 0em 0em;
+  margin: 2.5em 0em 0em 0em;
 }
 
 .section{
@@ -205,10 +207,26 @@ header.mast{
   line-height: 2em;
 }
 
+.section hr{
+    width: 40%;
+    margin: 2em auto 2em auto;
+}
+
+.section > footer hr{
+  /*
+  width: 40%;
+  margin: 2em auto 2em auto;
+  */
+}
+
 .section:nth-child(2n){
   background-color: rgba(35,27,36, .93);
   color: #f9f9f9;
   /*transform:skew(-.5deg,.5deg);*/
+}
+
+.section:nth-child(2n) hr{
+    border-top: 1px dashed #f9f9f9;
 }
 
 .section:nth-child(2n+1){
@@ -217,16 +235,32 @@ header.mast{
   /*transform:skew(.5deg,-.5deg);*/
 }
 
-.section > header{
-  text-align: center;
-  font-size: 18pt;
-  text-transform: uppercase;
+.section:nth-child(2n+1) hr{
+    border-top: 1px dashed #231B23;
 }
 
-#contact label{
+.section > header{
+  text-align: center;
+  font-size: 50pt;
+  padding-bottom: .5em;
+  /*text-transform: uppercase;*/
+}
+
+#contact label,
+#contact button{
   display: block;
   margin-top: 1em;
   text-align: center;
+  background-color:  rgba(35,27,36, .5);
+}
+
+#contact button{
+  border: 1px solid  rgba(35,27,36, .8);
+  width: 100%;
+}
+
+#contact button:hover{
+  background-color:  rgba(35,27,36, .83);
 }
 
 #contact input,
@@ -234,11 +268,98 @@ header.mast{
   width: 98%;
   border: 0px none;
   padding: .5em;
-  color: inherit;
+  color: #231B23;
+}
+
+#contact input{
+  text-align: center;
 }
 
 #contact textarea{
   height: 5em;
+}
+
+.prcoess_setps{
+  list-style: none;
+  padding: 0;
+}
+
+.prcoess_setps .desc{
+  /*background-color: rgba(35,27,36, .95);*/
+  margin-bottom: 2em;
+}
+
+.prcoess_setps .step{
+  /*background-color: rgba(35,27,36, .95);*/
+  font-size: 2em;
+  line-height: 2.2em;
+  font-family: 'Arvo';
+  font-weight: 600;
+  text-align: center;
+  /*height: 4em;*/
+  /*vertical-align: bottom;*/
+}
+
+.prcoess_setps .v-line{
+  background-image: url('../img/DottedLine.png');
+  background-repeat: repeat-y;
+  background-size: 12px 12px;
+  background-position: center;
+  /*min-width: 100px;*/
+  max-width: 100px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px dashed;
+  /*border-bottom: 1px dashed;*/
+}
+
+.rocket{
+  background-image: url('../img/sts30nightlaunch_nasa_big_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.img-circle{
+  margin: 3em auto 3em auto;
+  text-align: center;
+}
+
+.img-circle > div{
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img-circle img{
+  width:inherit;
+  height: inherit;
+}
+
+.img-div{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: red;*/
+}
+
+.circle{
+  background-image: url('../img/Circle.png');
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  line-height: 3.2em;
+  font-family: 'Arvo';
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  color: #231B23;
+  margin: 0em auto 0em auto;
 }
 
 .drop-cap{
@@ -255,10 +376,6 @@ header.mast{
   font-size: 4em;
   text-align: center;
   /*background-color: red;*/
-}
-
-.step{
-  font-weight: 700;
 }
 
 .half{
