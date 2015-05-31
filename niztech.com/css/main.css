@@ -295,6 +295,13 @@ header.mast{
   background-color:  rgba(35,27,36, .83);
 }
 
+#contact button img{
+  border: 0px none;
+  height: .8em;
+  margin-bottom: .2em;
+  /*width: .5em;*/
+}
+
 #contact input,
 #contact textarea{
   width: 100%;
