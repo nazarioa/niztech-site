@@ -176,14 +176,14 @@ header.mast{
   margin-left: 1.5em;
 }
 
-#logo{
+#branding{
   margin-left: auto;
   margin-right: auto;
   width: 23em;
   text-align: center;
 }
 
-#brand {
+#brandname {
   display: block;
   padding: 2.5em 0em .5em 0em;
   /*margin-bottom: 2em;*/
@@ -484,11 +484,11 @@ header.mast{
     /*height: 50em;*/
   }
 
-  #logo{
+  #branding{
     width: 13em;
   }
 
-  #brand{
+  #brandname{
     padding: 5em 0em .5em 0em;
     font-size: 2em;
   }
