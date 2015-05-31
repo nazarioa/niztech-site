@@ -107,7 +107,7 @@ Light Color: #f9f9f9 -- rgba(247, 247, 237, .87);
 Purplish Color: -- rgba(35,27,36, .93);
 */
 
-body, div, span, textarea, input, label{
+html, body, div, span, textarea, input, label{
   box-sizing: border-box;
 }
 
@@ -270,6 +270,14 @@ header.mast{
   /*text-transform: uppercase;*/
 }
 
+/* -- CONTACT -- */
+
+#contact form{
+  max-width: 35em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #contact label,
 #contact button{
   display: block;
@@ -303,6 +311,8 @@ header.mast{
   height: 5em;
 }
 
+/* -- WORK -- */
+
 #work .subselect{
   list-style: none;
   padding: 0px;
@@ -328,6 +338,8 @@ header.mast{
   height: 65px;
 }
 
+/* -- PROCESS -- */
+
 .prcoess_setps{
   list-style: none;
   padding: 0;
@@ -352,7 +364,7 @@ header.mast{
 .prcoess_setps .v-line{
   background-image: url('../img/DottedLine.png');
   background-repeat: repeat-y;
-  background-size: 12px 12px;
+  background-size: 9px 12px;
   background-position: center;
   /*min-width: 100px;*/
   max-width: 100px;
@@ -395,6 +407,8 @@ header.mast{
   /*background-color: red;*/
 }
 
+/* -- GENERIC -- */
+
 .circle{
   background-size: 100px 100px;
   background-repeat: no-repeat;
@@ -431,12 +445,6 @@ header.mast{
   font-family: 'Arvo', serif !important;
   font-size: 4em;
   text-align: center;
-  /*background-color: red;*/
-}
-
-.half{
-  width: 40%;
-  display: inline-block;
   /*background-color: red;*/
 }
 
@@ -526,6 +534,22 @@ header.mast{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+ @media only screen and (min-width: 1200px) {
+   #work .subselect li{
+     display: inline-block;
+     width: 32%;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-flex;
+   }
+
+   #work .subselect .desc{
+     margin-top: 1.5em;
+     padding-left: 1.5em;
+     padding-right: 1.5em;
+   }
+ }
 
 @media only screen and (max-width: 710px) {
 
