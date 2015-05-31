@@ -306,6 +306,7 @@ header.mast{
 #work .subselect{
   list-style: none;
   padding: 0px;
+  margin-top: 5em;
 }
 
 #work .subselect li{
@@ -364,7 +365,7 @@ header.mast{
 }
 
 .rocket{
-  background-image: url('../img/sts30nightlaunch_nasa_big_2.jpg');
+  background-image: url('../img/nasa.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
