@@ -176,13 +176,15 @@
   <div id="contact" class="section light">
     <header>connect</header>
     <div class="content">
-      <form>
+      <form id="sendmessage" method="post">
         <div><label for="name">Name</label><input type="text" name="name" id="name" value="Peter Parker"/></div>
         <div><label for="email">eMail</label><input type="text" name="email" id="email" value="webslinger@gmail.com"/></div>
-        <div><label for="message">Message</label><textarea name="message" id="message">Hi,
-          Let's grab coffee!</textarea></div>
-          <div><button>Send <img alt="send arrow" src="img/RightChevron.svg"/></button></div>
-        </form>
+        <div>
+          <label for="message">Message</label><textarea name="message" id="message">Hi,
+Let's grab coffee!</textarea>
+        </div>
+        <div><button class="send">Send <img alt="send arrow" src="img/RightChevron.svg"/></button></div>
+      </form>
       </div>
     </div>
 
