@@ -1,0 +1,3 @@
+[submodule "niztech.com_extra/PHPMailer"]
+	path = niztech.com_extra/PHPMailer
+	url = https://github.com/PHPMailer/PHPMailer.git
