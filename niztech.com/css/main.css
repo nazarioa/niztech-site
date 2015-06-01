@@ -104,7 +104,7 @@ font-family: 'Arbutus Slab', serif; /*PARAGRAPH
 
 Color:
 Light Color: #f9f9f9 -- rgba(247, 247, 237, .87);
-Purplish Color: -- rgba(35,27,36, .93);
+Purplish Color: #231B23 -- rgba(35,27,36, .93);
 */
 
 html, body, div, span, textarea, input, label{
@@ -160,7 +160,7 @@ header.mast{
   border-top: 1px dashed #f9f9f9;
 }
 
-#logo{
+#niztechlogo{
   position: relative;
   background-image: url('../img/Logo.svg');
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ header.mast{
 }
 
 #contact textarea{
-  height: 5em;
+  height: 11em;
 }
 
 /* -- WORK -- */
@@ -324,6 +324,7 @@ header.mast{
   list-style: none;
   padding: 0px;
   margin-top: 5em;
+  vertical-align: top;
 }
 
 #work .subselect li{
@@ -340,9 +341,28 @@ header.mast{
   max-width: 5em;
 }
 
+#work .subselect .desc{
+  text-align: center;
+}
+
 #work img.bit{
   width: 65px;
   height: 65px;
+}
+
+#workexamples figure{
+  margin-left: 0px;
+  float: left;
+}
+
+#workexamples .title{
+  text-transform: uppercase;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+}
+
+#workexamples .logo{
+  width: 8em;
 }
 
 /* -- PROCESS -- */
@@ -391,12 +411,12 @@ header.mast{
   background-position: center;
 }
 
-.img-circle{
+.special{
   margin: 3em auto 3em auto;
   text-align: center;
 }
 
-.img-circle > div{
+.img-circle{
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
@@ -415,6 +435,18 @@ header.mast{
 }
 
 /* -- GENERIC -- */
+
+.outline, .outline.light{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #231B23;
+}
+
+.outline.dark{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f9f9f9;
+}
 
 .circle{
   background-size: 100px 100px;
@@ -459,6 +491,10 @@ header.mast{
   -moz-box-shadow:    3px 3px 15px -6px #000;
   -webkit-box-shadow: 3px 3px 15px -6px #000;
   box-shadow:         3px 3px 15px -6px #000;
+}
+
+.left{
+  float:left;
 }
 
 
