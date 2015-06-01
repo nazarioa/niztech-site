@@ -24,4 +24,21 @@ $(document).ready(function(){
     $(id_to_display).removeClass('hidden');
   });
 
+  $('#sendmessage button.send').on('click', function(e){
+    var messageData = $('#sendmessage').serialize();
+
+    $.ajax("content/send.php", { //// context: document.body
+        async: false,
+        dataType: "json",
+        data: messageData,
+        method: "POST"
+      }
+    ).done(function(data) {
+      // $( this ).addClass( "done" );
+      console.log(data);
+    });
+
+    e.preventDefault();
+  });
+
 });
