@@ -151,7 +151,6 @@ header.mast{
 }
 
 #wrapper > footer{
-  height: 1em;
   text-align: center;
   font-family: 'Arvo', serif;
   background-color: rgba(35,27,36, .93);
@@ -160,15 +159,25 @@ header.mast{
   border-top: 1px dashed #f9f9f9;
 }
 
-#niztechlogo{
+.niztechlogo{
   position: relative;
   background-image: url('../img/Logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+header.mast > .niztechlogo{
   width: 4em;
   height: 4em;
   left: 3em;
   top: 2.5em;
+}
+
+#wrapper > footer .niztechlogo{
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 1.5em auto 0em auto;
 }
 
 #nav {
@@ -267,7 +276,23 @@ header.mast{
   text-align: center;
   font-size: 50pt;
   padding-bottom: .5em;
-  /*text-transform: uppercase;*/
+}
+
+.subselect{
+  list-style: none;
+  padding: 0px;
+  margin-top: 5em;
+}
+
+.subselect li{
+  margin-bottom: 5em;
+  vertical-align: top;
+}
+
+/* -- ABOUT ME -- */
+#about_me .small{
+  margin-top: 1em;
+  font-size: .2em;
 }
 
 /* -- CONTACT -- */
@@ -284,6 +309,7 @@ header.mast{
   margin-top: 1em;
   text-align: center;
   background-color:  rgba(35,27,36, .5);
+  color: white;
 }
 
 #contact button{
@@ -299,7 +325,6 @@ header.mast{
   border: 0px none;
   height: .8em;
   margin-bottom: .2em;
-  /*width: .5em;*/
 }
 
 #contact input,
@@ -319,17 +344,6 @@ header.mast{
 }
 
 /* -- WORK -- */
-
-#work .subselect{
-  list-style: none;
-  padding: 0px;
-  margin-top: 5em;
-  vertical-align: top;
-}
-
-#work .subselect li{
-  margin-bottom: 5em;
-}
 
 #work .subselect .title{
   text-align: center;
@@ -365,27 +379,55 @@ header.mast{
   width: 8em;
 }
 
+/* -- SOCIAL -- */
+#social .subselect{
+  margin: 0px;
+  padding: 0px;
+}
+
+#social .subselect li{
+  display: inline-block;
+  width: 49%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#social .subselect .circle{
+  width: 4.5em;
+  height: 4.5em;
+  background-size: 4.5em;
+}
+
+#social img.linkedin{
+  width: 3em; /*291, 79*/
+  margin-top: 1.2em;
+}
+
+#social img.github{
+  width: 3em; /*291, 79*/
+  margin-top: 1em;
+}
+
 /* -- PROCESS -- */
 
 .prcoess_setps{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .prcoess_setps .desc{
-  /*background-color: rgba(35,27,36, .95);*/
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .prcoess_setps .step{
-  /*background-color: rgba(35,27,36, .95);*/
   font-size: 2em;
   line-height: 2.2em;
   font-family: 'Arvo';
   font-weight: 600;
   text-align: center;
-  /*height: 4em;*/
-  /*vertical-align: bottom;*/
 }
 
 .prcoess_setps .v-line{
@@ -393,14 +435,12 @@ header.mast{
   background-repeat: repeat-y;
   background-size: 9px 12px;
   background-position: center;
-  /*min-width: 100px;*/
   max-width: 100px;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px dashed;
-  /*border-bottom: 1px dashed;*/
 }
 
 .rocket{
@@ -431,7 +471,6 @@ header.mast{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background-color: red;*/
 }
 
 /* -- GENERIC -- */
@@ -473,18 +512,16 @@ header.mast{
 
 .drop-cap{
   display:inline-block;
-  width: 1.3em;
+  width: auto;
   height: 1em;
   float:left;
-  /*vertical-align: top;*/
-  /*margin-top: .5em;*/
   padding-top: .3em;
-  margin-left: -.3em;
+  padding-right: .1em;
+  margin-left: -.1em;
   font-weight: 700;
   font-family: 'Arvo', serif !important;
   font-size: 4em;
   text-align: center;
-  /*background-color: red;*/
 }
 
 .shadow {
@@ -579,12 +616,15 @@ header.mast{
    ========================================================================== */
 
  @media only screen and (min-width: 1200px) {
-   #work .subselect li{
+   .subselect li{
      display: inline-block;
-     width: 32%;
      margin-left: auto;
      margin-right: auto;
+   }
+
+   #work .subselect li{
      display: inline-flex;
+     width: 32%;
    }
 
    #work .subselect .desc{
@@ -592,19 +632,28 @@ header.mast{
      padding-left: 1.5em;
      padding-right: 1.5em;
    }
+
+   #social .subselect li{
+     display: inline-block;
+   }
  }
 
 @media only screen and (max-width: 710px) {
 
   #wrapper{
-    width: 98%;
+    width: auto;
     margin-top: 20px;
     margin-left: 3px;
     margin-right: 3px;
   }
 
-  #mast{
-    /*height: 50em;*/
+  header.mast > .niztechlogo{
+    position: relative;
+    width: 5em;
+    height: 5em;
+    left:0px;
+    top: 5em;
+    margin: 0em auto 0em auto;
   }
 
   #branding{
@@ -628,6 +677,26 @@ header.mast{
     padding: 4.5em 1.5em 4.5em 1.5em;
     /*font-size: 12pt;*/
     /*line-height: 2em;*/
+  }
+
+  #about_me .img-div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #workexamples figure{
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  #wrapper > footer .niztechlogo{
+    margin-top: 1.5em;
+  }
+
+  #social .subselect li{
+    display: block;
+    margin: 1em auto 1em auto;
   }
 }
 
