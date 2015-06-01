@@ -383,6 +383,11 @@ header.mast > .niztechlogo{
   width: 8em;
 }
 
+#work .showcase{
+  /*border: 1px solid #DCDDD1;
+  padding: 10px;*/
+}
+
 /* -- SOCIAL -- */
 #social .subselect{
   margin: 0px;
@@ -627,7 +632,6 @@ header.mast > .niztechlogo{
    }
 
    #work .subselect li{
-     display: inline-flex;
      width: 32%;
    }
 
