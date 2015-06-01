@@ -345,6 +345,10 @@ header.mast > .niztechlogo{
 
 /* -- WORK -- */
 
+#work .subselect{
+  cursor: pointer;
+}
+
 #work .subselect .title{
   text-align: center;
   text-transform: uppercase;
@@ -364,18 +368,18 @@ header.mast > .niztechlogo{
   height: 65px;
 }
 
-#workexamples figure{
+#work .examples figure{
   margin-left: 0px;
   float: left;
 }
 
-#workexamples .title{
+#work .examples .title{
   text-transform: uppercase;
   font-family: 'Arvo', serif;
   font-weight: 700;
 }
 
-#workexamples .logo{
+#work .examples .logo{
   width: 8em;
 }
 
@@ -645,6 +649,10 @@ header.mast > .niztechlogo{
     margin-top: 20px;
     margin-left: 3px;
     margin-right: 3px;
+  }
+
+  header.mast{
+    height: 35em;
   }
 
   header.mast > .niztechlogo{
