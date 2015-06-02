@@ -747,10 +747,13 @@ header.mast > .niztechlogo{
     margin-right: auto;
   }
 
-  #workexamples figure{
+  .examples article figure{
     float: none;
+    display: block;
+    width: 100%;
+    margin: 0px 0px 1em 0px;
+    padding: 0px;
     text-align: center;
-    margin: 0;
   }
 
   #wrapper > footer .niztechlogo{
