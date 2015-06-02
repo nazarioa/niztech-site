@@ -3,7 +3,7 @@ require '../../niztech.com_extra/PHPMailer/PHPMailerAutoload.php';
 
 // echo json_encode($_POST);
 
-if($_POST['email'] != '' ){
+if($_POST['senderemail'] != '' ){
   $to = 'nazario@niztech.com';
 
   $mail = new PHPMailer;
@@ -18,8 +18,8 @@ if($_POST['email'] != '' ){
   $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
   $mail->Port = 587;                                    // TCP port to connect to
 
-  $mail->From = 'do-npot-reply@niztech.com';
-  $mail->FromName = $_POST['name'];
+  $mail->From = 'do-not-reply@niztech.com';
+  $mail->FromName = $_POST['sendername'];
   $mail->addAddress($to, 'Nazario Ayala');     // Add a recipient
   // $mail->addAddress('ellen@example.com');               // Name is optional
   $mail->addReplyTo('do-not-reply@niztech.com', 'Niztech Webform');
@@ -30,15 +30,15 @@ if($_POST['email'] != '' ){
   // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
   $mail->isHTML(true);                                  // Set email format to HTML
 
-  $mail->Subject = 'Message from '.$_POST['name'];
-  $mail->Body    = 'This is a message via <strong>Niztech</strong><br> '.$_POST['message'];
-  $mail->AltBody = 'This is a message via Niztech. \r\n '.$_POST['message'];
+  $mail->Subject = 'Message from '.$_POST['sendername'];
+  $mail->Body    = 'This is a message via <strong>Niztech</strong><br> '.$_POST['sendermessage'];
+  $mail->AltBody = 'This is a message via Niztech. \r\n '.$_POST['sendermessage'];
 
   if(!$mail->send()) {
     $error = array('result'=>'fail', 'message' => $mail->ErrorInfo);
     echo json_encode($error);
   } else {
-    $result = array('result'=>'success', 'message'=>'Message has been sent to: ' . $to .' from:"' . $_POST['email'] . '"."' );
+    $result = array('result'=>'success', 'message'=>'Message has been sent to: ' . $to .' from:"' . $_POST['senderemail'] . '"."' );
     echo json_encode($result);
   }
 }

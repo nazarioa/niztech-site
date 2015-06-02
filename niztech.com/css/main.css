@@ -343,6 +343,52 @@ header.mast > .niztechlogo{
   height: 11em;
 }
 
+#contact .overlay{
+  position: fixed;
+  /*display: */
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  background-color: rgba(35,27,36, .93);
+  text-align: center;
+}
+
+#contact .overlay > div{
+  background-color: #f9f9f9;
+  position: relative;
+  margin-top: 22%;
+  /*top: 15em;*/
+  /*bottom: 20em;*/
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 200px;
+  max-height: 70%;
+  min-width: 200px;
+  max-width: 70%;
+  text-align: center;
+}
+
+#contact .overlay .close{
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top:0px;
+  right:6px;
+  font-size: 1em;
+}
+
+#contact .overlay .result{
+  position: absolute;
+  font-size: 2em;
+  margin-top: 3em;
+  right: 0px;
+  left: 0px;
+}
+
 /* -- WORK -- */
 
 #work .subselect{
@@ -541,6 +587,11 @@ header.mast > .niztechlogo{
 
 .left{
   float:left;
+}
+
+.error{
+  background-color: #ffc4c4 !important;
+  border: 1px solid #fc6e6e !important;
 }
 
 
