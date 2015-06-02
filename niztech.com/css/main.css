@@ -434,6 +434,25 @@ header.mast > .niztechlogo{
   padding: 10px;*/
 }
 
+.button.visit{
+  padding: .1em 1em .1em 1em;
+  border: 1px solid  rgba(35,27,36, .8);
+  background-color:  rgba(35,27,36, .5);
+  color: #f9f9f9;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+}
+
+.button.visit:hover{
+  background-color:  rgba(35,27,36, .83);
+}
+
+.button.visit img{
+  height: .9em;
+  width: .9em;
+  margin-top: -.3em;
+}
+
 /* -- SOCIAL -- */
 #social .subselect{
   margin: 0px;
