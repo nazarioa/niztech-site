@@ -707,6 +707,11 @@ header.mast > .niztechlogo{
     clear: both;
 }
 
+.sticky {
+    position: fixed;
+    top:0;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.

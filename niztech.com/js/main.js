@@ -41,7 +41,7 @@ $(document).ready(function(){
       $('#sendmessage input, #sendmessage textarea').attr('disabled','disabled');
 
 
-      var request = $.ajax("content/send.php", { //// context: document.body
+      var request = $.ajax("content/send.php", {
         async: true,
         dataType: "json",
         data: messageData,
@@ -68,5 +68,23 @@ $(document).ready(function(){
     $('#contact .overlay').addClass('hidden');
     $('#sendmessage input, #sendmessage textarea').attr('disabled', false);
   });
+
+
+  $(document).scroll(function () {
+    //stick nav to top of page
+    var current_y = $(this).scrollTop();
+    var navWrap_y = $('#workNavWrap').offset().top;
+    var section_social_y = $('#social').offset().top;
+    // console.log('curreny y: ' + current_y + ' current social: ' + section_social_y);
+
+    if (current_y > navWrap_y && current_y < section_social_y) {
+        $('#workNavWrap nav').addClass('sticky');
+        $('#workNavWrap nav').removeClass('hidden');
+    }else{
+        $('#workNavWrap nav').removeClass('sticky');
+        $('#workNavWrap nav').addClass('hidden');
+    }
+  });
+
 
 });
