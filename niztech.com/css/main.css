@@ -132,7 +132,7 @@ body{
 }
 
 a{
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 .dark a{
@@ -415,14 +415,20 @@ header.mast > .niztechlogo{
 }
 
 #work .examples figure{
-  margin-left: 0px;
   float: left;
+  margin-left: 0px;
+  display: inline-block;
+  margin-bottom: auto;
 }
 
 #work .examples .title{
   text-transform: uppercase;
   font-family: 'Arvo', serif;
   font-weight: 700;
+}
+
+#work .examples .desc{
+  /*display: inline-block;*/
 }
 
 #work .examples .logo{
@@ -434,25 +440,6 @@ header.mast > .niztechlogo{
   padding: 10px;*/
 }
 
-.button.visit{
-  padding: .1em 1em .1em 1em;
-  border: 1px solid  rgba(35,27,36, .8);
-  background-color:  rgba(35,27,36, .5);
-  color: #f9f9f9;
-  font-size: .8em;
-  font-family: 'Arvo', serif;
-}
-
-.button.visit:hover{
-  background-color:  rgba(35,27,36, .83);
-}
-
-.button.visit img{
-  height: .9em;
-  width: .9em;
-  margin-top: -.3em;
-}
-
 /* -- SOCIAL -- */
 #social .subselect{
   margin: 0px;
@@ -461,7 +448,7 @@ header.mast > .niztechlogo{
 
 #social .subselect li{
   display: inline-block;
-  width: 49%;
+  width: 32%;
   margin: 0px;
   padding: 0px;
 
@@ -481,6 +468,11 @@ header.mast > .niztechlogo{
 #social img.github{
   width: 3em; /*291, 79*/
   margin-top: 1em;
+}
+
+#social img.resume{
+  width: 3em; /*291, 79*/
+  margin-top: .75em;
 }
 
 /* -- PROCESS -- */
@@ -517,6 +509,15 @@ header.mast > .niztechlogo{
   border-top: 1px dashed;
 }
 
+/* -- stuff about me --*/
+#yellowbrickroad .funfacts p{
+  display: inline;
+  /*margin-left: 1em;*/
+  /*margin-right: 1em;*/
+}
+
+/* -- GENRIC -- */
+
 .rocket{
   background-image: url('../img/nasa.jpg');
   background-size: cover;
@@ -546,8 +547,6 @@ header.mast > .niztechlogo{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* -- GENERIC -- */
 
 .outline, .outline.light{
   border-width: 1px;
@@ -582,6 +581,26 @@ header.mast > .niztechlogo{
 
 .circle.dark{
   background-image: url('../img/Circle-dark.svg');
+}
+
+.button.visit{
+  padding: .1em 1em .1em 1em;
+  border: 1px solid  rgba(35,27,36, .8);
+  background-color:  rgba(35,27,36, .5);
+  color: #f9f9f9;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+}
+
+.button.visit:hover{
+  background-color:  rgba(35,27,36, .83);
+}
+
+.button.visit img{
+  height: .9em;
+  width: .9em;
+  margin-top: -.3em;
 }
 
 .drop-cap{

@@ -66,7 +66,7 @@
         <li>
           <div class="step">Planning</div>
           <div class="v-line"><div class="circle light">0</div></div>
-          <div class="desc">The who, what, where, how, and why. I'll ask questions so that I fully understand your goals. This is where I try to become an extension of you. Getting a statment-of-work right make the subsequent steps much faster and more enjoyable.</div>
+          <div class="desc">The who, what, where, how, and why. I'll ask questions so that I fully understand your goals. This is where I try to become an extension of you. Getting a statement-of-work right make the subsequent steps much faster and more enjoyable.</div>
         </li>
         <li>
           <div class="step">Develop</div>
@@ -93,23 +93,27 @@
       <p><span class="drop-cap">W</span>ith time and projects comes experience. I have worked on many projects. Some have obscure uses others require rare or outdated technologies. Although talking about these things gets me excited, I do not want to barrage you with descriptions. Below are some samples. If you are curious about any of them or about my experience, please ask.</p>
       <ul class="subselect">
         <li class="websites"><div class="img circle dark"><img alt="Websites" src="img/Websites.svg" class="bit"/></div><div class="title">Websites</div><div class="desc">A sample of a few sites I have built. Some by hand others are CMS backed.</div></li>
-        <li class="modules"><div class="img circle dark"><img alt="Modules" src="img/Modules.svg" class="bit"/></div><div class="title">Modules</div><div class="desc">A few web components that I have made for CMS and none-CMS based sites.</div></li>
+        <li class="plugins"><div class="img circle dark"><img alt="Plugins" src="img/Plugins.svg" class="bit"/></div><div class="title">Plugins</div><div class="desc">A few web components that I have made for CMS and none-CMS based sites.</div></li>
         <li class="misc"><div class="img circle dark"><img alt="Collaborations" src="img/Collabos.svg" class="bit"/></div><div class="title">Misc.</div><div class="desc">Assortment of things that do not fit on the first two categories.</div></li>
       </ul>
 
       <div class="showcase">
-        <div id="websites_examples" class="examples hidden">
-          <!-- work examples here -->
 
+        <!-- Websites Start -->
+        <div id="websites_examples" class="examples hidden">
           <article>
             <h3 class="title">Janis Bell</h3>
             <figure>
               <img class="logo" src="content/janis-bell-logo.jpg" alt="Janis Bell Logo"/>
             </figure>
-            <p>A local marketer hired me to work on the promotion promotion for the local author's book. I made marketing material that was sent out to various book reviewers as well as her website.</p>
-            <div><label>Visit:</label><a class="button visit" href="http://www.janisbell.com">Live <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
-            <p>On occasion, I experiment with sites I have built. I like working with the constraights of a sites purpose.</p>
-            <div><label>Visit:</label><a class="button visit" href="http://www.niztech.com/Client/janisbell">Experimental <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+            <div class="desc">
+              <p>A local marketer hired me to work on the promotion promotion for the local author's book. I made marketing material that was sent out to various book reviewers as well as her website.</p>
+              <p>On occasion, I experiment with sites I have built. I like working with the constraights of a sites purpose.</p>
+            </div>
+            <div class="clearfix">
+              <a class="button visit" href="http://www.janisbell.com">Janis Bell -- Live Site <img alt="send arrow" src="img/RightChevron.svg"/></a>
+              <a class="button visit" href="http://www.niztech.com/Client/janisbell">Experimental Site <img alt="send arrow" src="img/RightChevron.svg"/></a>
+            </div>
           </article>
           <hr>
           <article>
@@ -117,8 +121,10 @@
             <figure>
               <img class="logo" src="content/elvias-logo-white_hand.svg" alt="Elvia's Home Child Care Logo"/>
             </figure>
-            <p>My mom started a daycare center a few years back. My dad, siblings and I pitched in. I made her website. The goal was to make a simple site that is easy to navigate and that encourages people to come in for a visit.</p>
-            <div><label>Visit:</label><a class="button visit" href="http://www.elviaschildcare.com">Live <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+            <div class="desc">
+              <p>My mom started a daycare center a few years back. My dad, siblings and I pitched in. I made her website. The goal was to make a simple site that is easy to navigate and that encourages people to come in for a visit.</p>
+            </div>
+            <div class="clearfix"><a class="button visit" href="http://www.elviaschildcare.com">Elvia's Child Care -- Live Site <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
           </article>
           <hr>
           <article>
@@ -126,39 +132,69 @@
             <figure>
               <img class="logo" src="content/ritas-cosmos-logo.png" alt="Ritas Cosmos Logo"/>
             </figure>
-            <p>Rita and the Cosmos is (mostly)) a cappella group comprised of retitred ladies. I was asked if I could make a site that they can manage easily. Wordpress to the rescue! Also wordpress themeaning to my repetuar.</p>
-            <div><label>Visit:</label><a class="button visit" href="http://ritascosmos.com/">Live <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+            <div class="desc">
+              <p>Rita and the Cosmos is (mostly)) a cappella group comprised of retitred ladies. I was asked if I could make a site that they can manage easily. Wordpress to the rescue! Also wordpress themeaning to my repetuar.</p>
+            </div>
+            <div class="clearfix"><a class="button visit" href="http://ritascosmos.com/">Rita's Cosmos -- Live Site<img alt="send arrow" src="img/RightChevron.svg"/></a></div>
           </article>
           <hr>
           <article>
             <h3 class="title">Marty Maldo</h3>
             <figure>
-              <img class="circle" src="content/maldo-logo.svg" alt="Maldo Logo"/>
+              <img class="logo" src="content/maldo-logo.svg" alt="Maldo Logo"/>
             </figure>
-            <p>My friend Martin Maldonado is a very talented and creative person. He does graphic art, logo design, music, and more.</p>
-            <p>When he started to freelance his craft, he asked me to help him build his website. He wanted to get it done quickly but also wanted to learn in the process and so did I.</p>
-            <p>With his website I tried new tricks with CSS and JS which at this point are now old tricks. I built the site in a way that my friend could easily tinker with the JS and CSS.</p>
-            <p>The site is really now maintained by him but the code origins are mine and I still help out when he needs some.</p>
-            <div><label>Visit:</label><a class="button visit" href="http://www.martymaldo.com/">Live <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+            <div class="desc">
+              <p>My friend Martin Maldonado is a very talented and creative person. He does graphic art, logo design, music, and more.</p>
+              <p>When he started to freelance his craft, he asked me to help him build his website. He wanted to get it done quickly but also wanted to learn in the process and so did I.</p>
+              <p>With his website I tried new tricks with CSS and JS which at this point are now old tricks. I built the site in a way that my friend could easily tinker with the JS and CSS.</p>
+              <p>The site is really now maintained by him but the code origins are mine and I still help out when he needs some.</p>
+            </div>
+            <div class="clearfix"><a class="button visit" href="http://www.martymaldo.com/">Marty Maldo -- Live Site<img alt="send arrow" src="img/RightChevron.svg"/></a></div>
           </article>
         </div>
+        <!-- Websites End -->
 
-        <div id="modules_examples" class="examples hidden">
+        <!-- Plugins Start -->
+        <div id="plugins_examples" class="examples hidden">
           <article>
             <h3 class="title">Drupal Age Gate</h3>
-            <p>Working for Jackson Family Enterpirses (a wine holdings company) as a contract programmer, I was asked to develop an age gate for their hand-built websites.</p>
-            <p>When the company moved to Drupal, I was asked to make a Drupal module of the age gate.</p>
-            <p>Below you can find the README.md I wrote along with links to sites that still use this code today.</p>
-            <p class="status">Live, Private Repo</p>
+            <figure>
+              <img class="logo" src="content/jfe-logo.png" alt="Jackson Family Wines" />
+            </figure>
+            <div class="desc">
+              <p>Working for Jackson Family Enterpirses (a wine holdings company) as a contract programmer, I was asked to develop an age gate for their hand-built websites.</p>
+              <p>When the company moved to Drupal, I was asked to make a Drupal module of the age gate.</p>
+              <p>This code is part of a private repo. Below you can find the README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal Age Gate</em> code.</p>
+            </div>
+            <div class="clearfix"><a href="http://www.edmeades.com/" class="visit button">Edmeades Wine <img alt="send arrow" src="img/RightChevron.svg"/></a></p></div>
+            <div class="readme">
+
+            </div>
+          </article>
+          <hr>
+          <article>
+            <h3 class="title">Drupal Ewinery Cart</h3>
+            <figure>
+              <img class="logo" src="content/arcanum-logo.png" alt="Jackson Family Wines" />
+            </figure>
+            <div class="desc">
+              <p>Like the <em>Drupal Age Gate</em>, I also wrote a module that works with Drupal that integartes with <a href="http://www.ewinerysolutions.com" />eWinery Solution's</a> wine ecommerce solution. This has become a linchpin piece of software forJFE's wine sites.</p>
+              <p>This code is part of a private repo. Below you can find the README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal Ewinery Cart</em> integration code.</p>
+            </div>
+            <div class="clearfix"><a href="http://www.arcanumwine.com" class="visit button">Arcanum Wine <img alt="send arrow" src="img/RightChevron.svg"/></a></p></div>
             <div class="readme">
 
             </div>
           </article>
         </div>
+        <!-- Plugins End -->
 
+        <!-- Misc start -->
         <div id="misc_examples" class="examples hidden">
-          <!-- module examples here -->
+          <div style="text-align:center;">Comming soon!</div>
         </div>
+        <!-- Misc End -->
+
       </div>
     </div>
   </div>
@@ -169,6 +205,8 @@
       <ul class="subselect">
         <li><a href="https://github.com/nazarioa"><div class="circle light"><img class="github" src="img/Github.svg" alt="Github"/></div></a></li>
         <li><a href="https://www.linkedin.com/pub/nazario-ayala/3/647/b47"><div class="circle light"><img class="linkedin" src="img/Linkedin.svg" alt="Linkedin"/></div></a></li>
+        <li><a href="content/NazarioA.Ayala.pdf"><div class="circle light"><img class="resume" src="img/Resume.svg" alt="Resume"/></div></a></li>
+
       </ul>
     </div>
   </div>
@@ -187,22 +225,24 @@
         <div><label for="senderemail">eMail</label><input type="text" name="senderemail" id="senderemail" value="webslinger@gmail.com"/></div>
         <div>
           <label for="sendermessage">Message</label><textarea name="sendermessage" id="sendermessage">Hi,
-Let's grab coffee!</textarea>
-        </div>
-        <div><button class="send">Send <img alt="send arrow" src="img/RightChevron.svg"/></button></div>
-      </form>
+            Let's grab coffee!</textarea>
+          </div>
+          <div><button class="send">Send <img alt="send arrow" src="img/RightChevron.svg"/></button></div>
+        </form>
       </div>
     </div>
 
     <div id="yellowbrickroad" class="section dark">
+      <header>softer side</header>
       <div class="content">
-        <p>In another world I would be:</p>
-        <ul>
-          <li>Standup Comedian</li>
-          <li>National Geographic Photographer</li>
-          <li>Aircraft Pilot</li>
-          <li>Veterinarian</li>
-        </ul>
+        <p><span class="drop-cap">A</span> few words. There is nothing earth shattering here.</p>
+        <div class="funfacts">
+          <p>Headphones help me concentrate.</p>
+          <p>I speak English and Spanish.</p>
+          <p>I am a board member at <a href="http://www.novatotelevision.tv">Novato Community Television</a>.</p>
+          <p>I enjoy hiking.</p>
+          <p>In another world I would be a: standup comedian, national Geographic hotographer, aircraft pilot, or maybe veterinarian.</p>
+        </div>
       </div>
     </div>
 
@@ -229,6 +269,6 @@ Let's grab coffee!</textarea>
   e.src='https://www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-</script>
+  </script>
 </body>
 </html>
