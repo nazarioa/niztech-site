@@ -24,15 +24,6 @@
 
     <header class="mast">
       <div class="niztechlogo"></div>
-      <!-- <div id="nav">
-      <ul>
-      <li>&nbsp;</li>
-      <li><a href="#">Me</a></li>
-      <li><a href="#">Process</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Connect</a></li>
-    </ul>
-  </div> -->
   <div id="branding">
     <div id="brandname">NIZTECH</div>
     <div id="tagline">
@@ -91,18 +82,12 @@
     <header>work</header>
     <div class="content">
       <p><span class="drop-cap">W</span>ith time and projects comes experience. I have worked on many projects. Some have obscure uses others require rare or outdated technologies. Although talking about these things gets me excited, I do not want to barrage you with descriptions. Below are some samples. If you are curious about any of them or about my experience, please ask.</p>
-      <ul class="subselect">
-        <li class="websites" onclick="ga('send', 'event', 'li.websites', 'clicked-webistes', 'clicked-websites');"><div class="img circle dark"><img alt="Websites" src="img/Websites.svg" class="bit"/></div><div class="title">Websites</div><div class="desc">A sample of a few sites I have built. Some by hand others are CMS backed.</div></li>
-        <li class="plugins"><div class="img circle dark"><img alt="Plugins" src="img/Plugins.svg" class="bit"/></div><div class="title">Plugins</div><div class="desc">A few web components that I have made for CMS and none-CMS based sites.</div></li>
-        <li class="misc"><div class="img circle dark"><img alt="Collaborations" src="img/Collabos.svg" class="bit"/></div><div class="title">Misc.</div><div class="desc">Assortment of things that do not fit on the first two categories.</div></li>
-      </ul>
-
       <div id="workNavWrap">
-        <nav id="miniWorkNav">
-          <ul style="background-color:red;">
-            <li class="websites">Websites</li>
-            <li class="plugins">Plugins</li>
-            <li class="misc">Misc</li>
+        <nav>
+          <ul class="subselect">
+            <li id="website_sc"><div class="img circle dark"><img alt="Websites" src="img/Websites.svg" class="bit"/></div><div class="title">Websites</div><div class="desc">A sample of a few sites I have built. Some by hand others are CMS backed.</div></li>
+            <li id="plugin_sc"><div class="img circle dark"><img alt="Plugins" src="img/Plugins.svg" class="bit"/></div><div class="title">Plugins</div><div class="desc">A few web components that I have made for CMS and none-CMS based sites.</div></li>
+            <li id="misc_sc"><div class="img circle dark"><img alt="Collaborations" src="img/Collabos.svg" class="bit"/></div><div class="title">Misc.</div><div class="desc">Assortment of things that do not fit on the first two categories.</div></li>
           </ul>
         </nav>
       </div>
@@ -110,7 +95,7 @@
       <div class="showcase">
 
         <!-- Websites Start -->
-        <div id="websites_examples" class="examples hidden">
+        <div id="website_sc_examples" class="examples hidden">
           <article>
             <h3 class="title">Janis Bell</h3>
             <figure>
@@ -165,7 +150,7 @@
         <!-- Websites End -->
 
         <!-- Plugins Start -->
-        <div id="plugins_examples" class="examples hidden">
+        <div id="plugin_sc_examples" class="examples hidden">
           <article>
             <h3 class="title">Drupal Age Gate</h3>
             <figure>
@@ -200,7 +185,7 @@
         <!-- Plugins End -->
 
         <!-- Misc start -->
-        <div id="misc_examples" class="examples hidden">
+        <div id="misc_sc_examples" class="examples hidden">
           <div style="text-align:center;">Comming soon!</div>
         </div>
         <!-- Misc End -->
