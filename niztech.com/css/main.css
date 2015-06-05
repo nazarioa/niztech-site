@@ -468,6 +468,9 @@ header.mast > .niztechlogo{
 
 #work .beforeafterarrow{
   flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3em;
 }
 
 #work .before, #work .after{
