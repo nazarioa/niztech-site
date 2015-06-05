@@ -212,18 +212,26 @@ header.mast > .niztechlogo{
 #branding{
   margin-left: auto;
   margin-right: auto;
-  width: 23em;
+  width: 10em;
   text-align: center;
 }
 
 #brandname {
   display: block;
   padding: 2.5em 0em .5em 0em;
-  /*margin-bottom: 2em;*/
-  font-size: 3.3em;
+  border-bottom: 2px dashed white;
+}
+
+#brandname .nickname{
   font-family: 'Arvo', serif;
   font-weight: 700;
-  border-bottom: 2px dashed white;
+  font-size: 3.8em;
+}
+
+#brandname .myname{
+  font-size: .7em;
+  font-family: 'Arbutus Slab', serif;
+  margin-bottom: .5em;
 }
 
 #tagline{
@@ -290,10 +298,7 @@ header.mast > .niztechlogo{
 }
 
 /* -- ABOUT ME -- */
-#about_me .small{
-  margin-top: 1em;
-  font-size: .2em;
-}
+
 
 /* -- CONTACT -- */
 
@@ -440,6 +445,64 @@ header.mast > .niztechlogo{
   padding: 10px;*/
 }
 
+#work .beforeafter{
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  flex-pack; center;
+  flex-align: stretch;
+  vertical-align: middle;
+  /*float: none;*/
+}
+
+#work .beforeafter ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: inside;
+}
+
+#work .beforeafter .title{
+  font-weight: bolder;
+  font-size: .8em;
+}
+
+#work .beforeafterarrow{
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3em;
+}
+
+#work .before, #work .after{
+  background-color: #C8C6C1;
+  padding: .5em;
+  height: inherit;
+  flex: 2;
+  /*width: 30%;*/
+  /*max-width: 40%;*/
+
+}
+
+#work .before{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work .after{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work .beforeafterarrow{
+  display: inline-flex;
+  background-image: url('../img/RightChevron.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 4em;
+}
+
 /* -- SOCIAL -- */
 #social .subselect{
   margin: 0px;
@@ -526,8 +589,8 @@ header.mast > .niztechlogo{
   background-position: center;
 }
 
-.special{
-  margin: 3em auto 3em auto;
+.my-ugly-mug{
+  margin: 0em auto 3em auto;
   text-align: center;
 }
 
@@ -745,33 +808,44 @@ header.mast > .niztechlogo{
   }
 
   header.mast{
-    height: 35em;
+    height: 31em;
+    /*bottom: 0px;*/
   }
 
   header.mast > .niztechlogo{
     position: relative;
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     left:0px;
-    top: 5em;
+    top: 4em;
     margin: 0em auto 0em auto;
   }
 
   #branding{
-    width: 13em;
+    padding: 0em;
+    margin-top: 4em;
   }
 
   #brandname{
-    padding: 5em 0em .5em 0em;
-    font-size: 2em;
+    /*margin: 4em 0em 4em 0em;*/
+    padding: 2.5em 0em;
+  }
+
+  #brandname .nickname{
+    font-size: 5em;
+  }
+
+  #brandname .myname{
+    font-size: 1.2em;
+
+  }
+
+  #tagline{
+    font-size: .9em;
   }
 
   #tagline span{
     display: block;
-  }
-
-  #nav{
-    display: none;
   }
 
   .section{
@@ -796,6 +870,26 @@ header.mast > .niztechlogo{
 
   #wrapper > footer .niztechlogo{
     margin-top: 1.5em;
+  }
+
+  #work .beforeafter{
+    flex-direction: column;
+    flex-pack; center;
+  }
+
+  #work .before, #work .after{
+    display: block;
+    margin: auto;
+  }
+
+  #work .beforeafter > div{
+    flex: 1;
+  }
+
+  #work .beforeafterarrow{
+    background-image: url('../img/DownChevron.svg');
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #social .subselect li{
