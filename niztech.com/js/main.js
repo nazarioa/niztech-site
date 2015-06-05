@@ -26,6 +26,7 @@ $(document).ready(function(){
     console.log(id_to_display);
     $('#work .showcase .examples').addClass('hidden');
     $(id_to_display).removeClass('hidden');
+    ga('send', 'event', 'work', 'click', id_to_display);
   });
 
   $('#sendmessage button.send').on('click', function(e){
