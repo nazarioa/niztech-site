@@ -1,3 +1,9 @@
 [submodule "niztech.com_extra/PHPMailer"]
 	path = niztech.com_extra/PHPMailer
 	url = https://github.com/PHPMailer/PHPMailer.git
+[submodule "niztech.com/js/--force"]
+	path = niztech.com/js/--force
+	url = https://github.com/kswedberg/jquery-smooth-scroll.git
+[submodule "niztech.com/js/jquery-smooth-scroll"]
+	path = niztech.com/js/jquery-smooth-scroll
+	url = https://github.com/kswedberg/jquery-smooth-scroll.git
