@@ -903,6 +903,7 @@ header.mast > .niztechlogo{
   #social .subselect li{
     display: block;
     margin: 1em auto 1em auto;
+    width: initial;
   }
 }
 
