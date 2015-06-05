@@ -41,7 +41,7 @@ $(document).ready(function(){
       $('#sendmessage input, #sendmessage textarea').attr('disabled','disabled');
 
 
-      var request = $.ajax("content/send.php", { //// context: document.body
+      var request = $.ajax("content/sensitive_send.php", { //// context: document.body
         async: true,
         dataType: "json",
         data: messageData,
