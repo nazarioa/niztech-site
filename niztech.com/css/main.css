@@ -446,8 +446,14 @@ header.mast > .niztechlogo{
 }
 
 #work .beforeafter{
-  display: -webkit-box;
+  /* thanks to */
+  /* https://css-tricks.com/using-flexbox/ */
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   display: flex;
+
   flex-direction: row;
   flex-pack; center;
   flex-align: stretch;
@@ -467,7 +473,14 @@ header.mast > .niztechlogo{
 }
 
 #work .beforeafterarrow{
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /*width:*/
+  -webkit-flex: 1;
+  -ms-flex: 1;
+
   flex: 1;
+
   margin-top: auto;
   margin-bottom: auto;
   height: 3em;
@@ -477,6 +490,12 @@ header.mast > .niztechlogo{
   background-color: #C8C6C1;
   padding: 1em;
   height: inherit;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  /*width:*/
+  -webkit-flex: 2;
+  -ms-flex: 2;
+
   flex: 2;
   /*width: 30%;*/
   /*max-width: 40%;*/
@@ -495,7 +514,7 @@ header.mast > .niztechlogo{
 
 #work .beforeafterarrow{
   display: inline-flex;
-  background-image: url('../img/RightChevron.svg');
+  background-image: url('../img/Chevron_right.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -646,11 +665,11 @@ header.mast > .niztechlogo{
 }
 
 .circle.light{
-  background-image: url('../img/Circle-white.svg');
+  background-image: url('../img/Circle_light.svg');
 }
 
 .circle.dark{
-  background-image: url('../img/Circle-dark.svg');
+  background-image: url('../img/Circle_dark.svg');
 }
 
 .button.visit{
@@ -828,6 +847,10 @@ header.mast > .niztechlogo{
     margin: 0em auto 0em auto;
   }
 
+  #wrapper > footer .niztechlogo{
+    margin-top: 1.5em;
+  }
+
   #branding{
     padding: 0em;
     margin-top: 4em;
@@ -866,7 +889,7 @@ header.mast > .niztechlogo{
     margin-right: auto;
   }
 
-  .examples article figure{
+  #work .examples article figure{
     float: none;
     display: block;
     width: 100%;
@@ -875,8 +898,8 @@ header.mast > .niztechlogo{
     text-align: center;
   }
 
-  #wrapper > footer .niztechlogo{
-    margin-top: 1.5em;
+  #work .examples iframe{
+    display: none;
   }
 
   #work .beforeafter{
@@ -888,6 +911,7 @@ header.mast > .niztechlogo{
     display: block;
     margin: auto;
     padding: .5em;
+    width: 100%;
   }
 
   #work .beforeafter > div{
@@ -895,7 +919,7 @@ header.mast > .niztechlogo{
   }
 
   #work .beforeafterarrow{
-    background-image: url('../img/DownChevron.svg');
+    background-image: url('../img/Chevron_down.svg');
     margin-left: auto;
     margin-right: auto;
   }
