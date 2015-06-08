@@ -131,32 +131,12 @@ body{
   overflow: hidden;
 }
 
-a{
-  /*text-decoration: none;*/
-}
-
 .dark a{
   color: #f9f9f9;
 }
 
 .light a{
   color: #231B23;
-}
-
-header.mast{
-  background-color: rgba(35,27,36, .93);
-  color: white;
-  height: 30em;
-
-}
-
-#wrapper > footer{
-  text-align: center;
-  font-family: 'Arvo', serif;
-  background-color: rgba(35,27,36, .93);
-  color: rgb(247, 247, 237);
-  padding: 2em;
-  border-top: 1px dashed #f9f9f9;
 }
 
 .niztechlogo{
@@ -166,80 +146,69 @@ header.mast{
   background-size: contain;
 }
 
-header.mast > .niztechlogo{
-  width: 4em;
-  height: 4em;
+#pageheader{
+  background-color: rgba(35,27,36, .93);
+  color: white;
+}
+
+#pageheader .niztechlogo{
+  width: 3em;
+  height: 3em;
   left: 3em;
   top: 2.5em;
 }
 
-#wrapper > footer .niztechlogo{
-  position: relative;
+#pageheader .mast{
+  text-align: center;
+  margin-top: 3em;
+}
+
+#pageheader .mast span{
+  border-bottom: 5px dotted white;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  font-weight: 700;
+  font-size: 3em;
+  font-family: 'Arvo', serif;
+  text-transform: uppercase;
+}
+
+#pageheader .tagline{
+  text-align: center;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+#pageheader .tagline span{
+  font-family: 'Arbutus Slab', serif;
+  font-size: .75em;
+}
+
+#pageheader .tagline span::after{
+  content: ' \\\\ ';
+}
+
+#pageheader .tagline span:last-child:after{
+  content: '';
+}
+
+#pagefooter {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  background-color: rgba(35,27,36, .93);
+  color: rgb(247, 247, 237);
+  padding: 2em;
+  border-top: 1px dashed #f9f9f9;
+}
+
+#pagefooter .niztechlogo{
   width: 2em;
   height: 2em;
   margin: 1.5em auto 0em auto;
 }
 
-#nav {
-  position: absolute;
-  right:4.5em;
-  top: 6.5em;
-  display: inline-block;
-}
-
-#nav ul{
-  /*display:none;*/
-  background-color: rgba(247, 247, 237, .9);
-  width: auto;
-  font-family: 'Arvo', serif;
-  padding: .5em 0em .5em 0em;
-}
-
-#nav li{
-  display: inline-block;
-  list-style: none;
-  margin: 0em .8em 0em .8em;
-}
-
-#nav li:last-child{
-  margin-right: 4em;
-}
-
-#nav li:first-child{
-  margin-left: 1.5em;
-}
-
-#branding{
-  margin-left: auto;
-  margin-right: auto;
-  width: 10em;
-  text-align: center;
-}
-
-#brandname {
-  display: block;
-  padding: 2.5em 0em .5em 0em;
-  border-bottom: 2px dashed white;
-}
-
-#brandname .nickname{
-  font-family: 'Arvo', serif;
-  font-weight: 700;
-  font-size: 3.8em;
-}
-
-#brandname .myname{
-  font-size: .7em;
-  font-family: 'Arbutus Slab', serif;
-  margin-bottom: .5em;
-}
-
-#tagline{
-  display: block;
-  font-size: 1em;
-  font-family: 'Arbutus Slab', serif;
-  margin: 2.5em 0em 0em 0em;
-}
+/* == GENERIC PAGE LAYOUT ==*/
 
 .section{
   padding: 4.5em 6em 4.5em 6em;
@@ -253,17 +222,9 @@ header.mast > .niztechlogo{
     margin: 2em auto 2em auto;
 }
 
-.section > footer hr{
-  /*
-  width: 40%;
-  margin: 2em auto 2em auto;
-  */
-}
-
 .section.dark{
   background-color: rgba(35,27,36, .93);
   color: #f9f9f9;
-  /*transform:skew(-.5deg,.5deg);*/
 }
 
 .section.dark hr{
@@ -273,7 +234,6 @@ header.mast > .niztechlogo{
 .section.light{
   background-color: rgba(247, 247, 237, .87);
   color: #231B23;
-  /*transform:skew(.5deg,-.5deg);*/
 }
 
 .section.light hr{
@@ -350,7 +310,6 @@ header.mast > .niztechlogo{
 
 #contact .overlay{
   position: fixed;
-  /*display: */
   width: 100%;
   height: 100%;
   top: 0px;
@@ -366,8 +325,6 @@ header.mast > .niztechlogo{
   background-color: #f9f9f9;
   position: relative;
   margin-top: 22%;
-  /*top: 15em;*/
-  /*bottom: 20em;*/
   margin-left: auto;
   margin-right: auto;
   min-height: 200px;
@@ -432,17 +389,8 @@ header.mast > .niztechlogo{
   font-weight: 700;
 }
 
-#work .examples .desc{
-  /*display: inline-block;*/
-}
-
 #work .examples .logo{
   width: 8em;
-}
-
-#work .showcase{
-  /*border: 1px solid #DCDDD1;
-  padding: 10px;*/
 }
 
 #work .beforeafter{
@@ -458,7 +406,6 @@ header.mast > .niztechlogo{
   flex-pack; center;
   flex-align: stretch;
   vertical-align: middle;
-  /*float: none;*/
 }
 
 #work .beforeafter ul{
@@ -475,7 +422,6 @@ header.mast > .niztechlogo{
 #work .beforeafterarrow{
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
-  /*width:*/
   -webkit-flex: 1;
   -ms-flex: 1;
 
@@ -492,13 +438,9 @@ header.mast > .niztechlogo{
   height: inherit;
   -webkit-box-flex: 2;
   -moz-box-flex: 2;
-  /*width:*/
   -webkit-flex: 2;
   -ms-flex: 2;
-
   flex: 2;
-  /*width: 30%;*/
-  /*max-width: 40%;*/
 
 }
 
@@ -601,8 +543,6 @@ header.mast > .niztechlogo{
 /* -- stuff about me --*/
 #yellowbrickroad .funfacts p{
   display: inline;
-  /*margin-left: 1em;*/
-  /*margin-right: 1em;*/
 }
 
 /* -- GENRIC -- */
@@ -803,6 +743,11 @@ header.mast > .niztechlogo{
    ========================================================================== */
 
  @media only screen and (min-width: 1200px) {
+   #pageheader .niztechlogo{
+     width: 4em;
+     height: 4em;
+   }
+
    .subselect li{
      display: inline-block;
      margin-left: auto;
@@ -826,6 +771,8 @@ header.mast > .niztechlogo{
 
 @media only screen and (max-width: 710px) {
 
+  /* == BRANDING == */
+
   #wrapper{
     width: auto;
     margin-top: 20px;
@@ -833,55 +780,34 @@ header.mast > .niztechlogo{
     margin-right: 3px;
   }
 
-  header.mast{
-    height: 31em;
-    /*bottom: 0px;*/
-  }
-
-  header.mast > .niztechlogo{
-    position: relative;
-    width: 4em;
-    height: 4em;
+  #pageheader .niztechlogo{
+    width: 3em;
+    height: 3em;
     left:0px;
-    top: 4em;
+    top: 3em;
     margin: 0em auto 0em auto;
   }
 
-  #wrapper > footer .niztechlogo{
+  #pagefooter .niztechlogo{
     margin-top: 1.5em;
   }
 
-  #branding{
-    padding: 0em;
-    margin-top: 4em;
+  #pageheader .mast{
+    margin-top: 4.5em;
   }
 
-  #brandname{
-    /*margin: 4em 0em 4em 0em;*/
-    padding: 2.5em 0em;
+  #pageheader .tagline span::after{
+    content: ' ';
   }
 
-  #brandname .nickname{
-    font-size: 5em;
-  }
-
-  #brandname .myname{
-    font-size: 1.2em;
-
-  }
-
-  #tagline{
-    font-size: .9em;
-  }
-
-  #tagline span{
+  #pageheader .tagline span{
     display: block;
   }
 
+  /* == GENERIC PAGE LAYOUT ==*/
+
   .section{
     padding: 4.5em 1.5em 4.5em 1.5em;
-    /*font-size: 12pt;*/
-    /*line-height: 2em;*/
   }
 
   #about_me .img-div {
@@ -915,6 +841,10 @@ header.mast > .niztechlogo{
   }
 
   #work .beforeafter > div{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
   }
 
