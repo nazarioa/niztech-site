@@ -403,7 +403,7 @@ body{
   display: flex;
 
   flex-direction: row;
-  flex-pack; center;
+  flex-pack: center;
   flex-align: stretch;
   vertical-align: middle;
 }
