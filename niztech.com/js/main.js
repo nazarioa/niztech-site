@@ -71,6 +71,11 @@ $(document).ready(function(){
       request.done(function( data ){
         if(data.result == 'success'){
           $('#contact .result').html('Your message was sent!');
+
+          // after message is sent reset to defualt values.
+          $('#sendername').val( $('#sendername').attr('value') );
+          $('#senderemail').val( $('#senderemail').attr('value') );
+          $('#sendermessage').val( $('#sendermessage').attr(oldvalue) );
         }else{
           $('#contact .result').html('Sadly, your message was almost sent.<br />Try again later.');
           console.log(data);
