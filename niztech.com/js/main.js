@@ -2,24 +2,23 @@ $(document).ready(function(){
   /* Work examples */
   $('#work .subselect li').on('click', function(){
     var id_to_display = '#' + $(this).attr('class') + '_examples';
-    console.log(id_to_display);
 
     if( $(this).hasClass('active') === true ){
       $('#work .subselect li').removeClass('active');
       $('#work .showcase .examples').addClass('hidden');
-      console.log('a');
     }else{
       $('#work .subselect li').removeClass('active');
       $(this).addClass('active');
       $('#work .showcase .examples').addClass('hidden');
       $(id_to_display).removeClass('hidden');
-      console.log('b');
       $.smoothScroll({scrollTarget: id_to_display});
     }
+
   });
 
   /* Contact Form */
-  $('#sendmessage input').on('click', function (){
+  // on click / touch in clear out the default values.
+  $('#message_form input').on('click', function (){
     if($(this).attr('name') === 'sendername' && $(this).val() === 'Peter Parker'){
       $(this).val('');
       $(this).removeClass('error');
@@ -29,7 +28,8 @@ $(document).ready(function(){
     }
   });
 
-  $('#sendmessage input').on('blur', function (){
+  // on click / touch in if the text is empty, add back in the defualt values
+  $('#message_form input').on('blur', function (){
     if($(this).attr('name') === 'sendername' && $(this).val().trim() === ''){
       $(this).val('Peter Parker');
       $(this).addClass('error');
@@ -39,41 +39,50 @@ $(document).ready(function(){
     }
   });
 
-  $('#sendmessage button.send').on('click', function(e){
+  // the send button.
+  $('#message_form button.send').on('click', function(e){
 
     if( $('#sendername').val() !== '' && $('#sendername').val() !== $('#sendername').attr('value') && $('#senderemail').val() !== $('#senderemail').attr('value') ){
 
       // when the ajax call finishes we want to put our button's text back the way it was.
-      var oldvalue = $('#sendmessage button.send').html();
-      $('#sendmessage button.send').html('Sending');
-      $('#sendmessage input, #sendmessage textarea').attr('disabled','disabled');
+      var oldvalue = $('#message_form button.send').html();
+      $('#message_form button.send').html('Sending');
+      $('#message_form input, #message_form textarea').attr('disabled','disabled');
 
       // prep our overlay message and display it
       $('#contact .result').html('Sending...');
       $('#contact .overlay').removeClass('hidden');
 
-      // Lets prep data for our php code.
-      var messageData = $('#sendmessage').serialize();
-
       // Let the ajax begin.
-      var request = $.ajax("content/sensitive_send.php", {
-        async: true,
-        dataType: "json",
-        data: messageData,
-        method: "POST"
-      }).always(function( data ) {
+      var request = $.post(
+        'content/send.php',
+        {
+          sendername: $('#sendername').val(),
+          senderemail: $('#senderemail').val(),
+          sendermessage: $('#sendermessage').val()
+        },
+        'JSON');
+
+      request.always(function( data ) {
         $('#contact .overlay').removeClass('hidden');
-        $('#sendmessage button.send').html(oldvalue);
-
-      }).fail(function( data ) {
-        $('#contact .result').html('Sadly, your message could not be sent.');
-
-      }).success(function( data ){
-        $('#contact .result').html('Your message was sent!');
+        $('#message_form button.send').html(oldvalue);
       });
+
+      request.done(function( data ){
+        if(data.result == 'success'){
+          $('#contact .result').html('Your message was sent!');
+        }else{
+          $('#contact .result').html('Sadly, your message could not be sent.');
+        }
+      });
+
+      request.fail(function( data ) {
+        console.log('.fail');
+        $('#contact .result').html('Sadly, your message could not be sent.');
+      });
+
     }else{
-      // oh no! it failed
-      $('#sendmessage input').addClass('error');
+      $('#message_form input').addClass('error');
     }
 
     // lets prevent the page from relaoding
@@ -84,7 +93,6 @@ $(document).ready(function(){
   $('#contact .close, #contact .overlay').on('click', function(){
     $('#contact .result').html('');
     $('#contact .overlay').addClass('hidden');
-    $('#sendmessage input, #sendmessage textarea').attr('disabled', false);
+    $('#message_form input, #message_form textarea').attr('disabled', false);
   });
-
 });
