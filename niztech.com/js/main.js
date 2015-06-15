@@ -61,7 +61,7 @@ $(document).ready(function(){
           senderemail: $('#senderemail').val(),
           sendermessage: $('#sendermessage').val()
         },
-        'JSON');
+        "JSON");
 
       request.always(function( data ) {
         $('#contact .overlay').removeClass('hidden');
@@ -72,7 +72,8 @@ $(document).ready(function(){
         if(data.result == 'success'){
           $('#contact .result').html('Your message was sent!');
         }else{
-          $('#contact .result').html('Sadly, your message could not be sent.');
+          $('#contact .result').html('Sadly, your message was almost sent.<br />Try again later.');
+          console.log(data);
         }
       });
 
