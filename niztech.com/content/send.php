@@ -20,17 +20,17 @@ if($_POST['senderemail'] !== '' ){
   $mail->Port = $smtpSettings['port'];                  // TCP port to connect to
 
   $mail->From = 'do-not-reply@niztech.com';
-  $mail->FromName = $_POST['sendername'];
+  $mail->FromName = 'Niztech #Connect';
   $mail->addAddress($to, 'Nazario Ayala');     // Add a recipient
   // $mail->addAddress('ellen@example.com');               // Name is optional
   $mail->addReplyTo('do-not-reply@niztech.com', 'Niztech Webform');
 
   $mail->Subject = 'Message from '.$_POST['sendername'];
   $mail->Body    = 'This is a message via <strong>Niztech</strong><br> '.$_POST['sendermessage'];
-  $mail->AltBody = 'This is a message via Niztech. \r\n '.$_POST['sendermessage'];
+  $mail->AltBody = 'This is a message via Niztech from '.$_POST['sendername'].' \r\n '.$_POST['sendermessage'];
 
   if(!$mail->send()) {
-    $result = array('result'=>'fail', 'message' => $mail->ErrorInfo);
+    $result = array('result'=>'fail', 'message' => addslashes($mail->ErrorInfo));
   } else {
     $result = array('result'=>'success', 'message'=>'Message has been sent to: ' . $to .' from:"' . $_POST['senderemail'] . '"."' );
   }
