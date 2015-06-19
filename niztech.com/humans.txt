@@ -10,6 +10,7 @@
 
 # THANKS
 
+    Janis Bell
     Marisela Castañeda
     Jodi Freedman
     Marianne Utulo
