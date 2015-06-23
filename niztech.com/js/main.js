@@ -22,7 +22,7 @@ $(document).ready(function(){
     if($(this).attr('name') === 'sendername' && $(this).val() === 'Peter Parker'){
       $(this).val('');
       $(this).removeClass('error');
-    }else if ($(this).attr('name') === 'senderemail' && $(this).val() === 'webslinger@gmail.com') {
+    }else if ($(this).attr('name') === 'senderemail' && $(this).val() === 'spidy@gmail.com') {
       $(this).val('');
       $(this).removeClass('error');
     }
@@ -34,7 +34,7 @@ $(document).ready(function(){
       $(this).val('Peter Parker');
       $(this).addClass('error');
     }else if ($(this).attr('name') === 'senderemail' && $(this).val().trim() === '') {
-      $(this).val('webslinger@gmail.com');
+      $(this).val('spidy@gmail.com');
       $(this).addClass('error');
     }
   });
