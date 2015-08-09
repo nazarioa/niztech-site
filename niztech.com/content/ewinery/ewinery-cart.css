@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ============================================
+Reset
+============================================ */
+#cart p, #cart li {
+	margin: 0px;
+	padding: 0px;
+}
+#cart li {
+	list-style: none;
+}
+/* ============================================
+Mini Cart Summary
+============================================ */
+
+/* Cart Toggle */
+#cart-toggle {
+	display: block;
+	text-decoration: none;
+	color: #989898;
+	text-align: left;
+}
+/* Mini cart icon positioning */
+#cart {
+	cursor: pointer;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	position: fixed;
+	right: 28px;
+	z-index: 20;
+}
+/* Mini cart summary container */
+#cart-content {
+	background-image: url('cart-bg.png');
+	width: 260px;
+	border-top: 0;
+	display: none;
+	position: absolute;
+	z-index: 9;
+	margin-top: 61px;
+	margin-bottom: 0 !important;
+	margin-left: -241px !important;
+	margin-top: 38px;
+	border-radius: 4px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	max-height: 532px;
+	font-family: arial, sans-serif;
+}
+/* Mini cart summary row item */
+#cart .item-row {
+	overflow: hidden;
+	height: 1%;
+	padding: 12px 10px;
+	position: relative;
+	border-bottom: 1px solid #ededed;
+}
+/* Forces the ul to expand to width of #cart-content */
+#cart-content ul {
+	margin: 0;
+	padding: 0;
+}
+/* Align cart details (price, qty & subtotal) */
+#cart-content ul li.item-row div, #total-line div {
+	text-align: right;
+}
+/* Font for prices in summary */
+.product-price, .product-qty, .product-qty-time-price, .sub-total, .total-item-count {
+	font-family: arial, "sans-serif";
+}
+/* Cart details width */
+.dynamic {
+	display: inline-block;
+	width: 7em;
+}
+/* Checkout link in summary */
+#cart a.checkout {
+	color: #434544;
+	display: inline-block;
+	height: 33px;
+	padding: 0.4em 1.5em;
+	text-align: center;
+	width: 100%;
+}
+/* Cart summary prices */
+.product-price, .product-qty, .product-qty-time-price {
+}
+/* "Total" area in mini cart content */
+#total-line {
+	padding: 10px 12px !important;
+	color: #c0c0c1;
+	background-color: #302f32;
+	opacity: 0.75;
+}
+/* ============================================
+Remove Items
+============================================ /
+
+/* Hover on remove */
+#cart a.remove:hover {
+	background-position: 1px -15px;
+}
+/* Remove icon */
+#cart .remove {
+	display: block;
+	position: absolute;
+	width: 26px;
+	height: 17px;
+	background: url(remove-item.gif) no-repeat 1px 5px;
+	right: -6px;
+	top: 2px;
+	z-index: 3;
+	text-decoration: none;
+	color: #434544;
+}
+/* ============================================
+Add to Cart items
+============================================ /
+
+/* Add to cart */
+.ewinery.buynow, .ewinery.noinfo, .ewinery.soldout {
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* Quantity Box */
+input.quantity {
+	border: 1px solid #a2a3a3;
+	display: block;
+	text-align: center;
+	width: 20px;
+}
+
+/* ============================================
+MOBILE
+============================================ */
+@media (max-width: 766px) {
+}
