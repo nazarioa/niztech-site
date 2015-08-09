@@ -3,16 +3,18 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <name> -- <role>
     Nazario A. Ayala -- WebDev
     Nazario A. Ayala -- Owner
     Martin Maldonado -- Graphic Artist
 
 # THANKS
 
+    Janis Bell
     Marisela Castañeda
     Jodi Freedman
     Marianne Utulo
+    Niklas Dalqvist
 
 # TECHNOLOGY COLOPHON
 

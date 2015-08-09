@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>eWinery Cart Example -- Nazario (niz)</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/readme.css">
+  <link rel="stylesheet" href="ewinery-cart.css" type="text/css" media="screen"/>
+
+  <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="../../js/plugins.js"></script>
+  <script id="ewineryscript" type="text/javascript" src="http://www.niztech.com/content/ewinery/ewinery-cart-v1-niztech.js"></script>
+</head>
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- start content -->
+  <div id="wrapper">
+
+    <div class="readme">
+      <h1>ewinerycart-connector-for-non-cms-sites</h1>
+      <p>This is an implementation for eWinery shopping carts for non-cms sites.</p>
+      <p>Version - 1.4<br />author - Nazario A. Ayala (niztech.com)<br />date - January 9, 2013<br/>updated - March 5, 2013<br/>updated - March 8, 2013 - Dale Geist</p>
+
+      <h2>Overview</h2>
+      <p>The eWinery Connector for Non-CMS Sites is intended for “hand coded,” none CMS websites. Its purpose is to display a buy button for each item being sold via eWinery and to generate a preview shopping cart.</p>
+      <p>This code has been rewritten not using the previous code by IQR. IQR’s code had some sever inefficiencies and performance issues. That is not to say the current implementation cannot be improved...</p>
+      <p>This was written in JavaScript, HTML, and CSS. Some functionality of this code is better suited for ASP, JSP, or PHP but since the eWinery Connector for Non-CMS sites needed to be platform agnostic, all code was written in JavaScript using jQuery as the primarily framework. Code and documentation exists as a github project <a href="https://github.com/jfedtc/ewinery-connector-for-non-cms-sites"> https://github.com/jfedtc/ewinery-connector-for-non-cms-sites</a>.</p>
+
+      <h2>Example</h2>
+      <div id="cart"></div>
+      <div>
+        <span class="ewinery ewbutton">fe77ca58-c19b-29d5-a9da-4a35880a6ce9</span>
+      </div>
+      <div>
+        <span class="ewinery ewprice">fe77ca58-c19b-29d5-a9da-4a35880a6ce9</span>
+      </div>
+
+
+      <h2>Requires</h2>
+      <ul>
+        <li>jQuery v1.8 [DG: seems to work with jQuery 1.7]</li>
+        <li>jQuery.Cookie-1.3 [DG: works with jQuery.Cookie-1.0]</li>
+        <li>jquery.json-2.4</li>
+      </ul>
+
+      <h2>Steps</h2>
+      <p>In order to use this code:</p>
+      <ol>
+        <li>Copy the "resources" folder to your sites root directory.</li>
+        <li>Include frameworks needed for development.<br /><code>&#60;script src="/resources/libraries/jquery.cookie-1.3.js" type="text/javascript"&#62;&#60;/script&#62;</code></li>
+        <li>Include "ewinery-v1-niztech.js" script in your head tag.<br />Copy and paste the following line<br /><code>&#60;script id&#61;"ewineryscript" type&#61;"text/javascript" src&#61;"/resources/ewinery/ewinery-v1-niztech.js"&#62;&#60;/script&#62;</code><br/>              Make sure you include it after the needed libraries mentioned above.</li>
+        <li>Include 'ewinery.css.' This is needed for the carts functionality and styling<br /><code>&#60;link rel&#61;"stylesheet" href&#61;"/resources/ewinery/ewinery.css" type&#61;"text/css" media&#61;"screen"/&#62;</code><br/>Make sure you include it after the needed libraries mentioned above.</li>
+        <li>Add the following tag in your html.
+          <code>&#60;div id&#61;"cart"&#62;&#60;/div&#62;</code></li>
+          <li>Set your settings in ewinery-v1-niztech.js file</li>
+          <li>Add the following for each product on your page where (productid)</span> is the unique product ID found in eWinery -- no parenthesis.
+            <code>&#60;span class&#61;"ewinery ewprice"&#62;(productid)</span>&#60;/span&#62;<br />&#60;span class&#61;"ewinery ewbutton"&#62;(productid)</span>&#60;/span&#62;</code>
+          </ol>
+        </ul>
+
+        <h2>Code Overview</h2>
+        <h3>ewinery.css</h3>
+        <p>Provides default styling for the cart.</p>
+        <ul>
+          <li>#cart - container that holds the whole cart</li>
+          <li>#mini-cart - container makes up the initial cart (horizontal bar with checkout)</li>
+          <li>#cart-content - container holds the cart contents. Appears when user clicks the cart icon.</li>
+          <li>#total-line - holds the last line in #cart-content ul</li>
+          <li>.checkout - checkout button</li>
+          <li>.total-item-count - all instances of cart items total have this class</li>
+          <li>.sub-total - all instances of cart tender total have this class</li>
+        </ul>
+        <h3>img/</h3>
+        <p>This directory holds images used by the source. Some images at this point should be changed to HTML/CSS buttons.</p>
+        <p>Currently holds:</p>
+        <ul>
+          <li>buy-now.png</li>
+          <li>out-of-stock.png</li>
+          <li>sold-out.png</li>
+          <li>cart-icon.png - image of shopping cart</li>
+          <li>remove-item.gif - image of red “x” for item removal</li>
+        </ul>
+        <h3>sampledata.js</h3>
+        <p>This is not used during production. This is a JSON valid file with dummy data. I kept it around because it is possible that an eWinery issue may arise where having known good datasource can aid in troubleshooting.</p>
+        <h3>ewinery-v1-niztech.js</h3>
+        <h4>Variables</h4>
+        <p>This is an overview of the most important variables used. Some of these need to be configured.</p>
+        <ul>
+          <li><span class="variable">DEBUG</span> - is set to true, this outputs to the console. Not that this should only be done for testing as internet explorer will not render correctly.</li>
+          <li>*<span class="variable">FeedURL</span> - Set the URL for product feed from eWinery. If you need to test known good feed set the path here to the sampledata.js mentioned above.</li>
+          <li>*<span class="variable">EwineryStoreURL</span> - This is the base URL to eWinery store URL. Checkout link is generated from here.</li>
+          <li>*<span class="variable">URL</span> - website URL. Set the URL fro dev, stage, production here. The program uses this to determine if the site is being execute from dev, stage, live.</li>
+          <li><span class="variable">COOKIE_DOMAIN</span> - Set the domain for the cookie.</li>
+          <li><span class="variable">productData</span> - Holds the data returned by eWinery.</li>
+          <li><span class="variable">cartCookieData</span> - Holds the data that is stored in the cookie.</li>
+        </ul>
+        <h4>Functions</h4>
+        <ul>
+          <li><span class="function">startEwinery()</span><br />--</li>
+          <li><span class="function">getEwineryData()</span><br />Makes a JSON call to eWinery Product Feed. Takes returned data and organizes it and stores it in <span class="variable">productData</span> array.</li>
+          <li><span class="function">renderMiniCart()</span><br />Renders the cart for display on screen.</li>
+          <li><span class="function">renderProductInfo()</span><br />This is a key function. It searches the content and deposits the buy / out of stock / not available for each item being sold.
+            It searches for two things:<br /><ol>
+              <li><code>&#60;span class=”ewinery ewbutton”&#62;productid&#60;/span&#62;</code></li>
+              <li><code>&#60;span class=”ewinery ewprice”&#62;productid&#60;/span&#62;</code></li>
+            </ol>
+            <p>productid should be replaced with the ewinery product id when the page is built. The script will replace item 1) above with the buy button or appropriate message and 2) will be replaced with the price.</p>
+          </li>
+          <li><span class="function">attachButtonsToClick()</span><br />This function attaches buy-buttons, remove-item, and toggle-cart functionality to the respective elements.</li>
+          <li><span class="function">removeItem(<span class="parameter">clickedProductId</span>, <span class="parameter">numberToRemove</span>)</span><br />This removes items. The items are removed from, the UI, the model representing the cookie, and the cookie. It also preforms the math operation related to the request.</li>
+          <li><span class="function">addItem(<span class="parameter">clickedProductId</span>, <span class="parameter">numberToAdd</span>)</span><br />This adds items to the cart. The items are added to the UI, model representing the cookie, and the cookie itself.
+            It also preforms the math operation related to the request.</li>
+            <li><span class="function">getCookieCartProducts(<span class="parameter">arg</span>)</span><br />Extracts data from cookie and puts it into the the local variable for easy manipulation</li>
+            <li><span class="function">setCookieCartProducts()</span><br />Stores data into cookie for use by eWinery.</li>
+            <li><span class="function">getCookieCartSubTotal()</span><br />Gets cookie cart subtotal in the event that the user removed items on the ewinery side.</li>
+            <li><span class="function">setCookieCartSubTotal(<span class="parameter">productPrice</span>, <span class="parameter">productQuantity</span>)</span><br />Sets the total value of the cart</li>
+            <li><span class="function">showHideMiniCart(<span class="parameter">arg</span>)</span><br />In the event that the cart needs to be hidden one can pass ‘show’ or ‘hide’ for the desired effect.</li>
+            <li><span class="function">toggleLittleCart()</span><br />This function shows and hides the mini-cart.</li>
+            <li><span class="function">scrollToTop()</span><br />When a user adds an item to the cart, the screen scrolls to the the top where the cart is displayed.</li>
+            <li><span class="function">getNumberItemsInCart()</span><br />Calculates the number of items in the cart.</li>
+            <li><span class="function">getSubTotal()</span><br />Calculates the subtotal based on item in the cart. </li>
+          </ul>
+        </div>
+      </div><!-- end wrapper -->
+
+    </body>
+    </html>

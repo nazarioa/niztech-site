@@ -1,0 +1,48 @@
+.readme{
+  width: 80%;
+  background-color: #ffffff;
+  padding: 2em;
+  border: 1px solid #e3e3e3;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.readme h1, .readme h2{
+  border-bottom: 1px solid #a3a3a3;
+  line-height: 2em;
+}
+
+.readme p{
+  line-height: 1.6em;
+}
+
+.readme li{
+  margin-bottom: 1.3em;
+}
+
+.readme code{
+  background-color: #ebebeb;
+  font-family: monospace;
+  border-radius: 4px;
+  padding: .2em;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.readme .function{
+  color: #B23F3F;
+}
+
+.readme .parameter{
+  color: #028181;
+}
+
+.readme .variable{
+  color: #B497BD;
+}
+
+.readme .string{
+  color: #DE1849;
+}

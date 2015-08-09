@@ -11,6 +11,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/iframe.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -22,20 +23,10 @@
   <!-- start content -->
   <div id="wrapper" class="shadow">
 
-    <header class="mast">
+    <header id="pageheader">
       <div class="niztechlogo"></div>
-      <div id="branding">
-        <div id="brandname">
-          <div class="nickname">NIZ</div>
-          <div class="myname">(Nazario A. Ayala)</div>
-        </div>
-
-        <div id="tagline">
-          <span>code craftsman</span>
-          <span>\\</span>
-          <span>problem solver</span>
-        </div>
-      </div>
+      <div class="mast"><span>Niz</span></div>
+      <div class="tagline"><span>web developer</span><span>problem solver</span><span>code craftsman</span></div>
     </header>
 
     <div id="page">
@@ -44,7 +35,7 @@
         <header></header>
         <div class="content">
           <div class="my-ugly-mug"><div class="img-circle" style="width: 15em; height: 15em;"><img src="img/Nazario.jpg" alt="nazario's face"/></div></div>
-          <p><span class="drop-cap">M</span>y nick name is Niz and I love using tech to build stuff and create beautiful code. From a young age, I have always had a knack for breaking problems down so that I could understand them; I am intrigued by how things work. When I am in awe of someones work, my passion makes me want to learn from others! Web development makes me smile and gives me this opportunity, so here I am!</p>
+          <p><span class="drop-cap">M</span>y nickname is Niz and I love using tech to build beautiful code. From a young age, I have  had a knack for breaking problems down so that I could understand them. I am intrigued by how things work. When I am in awe of someone’s website, I want to find out how they made it. Web development makes me smile and gives me this opportunity.</p>
         </div>
         <footer>
           <hr>
@@ -53,7 +44,7 @@
       </div>
 
       <div id="social" class="section dark">
-        <!-- <header>connect</header> -->
+        <header>#social</header>
         <div class="content">
           <ul class="subselect">
             <li><a href="https://github.com/nazarioa"><div class="circle light"><img class="github" src="img/Github.svg" alt="Github"/></div></a></li>
@@ -67,11 +58,11 @@
       <div id="work" class="section light">
         <header>work</header>
         <div class="content">
-          <p><span class="drop-cap">W</span>ith time and work comes, experience. I have been involved with many projects; Some have obscure uses others require rare or outdated technologies. Talking about these things gets me excited. However, I do not want to barrage you with descriptions. Below are some samples. If you are curious about any of them or about my experience, please feel free to ask.</p>
+          <p><span class="drop-cap">W</span>ith technology ever changing, I have been involved in many creative environments and have worked on some very interesting projects in website development for individuals and large companies. Here are some examples. Challenge me: what can I do for you?</p>
           <ul class="subselect">
-            <li class="websites"><div class="img circle dark"><img alt="Websites" src="img/Websites.svg" class="bit"/></div><div class="title">Websites</div><div class="desc">A sample of a few sites I have built. Some by hand and some others are CMS backed.</div></li>
-            <li class="plugins"><div class="img circle dark"><img alt="Plugins" src="img/Plugins.svg" class="bit"/></div><div class="title">Plugins</div><div class="desc">A few web components that I have made for CMS and non-CMS based sites.</div></li>
-            <li class="misc"><div class="img circle dark"><img alt="Collaborations" src="img/Collabos.svg" class="bit"/></div><div class="title">Misc.</div><div class="desc">Assortment of things that do not fit in the first two categories.</div></li>
+            <li class="websites"><div class="img circle dark"><img alt="Websites" src="img/Websites_light.svg" class="bit"/></div><div class="title">Websites</div><div class="desc">A sample of a few sites I have built, some by hand and others CMS-backed.</div></li>
+            <li class="plugins"><div class="img circle dark"><img alt="Plugins" src="img/Plugins_light.svg" class="bit"/></div><div class="title">Plug-ins</div><div class="desc">A few web components that I have made for CMS and non-CMS-based sites.</div></li>
+            <li class="misc"><div class="img circle dark"><img alt="Collaborations" src="img/Collabos_light.svg" class="bit"/></div><div class="title">Misc.</div><div class="desc">An assortment of things that do not fit in the first two categories.</div></li>
           </ul>
 
           <div class="showcase">
@@ -79,17 +70,31 @@
             <!-- Websites Start -->
             <div id="websites_examples" class="examples hidden">
               <article>
+                <h3 class="title">My Website</h3>
+                <figure>
+                  <img class="logo img-circle" src="img/Nazario.jpg" alt="Nazario A. Ayala's Face"/>
+                </figure>
+                <div class="desc">
+                  <p>This is a natural place to start; I hope you are enjoying it. Please drop me a line if you have suggestions.</p>
+                  <p>You can check out the commit history on Github.</p>
+                </div>
+                <div class="clearfix">
+                  <a href="https://github.com/nazarioa/niztech-site" class="visit button">Git Repo <img alt="send arrow" src="img/Chevron_right.svg"/></a>
+                </div>
+              </article>
+              <hr>
+              <article>
                 <h3 class="title">Janis Bell</h3>
                 <figure>
                   <img class="logo" src="content/janis-bell-logo.jpg" alt="Janis Bell Logo"/>
                 </figure>
                 <div class="desc">
-                  <p>A local marketer hired me to work on the promotion promotion for the local author's book. I made marketing material that was sent out to various book reviewers as well as her website.</p>
-                  <p>On occasion, I experiment with sites I have built. I like working with the constraights of a sites purpose.</p>
+                  <p>A local marketer hired me to work on the promotion for an author's book. I developed her website as well as created marketing material that was sent to book reviewers.</p>
+                  <p>On occasion, I experiment with sites I have built. I like working within the boundaries of a site's purpose.</p>
                 </div>
                 <div class="clearfix">
-                  <a class="button visit" href="http://www.janisbell.com">Janis Bell -- Live Site <img alt="send arrow" src="img/RightChevron.svg"/></a>
-                  <a class="button visit" href="http://www.niztech.com/Client/janisbell">Experimental Site <img alt="send arrow" src="img/RightChevron.svg"/></a>
+                  <a class="button visit" href="http://www.janisbell.com">Janis Bell -- Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a><br />
+                  <a class="button visit" href="http://www.niztech.com/Client/janisbell">Janis Bell -- Experimental Site <img alt="send arrow" src="img/Chevron_right.svg"/></a>
                 </div>
               </article>
               <hr>
@@ -99,22 +104,27 @@
                   <img class="logo" src="content/elvias-logo-white_hand.svg" alt="Elvia's Home Child Care Logo"/>
                 </figure>
                 <div class="desc">
-                  <p>My mom started a daycare center a few years back. My dad, siblings and I pitched in. I made her website. The goal was to make a simple site that is easy to navigate and that encourages people to come in for a visit.</p>
+                  <p>When my mom started a daycare center a few years back, I developed her website. The goal was to make it simple and easy to navigate so that people would be encouraged to come in for a visit.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://www.elviaschildcare.com">Elvia's Child Care -- Live Site <img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://www.elviaschildcare.com">Elvia's Child Care -- Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
               </article>
               <hr>
               <article>
-                <h3 class="title">Rita's Cosmos</h3>
+                <h3 class="title">Rita &amp; The Cosmos</h3>
                 <figure>
                   <img class="logo" src="content/ritas-cosmos-logo.png" alt="Ritas Cosmos Logo"/>
                 </figure>
                 <div class="desc">
-                  <p>Rita and the Cosmos is (mostly)) a cappella group comprised of retitred ladies. I was asked if I could make a site that they can manage easily. Wordpress to the rescue! Also wordpress themeaning to my repetuar.</p>
+                  <p>Rita &amp; The Cosmos is (mostly) an a capella group comprised of retired ladies. I was asked to make a site that they can manage easily. WordPress to the rescue, and WordPress theming added to my repertoire!</p>
+                  <p>Speaking of, I am currently "tightening" this website; I am making it more responsive, adding some Posttypes and custom templates to give it a more consistant look.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://ritascosmos.com/">Rita's Cosmos -- Live Site<img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://ritascosmos.com/">Rita's Cosmos -- Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://ratc.dev.niztech.com/">Rita's Cosmos -- Experimental Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+
               </article>
               <hr>
+              <!--
+              removed for now. questions about this please email me nazario (d ot) a (the @ symbol ) gmail [another dot] com
               <article>
                 <h3 class="title">Marty Maldo</h3>
                 <figure>
@@ -124,10 +134,11 @@
                   <p>My friend Martin Maldonado is a very talented and creative person. He does graphic art, logo design, music, and more.</p>
                   <p>When he started to freelance his craft, he asked me to help him build his website. He wanted to get it done quickly but also wanted to learn in the process and so did I.</p>
                   <p>With his website I tried new tricks with CSS and JS which at this point are now old tricks. I built the site in a way that my friend could easily tinker with the JS and CSS.</p>
-                  <p>The site is really now maintained by him but the code origins are mine and I still help out when he needs some.</p>
+                  <p>The site is maintained by Martin. I just taught him the basic and on occasion I still help him out.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://www.martymaldo.com/">Marty Maldo -- Live Site<img alt="send arrow" src="img/RightChevron.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://www.martymaldo.com/">Marty Maldo -- Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
               </article>
+            -->
             </div>
             <!-- Websites End -->
 
@@ -139,11 +150,10 @@
                   <img class="logo" src="content/jfe-logo.png" alt="Jackson Family Wines" />
                 </figure>
                 <div class="desc">
-                  <p>Working for Jackson Family Enterpirses (a wine holdings company) as a contract programmer, I was asked to develop an age gate for their hand-built websites.</p>
-                  <p>When the company moved to Drupal, I was asked to make a Drupal module of the age gate.</p>
-                  <p>This code is part of a private repo. Below you can find the README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal Age Gate</em> code.</p>
+                  <p>Working for Jackson Family Enterprises (a wine-holdings company) as a contract programmer, I was asked to develop an age gate for their hand-built websites. When the company moved to Drupal, I was asked to covert the Age Gate into a Drupal module.</p>
+                  <p>This code is part of a private repo. Below is a README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal Age Gate</em> code.</p>
                 </div>
-                <div class="clearfix"><a href="http://www.edmeades.com/" class="visit button">Edmeades Wine <img alt="send arrow" src="img/RightChevron.svg"/></a></p></div>
+                <div class="clearfix"><a href="http://www.edmeades.com/" class="visit button">Edmeades Wine <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
                 <div class="readme">
 
                 </div>
@@ -155,10 +165,10 @@
                   <img class="logo" src="content/arcanum-logo.png" alt="Jackson Family Wines" />
                 </figure>
                 <div class="desc">
-                  <p>Like the <em>Drupal Age Gate</em>, I also wrote a module that works with Drupal that integartes with <a href="http://www.ewinerysolutions.com" />eWinery Solution's</a> wine ecommerce solution. This has become a linchpin piece of software forJFE's wine sites.</p>
-                  <p>This code is part of a private repo. Below you can find the README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal Ewinery Cart</em> integration code.</p>
+                  <p>Like the <em>Drupal Age Gate</em>, I also wrote a module that works with Drupal and integrates with <a href="http://www.ewinerysolutions.com" >eWinery's</a> wine e-commerce solution. This has become a linchpin piece of software for Jackson Family Enterprises' wine sites.</p>
+                  <p>This code is also part of a private repo. Below is a README.md I wrote along with a link to one of the many JFE sites that use my <em>Drupal eWinery Cart</em> integration code.</p>
                 </div>
-                <div class="clearfix"><a href="http://www.arcanumwine.com" class="visit button">Arcanum Wine <img alt="send arrow" src="img/RightChevron.svg"/></a></p></div>
+                <div class="clearfix"><a href="http://www.arcanumwine.com" class="visit button">Arcanum Wine <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
                 <div class="readme">
 
                 </div>
@@ -169,23 +179,21 @@
             <!-- Misc start -->
             <div id="misc_examples" class="examples hidden">
               <article>
-                <h3 class="title">A Crud Site</h3>
+                <h3 class="title">C.R.U.D. Site</h3>
                 <div class="desc">
                   <div class="beforeafter">
                     <div class="before">
                       <div class="title">Start</div>
                       <ul>
-                        <li>I was asked to develope a database and API for the backend of CRUD based site.</li>
+                        <li>Instruction: develop a database and API for the backend of C.R.U.D.-based site.</li>
                       </ul>
                     </div>
                     <div class="beforeafterarrow">&nbsp;</div>
                     <div class="after">
                       <div class="title">My Work</div>
-                      <p>The project manager had me change some graphics and a few other things.</p>
-                      <p>Here is what I did:</p>
                       <ul>
-                        <li><a href="http://www.niztech.com/Client/swis/swis-erd.pdf">PDF</a><br />This is a database diagram.</li>
-                        <li><a href="http://www.niztech.com/Client/swis/swis-progress-presentation.pdf">PDF</a><br />I had three major review meetings. This is a presenation created for the first stage</li>
+                        <li><a href="http://www.niztech.com/Client/swis/swis-erd.pdf">PDF - entity relational diagram (database diagram)</a></li>
+                        <li><a href="http://www.niztech.com/Client/swis/swis-progress-presentation.pdf">PDF - my presentation of the first review meeting</a></li>
                       </ul>
                     </div>
                   </div>
@@ -193,8 +201,8 @@
               </article>
               <hr>
               <article>
-                <h3 class="title">Brands Site</h3>
-                <div class="desc"><p>There was a need for an internal site that would connect to ERP that would manage brand content. An inhouse designer created the look and feel. They gave me a PDF file, I coded the skeleton and basic functionality, and an ERP expert connected it to the database</p>
+                <h3 class="title">Brand Site</h3>
+                <div class="desc"><p>Jackson Family Enterprises needed an internal site that would connect to ERP and manage brand content. An in-house designer created the look and feel; I used their mockup to code the skeleton with basic functionality, and an ERP expert connected it to the database.</p>
                   <div class="beforeafter">
                     <div class="before">
                       <div class="title">Start</div>
@@ -205,8 +213,6 @@
                     <div class="beforeafterarrow">&nbsp;</div>
                     <div class="after">
                       <div class="title">My Work</div>
-                      <p>The project manager had me change some graphics and a few other things.</p>
-                      <p>Here is what I did:</p>
                       <ul>
                         <li><a href="http://www.niztech.com/Client/jfe/mfw/p1-5_general.html">Page 1 - 5</a></li>
                         <li><a href="http://www.niztech.com/Client/jfe/mfw/p6-7_10-11_grid-view.html">Page 6 - 7 and 10 - 11</a></li>
@@ -216,6 +222,26 @@
                     </div>
                   </div>
                 </div>
+              </article>
+              <hr>
+              <article>
+                <h3 class="title">Roller Derby iOS App</h3>
+                <figure>
+                  <img class="logo img-circle" src="content/ios-roller-derby.png" alt="Roller Derby iOS"/>
+                </figure>
+                <div class="desc">
+                  <p>I started teaching myself Objective-C. I am in the process of making an app to keep track of the score at derby games. I'm happy with what I have learned so far. It's nice to brush up on C-style languages.</p>
+                  <div><a href="https://github.com/nazarioa/DerbyScoreBoard" class="visit button">Git Repo <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                </div>
+              </article>
+              <hr>
+              <article>
+                <h3 class="title">Marketing Animation</h3>
+                <div class="desc">
+                  <p>I was asked by a marketing manager to take a logo and animate a splash page.</p>
+                </div>
+                <div><a href="http://www.niztech.com/Client/toothtrax/" class="visit button" target="_parent">Breakout Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="iframe-wrap loaded"><iframe src="http://www.niztech.com/Client/toothtrax/"></iframe></div>
               </article>
             </div>
             <!-- Misc End -->
@@ -227,28 +253,28 @@
       <div id="process" class="section dark">
         <header>process</header>
         <div class="content">
-          <p><span class="drop-cap">B</span>efore a single line of code hits my screen, we need a game plan. We can’t get to where we need to go if we don’t know where we are going. Once we have established a direction, I execute, test, refine and repeat until we hit our mark. Then, high-fives all round; this part is very important.</p>
+          <p><span class="drop-cap">B</span>efore a single line of code hits my screen, I need a game plan. I will listen to your needs and once we have established a direction, I execute, test, refine, and repeat until we hit our mark.</p>
           <!-- <hr> -->
           <ol class="prcoess_setps">
             <li>
-              <div class="step">Planning</div>
+              <div class="step">Plan</div>
               <div class="v-line"><div class="circle light">0</div></div>
-              <div class="desc">The who, what, where, how, and why. I'll ask questions so that I fully understand your goals. This is where I try to become an extension of you. Getting a statement-of-work right make the subsequent steps much faster and more enjoyable.</div>
+              <div class="desc">The who, what, when, where, how, and why -- I'll ask questions so that I fully understand your goals. This is where I become an extension of you. Getting a statement-of-work right speeds-up the subsequent steps and makes them more enjoyable.</div>
             </li>
             <li>
               <div class="step">Develop</div>
               <div class="v-line"><div class="circle light">1</div></div>
-              <div class="desc">For me the fun part begins. I'll work diligently on your project. Updates are provided during my progress. You should see the monument being built just as much as the builder.</div>
+              <div class="desc">I will work diligently on your project and give you updates during my progress.</div>
             </li>
             <li>
               <div class="step">Deliver</div>
               <div class="v-line"><div class="circle light">2</div></div>
-              <div class="desc">This not only includes a finished product, but depending on the project it can include README files or training. It however, does not always mean the end.</div>
+              <div class="desc">This always includes a finished product; and depening on the project, it can also include a README file or training.</div>
             </li>
             <li>
-              <div class="step">Repeat</div>
+              <div class="step">Review</div>
               <div class="v-line"><div class="circle light">3</div></div>
-              <div class="desc">The world changes. Software is beautiful because it can be made to adapt. I take what is learned and apply it anew.</div>
+              <div class="desc">Becuase the Web is always changing, it's a good idea to reflect, review, and refine.</div>
             </li>
           </ol>
         </div>
@@ -257,7 +283,7 @@
       <div id="contact" class="section light">
         <header>connect</header>
         <div class="content">
-          <form id="sendmessage" method="post">
+          <form id="message_form">
             <div class="overlay hidden">
               <div>
                 <div class="close">&#x2715;</div>
@@ -265,43 +291,53 @@
               </div>
             </div>
             <div><label for="sendername">Name</label><input type="text" name="sendername" id="sendername" value="Peter Parker"/></div>
-            <div><label for="senderemail">eMail</label><input type="text" name="senderemail" id="senderemail" value="webslinger@gmail.com"/></div>
-            <div>
-              <label for="sendermessage">Message</label><textarea name="sendermessage" id="sendermessage">Hi,&#13;Let's grab coffee!</textarea>
-              </div>
-              <div><button class="send">Send <img alt="send arrow" src="img/RightChevron.svg"/></button></div>
-            </form>
+            <div><label for="senderemail">eMail</label><input type="text" name="senderemail" id="senderemail" value="spidy@gmail.com"/></div>
+            <div><label for="sendermessage">Message</label><textarea name="sendermessage" id="sendermessage">Niz, I need help with my web site.</textarea></div>
+            <div><button class="send">Send <img alt="send arrow" src="img/Chevron_right.svg"/></button></div>
+          </form>
+        </div>
+      </div>
+
+      <div id="yellowbrickroad" class="section dark">
+        <header>tidbits</header>
+        <div class="content">
+          <div class="funfacts">
+            <p><span class="drop-cap">A</span> few words.</p>
+            <p>Hablo Español and English.</p>
+            <p>Am a board member at <a href="http://www.novatotelevision.tv">Novato Community Television</a>.</p>
           </div>
         </div>
+      </div>
 
-        <div id="yellowbrickroad" class="section dark">
-          <header>softer side</header>
-          <div class="content">
-            <p><span class="drop-cap">A</span> few words. There is nothing earth shattering here.</p>
-            <div class="funfacts">
-              <p>Headphones help me concentrate.</p>
-              <p>I speak English and Spanish.</p>
-              <p>I am a board member at <a href="http://www.novatotelevision.tv">Novato Community Television</a>.</p>
-              <p>I enjoy hiking.</p>
-              <p>In another world I would be a: standup comedian, National Geographic Photographer, aircraft pilot, or maybe veterinarian.</p>
-            </div>
-          </div>
-        </div>
+    </div><!-- end "page" -->
 
-      </div><!-- end "page" -->
+    <footer id="pagefooter">
+      <div>Fin</div>
+      <div class="niztechlogo"></div>
+    </footer>
 
-      <footer>
-        <div>Fin</div>
-        <div class="niztechlogo"></div>
-      </footer>
+  </div><!-- end wrapper -->
 
-    </div><!-- end wrapper -->
+  <!-- end content -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="js/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
-    <!-- end content -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    if (document.location.hostname.search("dev=true") !== -1) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-11261933-1', 'auto');
+      ga('send', 'pageview');
+    }else{
+      console.log('Not Tracking');
+    }
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -311,4 +347,5 @@
   ga('send', 'pageview');
 </script>
 </body>
+
 </html>
