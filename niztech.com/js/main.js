@@ -12,6 +12,10 @@ $(document).ready(function(){
       $('#work .showcase .examples').addClass('hidden');
       $(id_to_display).removeClass('hidden');
       $.smoothScroll({scrollTarget: id_to_display});
+
+      console.log(id_to_display);
+      ga('work', id_to_display, null, 1);
+
     }
 
   });
@@ -37,14 +41,6 @@ $(document).ready(function(){
       $(this).val('spidy@gmail.com');
       $(this).addClass('error');
     }
-  });
-
-  $('#work .subselect li').on('click', function(){
-    var id_to_display = '#' + $(this).attr('class') + '_examples';
-    console.log(id_to_display);
-    $('#work .showcase .examples').addClass('hidden');
-    $(id_to_display).removeClass('hidden');
-    ga('send', 'event', 'work', 'click', id_to_display);
   });
 
   $('#sendmessage button.send').on('click', function(e){
