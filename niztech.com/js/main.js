@@ -12,6 +12,10 @@ $(document).ready(function(){
       $('#work .showcase .examples').addClass('hidden');
       $(id_to_display).removeClass('hidden');
       $.smoothScroll({scrollTarget: id_to_display});
+
+      console.log(id_to_display);
+      ga('work', id_to_display, null, 1);
+
     }
 
   });
@@ -39,8 +43,7 @@ $(document).ready(function(){
     }
   });
 
-  // the send button.
-  $('#message_form button.send').on('click', function(e){
+  $('#sendmessage button.send').on('click', function(e){
 
     if( $('#sendername').val() !== '' && $('#sendername').val() !== $('#sendername').attr('value') && $('#senderemail').val() !== $('#senderemail').attr('value') ){
 
@@ -101,4 +104,66 @@ $(document).ready(function(){
     $('#contact .overlay').addClass('hidden');
     $('#message_form input, #message_form textarea').attr('disabled', false);
   });
+
+  /*
+   * Percent Scrolled
+   */
+   ga('send', 'pageview');
+
+   /**
+    * Manual callback handler
+    * false == no scroll to track from previous page
+    */
+   var callbackData = bamPercentPageViewed.callback();
+   if(callbackData != false)
+   {
+     console.group('Callback');
+     console.log(callbackData);
+     console.groupEnd();
+     ga('send', 'event', 'Percent of Page Viewed', callbackData.documentLocation, callbackData.scrollPercent + '', undefined, true); //or send as a custom dimension before the pageview
+   }
+
 });
+
+
+// console.log(document.documentURI.search('dev=true'));
+if (document.documentURI.search('dev=true') === -1) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-11261933-1', 'auto');
+  ga('send', 'pageview');
+  console.log('Tracking');
+}else{
+  console.log('Not Tracking');
+}
+
+
+/**
+ * Use the bamPercentPageViewed plugin
+ */
+(function() {
+  var o=onload, n=function(){
+    bamPercentPageViewed.init({
+      trackDelay : '2000',
+      percentInterval : '10'
+    });
+    }
+    if (typeof o!='function'){onload=n} else { onload=function(){ n();o();}}
+})(window);
+
+
+/**
+ * Manual callback handler
+ * false == no scroll to track from previous page
+ */
+var callbackData = bamPercentPageViewed.callback();
+if(callbackData != false)
+{
+  console.group('Callback');
+  console.log(callbackData);
+  console.groupEnd();
+  ga('send', 'event', 'Percent of Page Viewed', callbackData.documentLocation, callbackData.scrollPercent + '', undefined, true); //or send as a custom dimension before the pageview
+}

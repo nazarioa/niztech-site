@@ -7,3 +7,6 @@
 [submodule "niztech.com/js/jquery-smooth-scroll"]
 	path = niztech.com/js/jquery-smooth-scroll
 	url = https://github.com/kswedberg/jquery-smooth-scroll.git
+[submodule "niztech.com/js/ga-plugin-percent-page-viewed"]
+	path = niztech.com/js/ga-plugin-percent-page-viewed
+	url = https://bitbucket.org/blast-analytics-marketing/ga-plugin-percent-page-viewed.git

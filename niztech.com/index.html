@@ -11,6 +11,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/iframe.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -92,8 +93,8 @@
                   <p>On occasion, I experiment with sites I have built. I like working within the boundaries of a site's purpose.</p>
                 </div>
                 <div class="clearfix">
-                  <a class="button visit" href="http://www.janisbell.com">Janis Bell -- Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a><br />
-                  <a class="button visit" href="http://www.niztech.com/Client/janisbell">Janis Bell -- Experimental Site <img alt="send arrow" src="img/Chevron_right.svg"/></a>
+                  <a class="button visit" href="http://www.janisbell.com">Janis Bell &mdash; Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a><br />
+                  <a class="button visit" href="http://www.niztech.com/Client/janisbell">Janis Bell &mdash; Experimental Site <img alt="send arrow" src="img/Chevron_right.svg"/></a>
                 </div>
               </article>
               <hr>
@@ -105,7 +106,7 @@
                 <div class="desc">
                   <p>When my mom started a daycare center a few years back, I developed her website. The goal was to make it simple and easy to navigate so that people would be encouraged to come in for a visit.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://www.elviaschildcare.com">Elvia's Child Care -- Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://www.elviaschildcare.com">Elvia's Child Care &mdash; Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
               </article>
               <hr>
               <article>
@@ -117,8 +118,8 @@
                   <p>Rita &amp; The Cosmos is (mostly) an a capella group comprised of retired ladies. I was asked to make a site that they can manage easily. WordPress to the rescue, and WordPress theming added to my repertoire!</p>
                   <p>Speaking of, I am currently "tightening" this website; I am making it more responsive, adding some Posttypes and custom templates to give it a more consistant look.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://ritascosmos.com/">Rita's Cosmos -- Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
-                <div class="clearfix"><a class="button visit" href="http://ratc.dev.niztech.com/">Rita's Cosmos -- Experimental Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://ritascosmos.com/">Rita's Cosmos &mdash; Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://ratc.dev.niztech.com/">Rita's Cosmos &mdash; Experimental Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
 
               </article>
               <hr>
@@ -135,7 +136,7 @@
                   <p>With his website I tried new tricks with CSS and JS which at this point are now old tricks. I built the site in a way that my friend could easily tinker with the JS and CSS.</p>
                   <p>The site is maintained by Martin. I just taught him the basic and on occasion I still help him out.</p>
                 </div>
-                <div class="clearfix"><a class="button visit" href="http://www.martymaldo.com/">Marty Maldo -- Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+                <div class="clearfix"><a class="button visit" href="http://www.martymaldo.com/">Marty Maldo &mdash; Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
               </article>
             -->
             </div>
@@ -240,7 +241,7 @@
                   <p>I was asked by a marketing manager to take a logo and animate a splash page.</p>
                 </div>
                 <div><a href="http://www.niztech.com/Client/toothtrax/" class="visit button" target="_parent">Breakout Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
-                <iframe src="http://www.niztech.com/Client/toothtrax/" width="800" height="400" seamless="seamless"></iframe>
+                <div class="iframe-wrap loaded"><iframe src="http://www.niztech.com/Client/toothtrax/"></iframe></div>
               </article>
             </div>
             <!-- Misc End -->
@@ -321,23 +322,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
   <script src="js/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
+  <script src="js/ga-plugin-percent-page-viewed/bam-percent-page-viewed.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+</body>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    if (document.location.hostname.search("dev=true") !== -1) {
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-11261933-1', 'auto');
-      ga('send', 'pageview');
-    }else{
-      console.log('Not Tracking');
-    }
-
-  </script>
-  </body>
 </html>
