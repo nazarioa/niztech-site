@@ -26,3 +26,6 @@ sensitive_*.*
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Connection Information
+.ftpconfig
