@@ -9,6 +9,39 @@
  */
 
 /* ==========================================================================
+   ANIMATION
+   ========================================================================== */
+@keyframes pop {
+ 0% {width:10em; height:10em;}
+ 93% {width:16em; height:16em;}
+ 100% {width:15em; height:15em;}
+}
+
+@keyframes rock{
+  0% {transform: rotate(1deg);}
+  5% {bottom: 3px;}
+  10% {transform: rotate(0deg);}
+  15% {bottom: 0px;}
+  20% {transform: rotate(2deg);}
+  25% {bottom: 2px;}
+  30% {transform: rotate(-1deg);}
+  35% {bottom: -1px;}
+  40% {transform: rotate(1deg);}
+  45% {bottom: 2px;}
+  50% {transform: rotate(1deg);}
+  55% {bottom: 0px;}
+  60% {transform: rotate(2deg);}
+  65% {bottom: 3px;}
+  70% {transform: rotate(1deg);}
+  75% {bottom: 0px;}
+  80% {transform: rotate(0deg);}
+  85% {bottom: -2px;}
+  90% {transform: rotate(-1deg);}
+  95% {bottom: 3px;}
+}
+
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
@@ -562,9 +595,21 @@ body{
   background-position: center;
 }
 
+#calvin-hobbes-cart{
+  animation-name: rock;
+  position: relative;
+  animation-duration: 1.75s;
+  animation-iteration-count: 30;
+}
+
 .my-ugly-mug{
   margin: 0em auto 3em auto;
   text-align: center;
+}
+
+.my-ugly-mug .img-circle{
+  animation-name: pop;
+  animation-duration: .5s;
 }
 
 .img-circle{
