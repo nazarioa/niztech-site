@@ -250,6 +250,13 @@ body{
   line-height: 2em;
 }
 
+.section em{
+  font-style: normal;
+  padding-left: .4em;
+  padding-right: .4em;
+  border-radius: 3px;
+}
+
 .section hr{
     width: 40%;
     margin: 2em auto 2em auto;
@@ -264,9 +271,17 @@ body{
     border-top: 1px dashed #f9f9f9;
 }
 
+.section.dark em{
+  background-color: rgba(255,255,255, .3);
+}
+
 .section.light{
   background-color: rgba(247, 247, 237, .87);
   color: #231B23;
+}
+
+.section.light em{
+  background-color: rgba(35,27,36, .1);
 }
 
 .section.light hr{
@@ -546,6 +561,29 @@ body{
   margin-top: .75em;
 }
 
+/* -- SOCIAL -- */
+#tags ul{
+  text-align: center;
+}
+
+#tags ul li{
+  color: rgba(255,255,255,.5);
+  display: inline-block;
+  list-style-type: none;
+  font-style: normal;
+  padding-left: .4em;
+  padding-right: .4em;
+  margin: .2em;
+  border-radius: 3px;
+  background-color: rgba(255,255,255, .1);
+  transition: color .5s, background-color .5s;
+}
+
+#tags li:hover{
+  color: white;
+  background-color: rgba(255,255,255, 0);
+}
+
 /* -- PROCESS -- */
 
 .prcoess_setps{
@@ -599,7 +637,7 @@ body{
   animation-name: rock;
   position: relative;
   animation-duration: 1.75s;
-  animation-iteration-count: 30;
+  animation-iteration-count: infinite;
 }
 
 .my-ugly-mug{
