@@ -569,6 +569,8 @@ ul{
 /* -- SOCIAL -- */
 #tags ul{
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 #tags ul li{
