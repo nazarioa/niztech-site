@@ -152,6 +152,11 @@ body{
    background-position: center;
 }
 
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+
 #wrapper{
   width: 80%;
   margin-left: auto;
