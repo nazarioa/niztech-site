@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $('body').addClass('loaded');
+
   /* Work examples */
   $('#work .subselect li').on('click', function(){
     var id_to_display = '#' + $(this).attr('class') + '_examples';
@@ -18,6 +20,11 @@ $(document).ready(function(){
 
     }
 
+  });
+
+  /* Gut Check */
+  $('ul.stars li').on('click', function(){
+    console.log( $(this).index() );
   });
 
   /* Contact Form */
@@ -44,7 +51,6 @@ $(document).ready(function(){
   });
 
   $('#sendmessage button.send').on('click', function(e){
-
     if( $('#sendername').val() !== '' && $('#sendername').val() !== $('#sendername').attr('value') && $('#senderemail').val() !== $('#senderemail').attr('value') ){
 
       // when the ajax call finishes we want to put our button's text back the way it was.
@@ -135,7 +141,7 @@ if (document.documentURI.search('dev=true') === -1) {
 
   ga('create', 'UA-11261933-1', 'auto');
   ga('send', 'pageview');
-  console.log('Tracking');
+  // console.log('Tracking');
 }else{
   console.log('Not Tracking');
 }

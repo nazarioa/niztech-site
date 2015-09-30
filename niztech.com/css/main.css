@@ -17,6 +17,13 @@
  100% {width:15em; height:15em;}
 }
 
+@keyframes poptwo {
+  0% {width:15em; height:15em;}
+  20% {width:14em; height:14em;}
+  93% {width:16em; height:16em;}
+  100% {width:15em; height:15em;}
+}
+
 @keyframes rock{
   0% {transform: rotate(1deg);}
   5% {bottom: 3px;}
@@ -150,6 +157,11 @@ body{
    background-repeat: repeat;
    background-attachment: fixed;
    background-position: center;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
 }
 
 #wrapper{
@@ -566,6 +578,8 @@ body{
   text-align: center;
 }
 
+/* -- TAGS -- */
+
 #tags ul li{
   color: rgba(255,255,255,.5);
   display: inline-block;
@@ -623,6 +637,55 @@ body{
   display: inline;
 }
 
+/* -- GUT CHECK -- */
+#gut-check{
+  padding: 1em;
+  width: 50%;
+  border-radius: 10px;
+  max-width: 450px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: .5em;
+  background-color: rgba(247, 247, 237, .95);
+  color: #231B23;
+}
+
+#gut-check em{
+    font-style: normal;
+    padding-left: .4em;
+    padding-right: .4em;
+    border-radius: 3px;
+    background-color: rgba(35,27,36, .3);
+}
+
+#gut-check ul.stars{
+  text-align: center;
+}
+
+#gut-check ul.stars li{
+  display: inline-block;
+  background-image: url('../img/star_hover.svg');
+  background-size: 2.5em 2.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -10000px;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+#gut-check ul.stars li:hover ~ li{
+  background-image: url('../img/star.svg');
+}
+
+#thank-you p{
+  padding: 0px;
+  margin: 0px;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Arvo';
+}
+
 /* -- GENRIC -- */
 
 .rocket{
@@ -645,8 +708,13 @@ body{
   text-align: center;
 }
 
-.my-ugly-mug .img-circle{
+body.loaded .my-ugly-mug .img-circle{
   animation-name: pop;
+  animation-duration: .5s;
+}
+
+.my-ugly-mug .img-circle:hover{
+  animation-name: poptwo;
   animation-duration: .5s;
 }
 
