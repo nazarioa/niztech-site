@@ -10,3 +10,6 @@
 [submodule "niztech.com/js/ga-plugin-percent-page-viewed"]
 	path = niztech.com/js/ga-plugin-percent-page-viewed
 	url = https://bitbucket.org/blast-analytics-marketing/ga-plugin-percent-page-viewed.git
+[submodule "niztech.com_extra/Medoo"]
+	path = niztech.com_extra/Medoo
+	url = https://github.com/catfan/Medoo.git
