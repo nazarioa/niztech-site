@@ -1,17 +1,25 @@
 <?php
-require_once '../../niztech.com_extra/sensitive_settings.php';
-require_once '../../niztech.com_extra/Medoo/medoo.php';
+require_once '/Users/nazario/Sites/com/niztech/www/v3/niztech.com_extra/sensitive_settings.php';
+require_once '/Users/nazario/Sites/com/niztech/www/v3/niztech.com_extra/Medoo/medoo.php';
 
 $database = new medoo($mysqlSettings);
 
-// $result = array('result'=>'fail', 'message'=>'Bug in the software!');
-$result = 'Ran';
+$data = $_GET['rating'];
+$result = array('result' => false);
 
-if($_POST['rating'] !== '' ){
-  $value = $_POST['rating']
-  $databse->insert('rating',['rating' => $value]);
+if( $data !== '' ){
+  $databse->insert( 'rating', ['rating' => $data] );
+
+  $error = $database->error();
+  if($error[0] != '00000'){
+    die(json_encode($result));
+  }
+
+}else{
+  $result = array('result' => true);
 }
 
-
-header('Content-Type: application/json');
-echo( json_encode($result) );
+// header('Content-Type: application/json');
+echo('bob');
+// echo( json_encode($result) );
+?>

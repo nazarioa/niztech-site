@@ -24,7 +24,47 @@ $(document).ready(function(){
 
   /* Gut Check */
   $('ul.stars li').on('click', function(){
-    console.log( $(this).index() );
+    var rating = $(this).index();
+
+    // Let the ajax begin.
+    var request = $.get(
+      'content/rating.php',
+      {
+        rating: rating,
+      },
+      "JSON"
+    );
+
+    request.always(function( data ) {
+      // $('#contact .overlay').removeClass('hidden');
+      // $('#message_form button.send').html(oldvalue);
+      console.log('.always')
+      console.log(data)
+    });
+
+    request.done(function( data ) {
+      if (data.result == 'success') {
+        // $('#contact .result').html('Your message was sent!');
+
+        // after message is sent reset to defualt values.
+        // $('#sendername').val( $('#sendername').attr('value') );
+        // $('#senderemail').val( $('#senderemail').attr('value') );
+        // $('#sendermessage').val( $('#sendermessage').attr(oldvalue) );
+      } else {
+        // $('#contact .result').html('Sadly, your message was almost sent.<br />Try again later.');
+        console.log('done');
+        console.log(data);
+      }
+    });
+
+    request.fail(function( data ) {
+      console.log('.fail');
+      console.log(data);
+      // $('#contact .result').html('Sadly, your message could not be sent.');
+    });
+
+
+    // console.log(  );
   });
 
   /* Contact Form */
@@ -70,7 +110,8 @@ $(document).ready(function(){
           senderemail: $('#senderemail').val(),
           sendermessage: $('#sendermessage').val()
         },
-        "JSON");
+        "JSON"
+      );
 
       request.always(function( data ) {
         $('#contact .overlay').removeClass('hidden');
@@ -116,13 +157,12 @@ $(document).ready(function(){
    */
    ga('send', 'pageview');
 
-   /**
-    * Manual callback handler
-    * false == no scroll to track from previous page
-    */
+  /**
+   * Manual callback handler
+   * false == no scroll to track from previous page
+   */
    var callbackData = bamPercentPageViewed.callback();
-   if(callbackData != false)
-   {
+   if (callbackData != false) {
      console.group('Callback');
      console.log(callbackData);
      console.groupEnd();
@@ -135,8 +175,8 @@ $(document).ready(function(){
 // console.log(document.documentURI.search('dev=true'));
 if (document.documentURI.search('dev=true') === -1) {
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-11261933-1', 'auto');
@@ -156,8 +196,8 @@ if (document.documentURI.search('dev=true') === -1) {
       trackDelay : '2000',
       percentInterval : '10'
     });
-    }
-    if (typeof o!='function'){onload=n} else { onload=function(){ n();o();}}
+  }
+  if (typeof o!='function'){onload=n} else { onload=function(){ n();o();}}
 })(window);
 
 
