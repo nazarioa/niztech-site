@@ -16,6 +16,8 @@
     Marianne Utulo
     Niklas Dalqvist
 
+    Issac Newton
+
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
