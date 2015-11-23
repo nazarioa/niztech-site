@@ -17,6 +17,7 @@
     Niklas Dalqvist
 
     Issac Newton
+    Alen Turing
 
 # TECHNOLOGY COLOPHON
 
