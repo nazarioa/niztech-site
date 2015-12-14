@@ -196,18 +196,18 @@ ul{
   top: 2.5em;
 }
 
-#pageheader .mast{
+#pageheader h1.mast{
   text-align: center;
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
-#pageheader .mast span{
+#pageheader h1.mast span{
   border-bottom: 5px dotted white;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: .5em;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: 'Arvo', serif;
   text-transform: uppercase;
 }
@@ -248,52 +248,52 @@ ul{
 
 /* == GENERIC PAGE LAYOUT ==*/
 
-.section{
+section{
   padding: 4.5em 6em 4.5em 6em;
   font-family: 'Arbutus Slab', serif;
   font-size: 12pt;
   line-height: 2em;
 }
 
-.section em{
+section em{
   font-style: normal;
   padding-left: .4em;
   padding-right: .4em;
   border-radius: 3px;
 }
 
-.section hr{
+section hr{
     width: 40%;
     margin: 2em auto 2em auto;
 }
 
-.section.dark{
+section.dark{
   background-color: rgba(35,27,36, .93);
   color: #f9f9f9;
 }
 
-.section.dark hr{
+section.dark hr{
     border-top: 1px dashed #f9f9f9;
 }
 
-.section.dark em{
+section.dark em{
   background-color: rgba(255,255,255, .3);
 }
 
-.section.light{
+section.light{
   background-color: rgba(247, 247, 237, .87);
   color: #231B23;
 }
 
-.section.light em{
+section.light em{
   background-color: rgba(35,27,36, .1);
 }
 
-.section.light hr{
+section.light hr{
     border-top: 1px dashed #231B23;
 }
 
-.section > header{
+section h2{
   text-align: center;
   font-size: 50pt;
   padding-bottom: .5em;
@@ -904,7 +904,7 @@ ul{
 
   /* == GENERIC PAGE LAYOUT ==*/
 
-  .section{
+  section{
     padding: 4.5em 1.5em 4.5em 1.5em;
   }
 
