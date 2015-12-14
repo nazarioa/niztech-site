@@ -408,6 +408,32 @@ section h2{
 
 /* -- WORK -- */
 
+#showcase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#showcase-menu {
+  flex-grow: 1 40%;
+  font-size: 90%;
+}
+
+#showcase-menu ul, #showcase-menu li {
+  list-style: none;
+}
+
+#showcase-menu > li.category > span{
+  color: blue;
+}
+
+#showcase-container {
+  flex-grow: 2;
+}
+
+/* old */
+
 #work .subselect{
   cursor: pointer;
 }
