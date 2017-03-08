@@ -3,3 +3,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 Header always set Strict-Transport-Security max-age=7884000;
+Header always set Content-Security-Policy default-src 'none'; script-src 'self' 'unsafe-inline' ajax.googleapis.com www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' www.google-analytics.com stats.g.doubleclick.net; font-src 'self' fonts.googleapis.com fonts.gstatic.com;
