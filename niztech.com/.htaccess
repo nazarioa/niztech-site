@@ -2,3 +2,4 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Header always set Strict-Transport-Security max-age=7884000;
