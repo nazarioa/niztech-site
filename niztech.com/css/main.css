@@ -504,24 +504,24 @@ section h2 {
   width: 8em;
 }
 
-#work .beforeafter {
+#work .before-after {
   display: flex;
   flex-direction: row;
   vertical-align: middle;
 }
 
-#work .beforeafter ul {
+#work .before-after ul {
   padding: 0;
   margin: 0;
   list-style: inside;
 }
 
-#work .beforeafter .title {
+#work .before-after .title {
   font-weight: bolder;
   font-size: .8em;
 }
 
-#work .beforeafterarrow {
+#work .before-after-arrow {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
@@ -961,7 +961,7 @@ section h2 {
     display: none;
   }
 
-  #work .beforeafter {
+  #work .before-after {
     display: block;
   }
 
@@ -972,7 +972,7 @@ section h2 {
     width: 100%;
   }
 
-  #work .beforeafter > div {
+  #work .before-after > div {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -980,7 +980,7 @@ section h2 {
     flex: 1;
   }
 
-  #work .beforeafterarrow {
+  #work .before-after-arrow {
     background-image: url('../img/Chevron_down.svg');
     margin: 1.5em auto;
     width: 100%;
