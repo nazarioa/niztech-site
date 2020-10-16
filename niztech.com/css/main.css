@@ -12,32 +12,81 @@
    ANIMATION
    ========================================================================== */
 @keyframes pop {
- 0% {width:10em; height:10em;}
- 93% {width:16em; height:16em;}
- 100% {width:15em; height:15em;}
+  0% {
+    width: 10em;
+    height: 10em;
+  }
+  93% {
+    width: 16em;
+    height: 16em;
+  }
+  100% {
+    width: 15em;
+    height: 15em;
+  }
 }
 
-@keyframes rock{
-  0% {transform: rotate(1deg);}
-  5% {bottom: 3px;}
-  10% {transform: rotate(0deg);}
-  15% {bottom: 0px;}
-  20% {transform: rotate(2deg);}
-  25% {bottom: 2px;}
-  30% {transform: rotate(-1deg);}
-  35% {bottom: -1px;}
-  40% {transform: rotate(1deg);}
-  45% {bottom: 2px;}
-  50% {transform: rotate(1deg);}
-  55% {bottom: 0px;}
-  60% {transform: rotate(2deg);}
-  65% {bottom: 3px;}
-  70% {transform: rotate(1deg);}
-  75% {bottom: 0px;}
-  80% {transform: rotate(0deg);}
-  85% {bottom: -2px;}
-  90% {transform: rotate(-1deg);}
-  95% {bottom: 3px;}
+@keyframes rock {
+  0% {
+    transform: rotate(1deg);
+  }
+  5% {
+    bottom: 3px;
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    bottom: 0px;
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  25% {
+    bottom: 2px;
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  35% {
+    bottom: -1px;
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  45% {
+    bottom: 2px;
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  55% {
+    bottom: 0px;
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  65% {
+    bottom: 3px;
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  75% {
+    bottom: 0px;
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    bottom: -2px;
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  95% {
+    bottom: 3px;
+  }
 }
 
 
@@ -46,9 +95,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -60,13 +109,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -74,12 +123,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -94,7 +143,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -102,9 +151,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -112,7 +161,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -120,10 +169,10 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -140,24 +189,24 @@ Light Color: #f9f9f9 -- rgba(247, 247, 237, .87);
 Purplish Color: #231B23 -- rgba(35,27,36, .93);
 */
 
-html, body, div, span, textarea, input, label{
+html, body, div, span, textarea, input, label {
   box-sizing: border-box;
 }
 
-body{
-   background-image: url('../img/blur.jpg');
-   background-size: cover;
-   background-repeat: repeat;
-   background-attachment: fixed;
-   background-position: center;
+body {
+  background-image: url('../img/blur.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-ul{
+ul {
   margin: 0px;
   padding: 0px;
 }
 
-#wrapper{
+#wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -169,39 +218,39 @@ ul{
   overflow: hidden;
 }
 
-.dark a{
+.dark a {
   color: #f9f9f9;
 }
 
-.light a{
+.light a {
   color: #231B23;
 }
 
-.niztechlogo{
+.niztechlogo {
   position: relative;
   background-image: url('../img/Logo.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-#pageheader{
-  background-color: rgba(35,27,36, .93);
+#pageheader {
+  background-color: rgba(35, 27, 36, .93);
   color: white;
 }
 
-#pageheader .niztechlogo{
+#pageheader .niztechlogo {
   width: 3em;
   height: 3em;
   left: 3em;
   top: 2.5em;
 }
 
-#pageheader h1.mast{
+#pageheader h1.mast {
   text-align: center;
   margin-top: 1.5em;
 }
 
-#pageheader h1.mast span{
+#pageheader h1.mast span {
   border-bottom: 5px dotted white;
   padding-left: 1em;
   padding-right: 1em;
@@ -212,35 +261,35 @@ ul{
   text-transform: uppercase;
 }
 
-#pageheader .tagline{
+#pageheader .tagline {
   text-align: center;
   padding-top: 3.5em;
   padding-bottom: 3.5em;
 }
 
-#pageheader .tagline span{
+#pageheader .tagline span {
   font-family: 'Arbutus Slab', serif;
   font-size: .75em;
 }
 
-#pageheader .tagline span::after{
+#pageheader .tagline span::after {
   content: ' \\\\ ';
 }
 
-#pageheader .tagline span:last-child:after{
+#pageheader .tagline span:last-child:after {
   content: '';
 }
 
 #pagefooter {
   text-align: center;
   font-family: 'Arvo', serif;
-  background-color: rgba(35,27,36, .93);
+  background-color: rgba(35, 27, 36, .93);
   color: rgb(247, 247, 237);
   padding: 2em;
   border-top: 1px dashed #f9f9f9;
 }
 
-#pagefooter .niztechlogo{
+#pagefooter .niztechlogo {
   width: 2em;
   height: 2em;
   margin: 1.5em auto 0em auto;
@@ -248,64 +297,64 @@ ul{
 
 /* == GENERIC PAGE LAYOUT ==*/
 
-section{
+section {
   padding: 4.5em 6em 4.5em 6em;
   font-family: 'Arbutus Slab', serif;
   font-size: 12pt;
   line-height: 2em;
 }
 
-section em{
+section em {
   font-style: normal;
   padding-left: .4em;
   padding-right: .4em;
   border-radius: 3px;
 }
 
-section hr{
-    width: 40%;
-    margin: 2em auto 2em auto;
+section hr {
+  width: 40%;
+  margin: 2em auto 2em auto;
 }
 
-section.dark{
-  background-color: rgba(35,27,36, .93);
+section.dark {
+  background-color: rgba(35, 27, 36, .93);
   color: #f9f9f9;
 }
 
-section.dark hr{
-    border-top: 1px dashed #f9f9f9;
+section.dark hr {
+  border-top: 1px dashed #f9f9f9;
 }
 
-section.dark em{
-  background-color: rgba(255,255,255, .3);
+section.dark em {
+  background-color: rgba(255, 255, 255, .3);
 }
 
-section.light{
+section.light {
   background-color: rgba(247, 247, 237, .87);
   color: #231B23;
 }
 
-section.light em{
-  background-color: rgba(35,27,36, .1);
+section.light em {
+  background-color: rgba(35, 27, 36, .1);
 }
 
-section.light hr{
-    border-top: 1px dashed #231B23;
+section.light hr {
+  border-top: 1px dashed #231B23;
 }
 
-section h2{
+section h2 {
   text-align: center;
   font-size: 50pt;
   padding-bottom: .5em;
 }
 
-.subselect{
+.subselect {
   list-style: none;
   padding: 0px;
   margin-top: 5em;
 }
 
-.subselect li{
+.subselect li {
   margin-bottom: 5em;
   vertical-align: top;
 }
@@ -315,39 +364,39 @@ section h2{
 
 /* -- CONTACT -- */
 
-#contact form{
+#contact form {
   max-width: 35em;
   margin-left: auto;
   margin-right: auto;
 }
 
 #contact label,
-#contact button{
+#contact button {
   display: block;
   margin-top: 1em;
   text-align: center;
-  background-color:  rgba(35,27,36, .5);
+  background-color: rgba(35, 27, 36, .5);
   color: white;
   transition: color .5s, background-color .5s;
 }
 
-#contact button{
-  border: 1px solid  rgba(35,27,36, .8);
+#contact button {
+  border: 1px solid rgba(35, 27, 36, .8);
   width: 100%;
 }
 
-#contact button:hover{
-  background-color:  rgba(35,27,36, .83);
+#contact button:hover {
+  background-color: rgba(35, 27, 36, .83);
 }
 
-#contact button img{
+#contact button img {
   border: 0px none;
   height: .8em;
   margin-bottom: .2em;
 }
 
 #contact input,
-#contact textarea{
+#contact textarea {
   width: 100%;
   border: 0px none;
   padding: .5em;
@@ -355,15 +404,15 @@ section h2{
   transition: border .5s, background-color .5s, color .5s;
 }
 
-#contact input{
+#contact input {
   text-align: center;
 }
 
-#contact textarea{
+#contact textarea {
   height: 11em;
 }
 
-#contact .overlay{
+#contact .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -372,11 +421,11 @@ section h2{
   left: 0px;
   right: 0px;
   z-index: 1000;
-  background-color: rgba(35,27,36, .93);
+  background-color: rgba(35, 27, 36, .93);
   text-align: center;
 }
 
-#contact .overlay > div{
+#contact .overlay > div {
   background-color: #f9f9f9;
   position: relative;
   margin-top: 22%;
@@ -389,16 +438,16 @@ section h2{
   text-align: center;
 }
 
-#contact .overlay .close{
+#contact .overlay .close {
   width: 1em;
   height: 1em;
   position: absolute;
-  top:0px;
-  right:6px;
+  top: 0px;
+  right: 6px;
   font-size: 1em;
 }
 
-#contact .overlay .result{
+#contact .overlay .result {
   position: absolute;
   font-size: 2em;
   margin-top: 3em;
@@ -408,21 +457,21 @@ section h2{
 
 /* -- WORK -- */
 
-#work .subselect{
+#work .subselect {
   cursor: pointer;
 }
 
-#work .subselect li{
+#work .subselect li {
   padding: 1em .1em;
   border-radius: 10px;
   transition: background-color .5s;
 }
 
-#work .subselect li:hover, #work .subselect li.active{
-  background-color: rgba(250,250,250,.3);
+#work .subselect li:hover, #work .subselect li.active {
+  background-color: rgba(250, 250, 250, .3);
 }
 
-#work .subselect .title{
+#work .subselect .title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Arvo', serif;
@@ -432,38 +481,38 @@ section h2{
   max-width: 5em;
 }
 
-#work .subselect .desc{
+#work .subselect .desc {
   text-align: center;
 }
 
-#work img.bit{
+#work img.bit {
   width: 65px;
   height: 65px;
 }
 
-#work .examples figure{
+#work .examples figure {
   float: left;
   margin-left: 0px;
   display: inline-block;
   margin-bottom: auto;
 }
 
-#work .examples .title{
+#work .examples .title {
   text-transform: uppercase;
   font-family: 'Arvo', serif;
   font-weight: 700;
 }
 
-#work .examples .logo{
+#work .examples .logo {
   width: 8em;
 }
 
-#work .beforeafter{
+#work .beforeafter {
   /* thanks to */
   /* https://css-tricks.com/using-flexbox/ */
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex;
   display: flex;
 
@@ -473,18 +522,18 @@ section h2{
   vertical-align: middle;
 }
 
-#work .beforeafter ul{
+#work .beforeafter ul {
   padding: 0px;
   margin: 0px;
   list-style: inside;
 }
 
-#work .beforeafter .title{
+#work .beforeafter .title {
   font-weight: bolder;
   font-size: .8em;
 }
 
-#work .beforeafterarrow{
+#work .beforeafterarrow {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex: 1;
@@ -502,7 +551,7 @@ section h2{
   height: 4em;
 }
 
-#work .before, #work .after{
+#work .before, #work .after {
   background-color: #C8C6C1;
   padding: 1em;
   height: inherit;
@@ -514,17 +563,17 @@ section h2{
 
 }
 
-#work .before{
+#work .before {
   margin-left: auto;
   margin-right: auto;
 }
 
-#work .after{
+#work .after {
   margin-left: auto;
   margin-right: auto;
 }
 
-#work .examples iframe{
+#work .examples iframe {
   width: 100%;
   height: 20em;
   border: 0px none;
@@ -532,12 +581,12 @@ section h2{
 }
 
 /* -- SOCIAL -- */
-#social .subselect{
+#social .subselect {
   margin: 0px;
   padding: 0px;
 }
 
-#social .subselect li{
+#social .subselect li {
   display: inline-block;
   width: 32%;
   margin: 0px;
@@ -545,36 +594,36 @@ section h2{
 
 }
 
-#social .subselect .circle{
+#social .subselect .circle {
   width: 4.5em;
   height: 4.5em;
   background-size: 4.5em;
 }
 
-#social img.linkedin{
+#social img.linkedin {
   width: 3em; /*291, 79*/
   margin-top: 1.2em;
 }
 
-#social img.github{
+#social img.github {
   width: 3em; /*291, 79*/
   margin-top: 1em;
 }
 
-#social img.resume{
+#social img.resume {
   width: 3em; /*291, 79*/
   margin-top: .75em;
 }
 
 /* -- SOCIAL -- */
-#tags ul{
+#tags ul {
   text-align: center;
   margin: 0px;
   padding: 0px;
 }
 
-#tags ul li{
-  color: rgba(255,255,255,.5);
+#tags ul li {
+  color: rgba(255, 255, 255, .5);
   display: inline-block;
   list-style-type: none;
   font-style: normal;
@@ -582,29 +631,29 @@ section h2{
   padding-right: .4em;
   margin: .2em;
   border-radius: 3px;
-  background-color: rgba(255,255,255, .1);
+  background-color: rgba(255, 255, 255, .1);
   transition: color .5s, background-color .5s;
 }
 
-#tags li:hover{
+#tags li:hover {
   color: white;
-  background-color: rgba(255,255,255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* -- PROCESS -- */
 
-.process-steps{
+.process-steps {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.process-steps .desc{
+.process-steps .desc {
   margin-bottom: 2em;
   text-align: center;
 }
 
-.process-steps .step{
+.process-steps .step {
   font-size: 2em;
   line-height: 2.2em;
   font-family: 'Arvo';
@@ -612,7 +661,7 @@ section h2{
   text-align: center;
 }
 
-.process-steps .v-line{
+.process-steps .v-line {
   background-image: url('../img/DottedLine.png');
   background-repeat: repeat-y;
   background-size: 9px 12px;
@@ -626,13 +675,13 @@ section h2{
 }
 
 /* -- stuff about me --*/
-#yellowbrickroad .funfacts p{
+#yellowbrickroad .funfacts p {
   display: inline;
 }
 
 /* -- GENRIC -- */
 
-.rocket{
+.rocket {
   background-image: url('../img/nasa.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -640,53 +689,53 @@ section h2{
   background-position: center;
 }
 
-#calvin-hobbes-cart{
+#calvin-hobbes-cart {
   animation-name: rock;
   position: relative;
   animation-duration: 1.75s;
   animation-iteration-count: infinite;
 }
 
-.my-ugly-mug{
+.my-ugly-mug {
   margin: 0em auto 3em auto;
   text-align: center;
 }
 
-.my-ugly-mug .img-circle{
+.my-ugly-mug .img-circle {
   animation-name: pop;
   animation-duration: .5s;
 }
 
-.img-circle{
+.img-circle {
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
 }
 
-.img-circle img{
-  width:inherit;
+.img-circle img {
+  width: inherit;
   height: inherit;
 }
 
-.img-div{
+.img-div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.outline, .outline.light{
+.outline, .outline.light {
   border-width: 1px;
   border-style: solid;
   border-color: #231B23;
 }
 
-.outline.dark{
+.outline.dark {
   border-width: 1px;
   border-style: solid;
   border-color: #f9f9f9;
 }
 
-.circle{
+.circle {
   background-size: 100px 100px;
   background-repeat: no-repeat;
   width: 100px;
@@ -701,18 +750,18 @@ section h2{
   margin: 0em auto 0em auto;
 }
 
-.circle.light{
+.circle.light {
   background-image: url('../img/Circle_light.svg');
 }
 
-.circle.dark{
+.circle.dark {
   background-image: url('../img/Circle_dark.svg');
 }
 
-.button.visit{
+.button.visit {
   padding: .1em 1em .1em 1em;
-  border: 1px solid  rgba(35,27,36, .8);
-  background-color:  rgba(35,27,36, .5);
+  border: 1px solid rgba(35, 27, 36, .8);
+  background-color: rgba(35, 27, 36, .5);
   color: #f9f9f9;
   font-size: .8em;
   font-family: 'Arvo', serif;
@@ -720,21 +769,21 @@ section h2{
   transition: color .5s, background-color .5s;
 }
 
-.button.visit:hover{
-  background-color:  rgba(35,27,36, .83);
+.button.visit:hover {
+  background-color: rgba(35, 27, 36, .83);
 }
 
-.button.visit img{
+.button.visit img {
   height: .9em;
   width: .9em;
   margin-top: -.3em;
 }
 
-.drop-cap{
-  display:inline-block;
+.drop-cap {
+  display: inline-block;
   width: auto;
   height: 1em;
-  float:left;
+  float: left;
   padding-top: .3em;
   padding-right: .1em;
   margin-left: -.1em;
@@ -745,16 +794,16 @@ section h2{
 }
 
 .shadow {
-  -moz-box-shadow:    3px 3px 15px -6px #000;
+  -moz-box-shadow: 3px 3px 15px -6px #000;
   -webkit-box-shadow: 3px 3px 15px -6px #000;
-  box-shadow:         3px 3px 15px -6px #000;
+  box-shadow: 3px 3px 15px -6px #000;
 }
 
-.left{
-  float:left;
+.left {
+  float: left;
 }
 
-.error{
+.error {
   background-color: #ffc4c4 !important;
   border: 1px solid #fc6e6e !important;
 }
@@ -769,7 +818,7 @@ section h2{
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -778,14 +827,14 @@ section h2{
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -796,12 +845,12 @@ section h2{
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
@@ -809,7 +858,7 @@ section h2{
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -826,12 +875,12 @@ section h2{
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -840,71 +889,69 @@ section h2{
    Modify as content requires.
    ========================================================================== */
 
- @media only screen and (min-width: 1200px) {
-   #pageheader .niztechlogo{
-     width: 4em;
-     height: 4em;
-   }
+@media only screen and (min-width: 1200px) {
+  #pageheader .niztechlogo {
+    width: 4em;
+    height: 4em;
+  }
 
-   .subselect li{
-     display: inline-block;
-     margin-left: auto;
-     margin-right: auto;
-   }
+  .subselect li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-   #work .subselect li{
-     width: 32%;
-   }
+  #work .subselect li {
+    width: 32%;
+  }
 
-   #work .subselect .desc{
-     margin-top: 1.5em;
-     padding-left: 1.5em;
-     padding-right: 1.5em;
-   }
+  #work .subselect .desc {
+    margin-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 
-   #social .subselect li{
-     display: inline-block;
-   }
- }
+  #social .subselect li {
+    display: inline-block;
+  }
+}
 
 @media only screen and (max-width: 710px) {
 
   /* == BRANDING == */
-
-  #wrapper{
+  #wrapper {
     width: auto;
     margin-top: 20px;
     margin-left: 3px;
     margin-right: 3px;
   }
 
-  #pageheader .niztechlogo{
+  #pageheader .niztechlogo {
     width: 3em;
     height: 3em;
-    left:0px;
+    left: 0px;
     top: 3em;
     margin: 0em auto 0em auto;
   }
 
-  #pagefooter .niztechlogo{
+  #pagefooter .niztechlogo {
     margin-top: 1.5em;
   }
 
-  #pageheader .mast{
+  #pageheader .mast {
     margin-top: 4.5em;
   }
 
-  #pageheader .tagline span::after{
+  #pageheader .tagline span::after {
     content: ' ';
   }
 
-  #pageheader .tagline span{
+  #pageheader .tagline span {
     display: block;
   }
 
   /* == GENERIC PAGE LAYOUT ==*/
-
-  section{
+  section {
     padding: 4.5em 1.5em 4.5em 1.5em;
   }
 
@@ -913,7 +960,7 @@ section h2{
     margin-right: auto;
   }
 
-  #work .examples article figure{
+  #work .examples article figure {
     float: none;
     display: block;
     width: 100%;
@@ -922,22 +969,22 @@ section h2{
     text-align: center;
   }
 
-  #work .examples iframe{
+  #work .examples iframe {
     display: none;
   }
 
-  #work .beforeafter{
+  #work .beforeafter {
     display: block;
   }
 
-  #work .before, #work .after{
+  #work .before, #work .after {
     display: block;
     margin: auto;
     padding: .5em;
     width: 100%;
   }
 
-  #work .beforeafter > div{
+  #work .beforeafter > div {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -945,7 +992,7 @@ section h2{
     flex: 1;
   }
 
-  #work .beforeafterarrow{
+  #work .beforeafterarrow {
     background-image: url('../img/Chevron_down.svg');
     margin-left: auto;
     margin-right: auto;
@@ -955,7 +1002,7 @@ section h2{
     height: 2em;
   }
 
-  #social .subselect li{
+  #social .subselect li {
     display: block;
     margin: 1em auto 1em auto;
     width: initial;
@@ -963,10 +1010,10 @@ section h2{
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -976,72 +1023,71 @@ section h2{
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                      http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    thead {
-        display: table-header-group;
-    }
+  img {
+    max-width: 100% !important;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
