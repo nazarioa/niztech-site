@@ -208,10 +208,7 @@ ul {
 
 #wrapper {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin: 4em auto;
 
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -994,10 +991,7 @@ section h2 {
 
   #work .beforeafterarrow {
     background-image: url('../img/Chevron_down.svg');
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin: 1.5em auto;
     width: 100%;
     height: 2em;
   }
