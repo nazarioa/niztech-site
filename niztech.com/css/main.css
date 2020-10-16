@@ -348,13 +348,13 @@ section h2 {
   padding-bottom: .5em;
 }
 
-.subselect {
+.sub-select {
   list-style: none;
   padding: 0px;
   margin-top: 5em;
 }
 
-.subselect li {
+.sub-select li {
   margin-bottom: 5em;
   vertical-align: top;
 }
@@ -457,21 +457,21 @@ section h2 {
 
 /* -- WORK -- */
 
-#work .subselect {
+#work .sub-select {
   cursor: pointer;
 }
 
-#work .subselect li {
+#work .sub-select li {
   padding: 1em .1em;
   border-radius: 10px;
   transition: background-color .5s;
 }
 
-#work .subselect li:hover, #work .subselect li.active {
+#work .sub-select li:hover, #work .sub-select li.active {
   background-color: rgba(250, 250, 250, .3);
 }
 
-#work .subselect .title {
+#work .sub-select .title {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Arvo', serif;
@@ -481,7 +481,7 @@ section h2 {
   max-width: 5em;
 }
 
-#work .subselect .desc {
+#work .sub-select .desc {
   text-align: center;
 }
 
@@ -581,12 +581,12 @@ section h2 {
 }
 
 /* -- SOCIAL -- */
-#social .subselect {
+#social .sub-select {
   margin: 0px;
   padding: 0px;
 }
 
-#social .subselect li {
+#social .sub-select li {
   display: inline-block;
   width: 32%;
   margin: 0px;
@@ -594,7 +594,7 @@ section h2 {
 
 }
 
-#social .subselect .circle {
+#social .sub-select .circle {
   width: 4.5em;
   height: 4.5em;
   background-size: 4.5em;
@@ -895,23 +895,23 @@ section h2 {
     height: 4em;
   }
 
-  .subselect li {
+  .sub-select li {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #work .subselect li {
+  #work .sub-select li {
     width: 32%;
   }
 
-  #work .subselect .desc {
+  #work .sub-select .desc {
     margin-top: 1.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
 
-  #social .subselect li {
+  #social .sub-select li {
     display: inline-block;
   }
 }
@@ -1002,7 +1002,7 @@ section h2 {
     height: 2em;
   }
 
-  #social .subselect li {
+  #social .sub-select li {
     display: block;
     margin: 1em auto 1em auto;
     width: initial;

@@ -1,13 +1,13 @@
 $(document).ready(function () {
   /* Work examples */
-  $('#work .subselect li').on('click', function () {
+  $('#work .sub-select li').on('click', function () {
     var id_to_display = '#' + $(this).attr('class') + '_examples';
 
     if ($(this).hasClass('active') === true) {
-      $('#work .subselect li').removeClass('active');
+      $('#work .sub-select li').removeClass('active');
       $('#work .showcase .examples').addClass('hidden');
     } else {
-      $('#work .subselect li').removeClass('active');
+      $('#work .sub-select li').removeClass('active');
       $(this).addClass('active');
       $('#work .showcase .examples').addClass('hidden');
       $(id_to_display).removeClass('hidden');
