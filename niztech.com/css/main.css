@@ -233,24 +233,24 @@ ul {
   background-size: contain;
 }
 
-#pageheader {
+#page-header {
   background-color: rgba(35, 27, 36, .93);
   color: white;
 }
 
-#pageheader .niztech-logo {
+#page-header .niztech-logo {
   width: 3em;
   height: 3em;
   left: 3em;
   top: 2.5em;
 }
 
-#pageheader h1.mast {
+#page-header h1.mast {
   text-align: center;
   margin-top: 1.5em;
 }
 
-#pageheader h1.mast span {
+#page-header h1.mast span {
   border-bottom: 5px dotted white;
   padding-left: 1em;
   padding-right: 1em;
@@ -261,22 +261,22 @@ ul {
   text-transform: uppercase;
 }
 
-#pageheader .tagline {
+#page-header .tagline {
   text-align: center;
   padding-top: 3.5em;
   padding-bottom: 3.5em;
 }
 
-#pageheader .tagline span {
+#page-header .tagline span {
   font-family: 'Arbutus Slab', serif;
   font-size: .75em;
 }
 
-#pageheader .tagline span::after {
+#page-header .tagline span::after {
   content: ' \\\\ ';
 }
 
-#pageheader .tagline span:last-child:after {
+#page-header .tagline span:last-child:after {
   content: '';
 }
 
@@ -890,7 +890,7 @@ section h2 {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-  #pageheader .niztech-logo {
+  #page-header .niztech-logo {
     width: 4em;
     height: 4em;
   }
@@ -926,7 +926,7 @@ section h2 {
     margin-right: 3px;
   }
 
-  #pageheader .niztech-logo {
+  #page-header .niztech-logo {
     width: 3em;
     height: 3em;
     left: 0px;
@@ -938,15 +938,15 @@ section h2 {
     margin-top: 1.5em;
   }
 
-  #pageheader .mast {
+  #page-header .mast {
     margin-top: 4.5em;
   }
 
-  #pageheader .tagline span::after {
+  #page-header .tagline span::after {
     content: ' ';
   }
 
-  #pageheader .tagline span {
+  #page-header .tagline span {
     display: block;
   }
 
