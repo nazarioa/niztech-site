@@ -4,7 +4,8 @@
   "description": "<p><a href=\"mailto:n@niztech.com\">n@niztech.com</a></p> <p>This is the repo for my website. It isn't anything flashy but I do take pride in what I do. I would <em>love</em> any input.</p>",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nazarioa/niztech-site/issues"
   },
-  "homepage": "https://github.com/nazarioa/niztech-site#readme"
+  "homepage": "https://github.com/nazarioa/niztech-site#readme",
+  "devDependencies": {
+    "http-server": "latest"
+  }
 }
