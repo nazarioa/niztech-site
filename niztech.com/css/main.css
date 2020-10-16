@@ -226,7 +226,7 @@ ul {
   color: #231B23;
 }
 
-.niztechlogo {
+.niztech-logo {
   position: relative;
   background-image: url('../img/Logo.svg');
   background-repeat: no-repeat;
@@ -238,7 +238,7 @@ ul {
   color: white;
 }
 
-#pageheader .niztechlogo {
+#pageheader .niztech-logo {
   width: 3em;
   height: 3em;
   left: 3em;
@@ -289,7 +289,7 @@ ul {
   border-top: 1px dashed #f9f9f9;
 }
 
-#pagefooter .niztechlogo {
+#pagefooter .niztech-logo {
   width: 2em;
   height: 2em;
   margin: 1.5em auto 0em auto;
@@ -890,7 +890,7 @@ section h2 {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-  #pageheader .niztechlogo {
+  #pageheader .niztech-logo {
     width: 4em;
     height: 4em;
   }
@@ -926,7 +926,7 @@ section h2 {
     margin-right: 3px;
   }
 
-  #pageheader .niztechlogo {
+  #pageheader .niztech-logo {
     width: 3em;
     height: 3em;
     left: 0px;
@@ -934,7 +934,7 @@ section h2 {
     margin: 0em auto 0em auto;
   }
 
-  #pagefooter .niztechlogo {
+  #pagefooter .niztech-logo {
     margin-top: 1.5em;
   }
 
