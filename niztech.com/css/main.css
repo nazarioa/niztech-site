@@ -593,18 +593,18 @@ section h2{
 
 /* -- PROCESS -- */
 
-.prcoess_setps{
+.process-steps{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.prcoess_setps .desc{
+.process-steps .desc{
   margin-bottom: 2em;
   text-align: center;
 }
 
-.prcoess_setps .step{
+.process-steps .step{
   font-size: 2em;
   line-height: 2.2em;
   font-family: 'Arvo';
@@ -612,7 +612,7 @@ section h2{
   text-align: center;
 }
 
-.prcoess_setps .v-line{
+.process-steps .v-line{
   background-image: url('../img/DottedLine.png');
   background-repeat: repeat-y;
   background-size: 9px 12px;
