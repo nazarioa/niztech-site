@@ -1,5 +1,6 @@
-niztech.com/node_modules/
-niztech.com/Client/
+src/node_modules/
+src/Client/
+dist/
 
 .DS_Store
 .AppleDouble
