@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node_modules/.bin/http-server src"
   },
+  "dependencies": {
+    "jquery": "3.5.1",
+    "modern-normalize": "1.0.0",
+    "jquery-smooth-scroll": "2.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nazarioa/niztech-site.git"
