@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node_modules/.bin/http-server src"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "dependencies": {
     "jquery": "3.5.1",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/nazarioa/niztech-site#readme",
   "devDependencies": {
-    "http-server": "latest"
+    "http-server": "latest",
+    "parcel": "1.12.4",
+    "parcel-bundler": "1.12.4"
   }
 }
