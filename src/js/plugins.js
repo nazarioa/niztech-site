@@ -1,3 +1,5 @@
+const jquery = require("jquery");
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -93,4 +95,4 @@
 		return false;
 	};
 
-})(jQuery, document);
+})(jquery, document);

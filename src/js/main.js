@@ -1,3 +1,8 @@
+const jquery = require('jquery');
+const smoothScroll = require('jquery-smooth-scroll');
+
+window.$ = window.jQuery = jquery;
+
 $(document).ready(function () {
   /* Work examples */
   $('#work .sub-select li').on('click', function () {
