@@ -1,6 +1,7 @@
 src/node_modules/
 src/Client/
 dist/
+RAW/
 
 .DS_Store
 .AppleDouble
