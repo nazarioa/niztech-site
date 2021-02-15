@@ -20,7 +20,6 @@ $(document).ready(function () {
 
       console.log(id_to_display);
       ga('work', id_to_display, null, 1);
-
     }
 
   });
@@ -37,7 +36,7 @@ $(document).ready(function () {
     }
   });
 
-  // on click / touch in if the text is empty, add back in the defualt values
+  // on click / touch in if the text is empty, add back in the default values
   $('#message_form input').on('blur', function () {
     if ($(this).attr('name') === 'sendername' && $(this).val().trim() === '') {
       $(this).val('Peter Parker');
@@ -71,7 +70,7 @@ $(document).ready(function () {
         },
         'JSON');
 
-      request.always(function (data) {
+      request.always(function () {
         $('#contact .overlay').removeClass('hidden');
         $('#message_form button.send').html(oldvalue);
       });
@@ -80,7 +79,7 @@ $(document).ready(function () {
         if (data.result == 'success') {
           $('#contact .result').html('Your message was sent!');
 
-          // after message is sent reset to defualt values.
+          // after message is sent reset to default values.
           $('#sendername').val($('#sendername').attr('value'));
           $('#senderemail').val($('#senderemail').attr('value'));
           $('#sendermessage').val($('#sendermessage').attr(oldvalue));
@@ -90,7 +89,7 @@ $(document).ready(function () {
         }
       });
 
-      request.fail(function (data) {
+      request.fail(function () {
         console.log('.fail');
         $('#contact .result').html('Sadly, your message could not be sent.');
       });
@@ -99,7 +98,7 @@ $(document).ready(function () {
       $('#message_form input').addClass('error');
     }
 
-    // lets prevent the page from relaoding
+    // lets prevent the page from reloading
     e.preventDefault();
   });
 
