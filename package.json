@@ -2,7 +2,6 @@
   "name": "niztech",
   "version": "1.0.0",
   "description": "<p>This is the repo for my website. It isn't anything flashy but I do take pride in what I do. I would <em>love</em> any input. Reach out via PR or LinkedIn message</p>",
-  "main": "src/index.html",
   "scripts": {
     "build": "parcel build ./src/index.html --out-dir ./dist",
     "dev": "parcel ./src/index.html",
