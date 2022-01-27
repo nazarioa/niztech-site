@@ -1,4 +1,5 @@
 src/node_modules/
+src/.parcel-cache/
 src/Client/
 dist/
 RAW/
@@ -8,6 +9,7 @@ RAW/
 .LSOverride
 .remote-sync.json
 .cache/
+.parcel-cache/
 
 # Icon must end with two \r
 Icon
