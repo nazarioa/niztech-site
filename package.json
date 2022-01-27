@@ -2,11 +2,10 @@
   "name": "niztech",
   "version": "1.0.0",
   "description": "<p>This is the repo for my website. It isn't anything flashy but I do take pride in what I do. I would <em>love</em> any input. Reach out via PR or LinkedIn message</p>",
-  "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./src/index.html --out-dir ./dist",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --out-dir ./dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "jquery": "3.5.1",
