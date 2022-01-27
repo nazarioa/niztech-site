@@ -2,16 +2,15 @@
   "name": "niztech",
   "version": "1.0.0",
   "description": "<p>This is the repo for my website. It isn't anything flashy but I do take pride in what I do. I would <em>love</em> any input. Reach out via PR or LinkedIn message</p>",
-  "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./src/index.html --dist-dir ./dist",
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --out-dir ./dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "jquery": "3.5.1",
-    "modern-normalize": "1.0.0",
-    "jquery-smooth-scroll": "2.2.0"
+    "jquery-smooth-scroll": "2.2.0",
+    "modern-normalize": "1.0.0"
   },
   "repository": {
     "type": "git",
@@ -19,13 +18,12 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
   "bugs": {
     "url": "https://github.com/nazarioa/niztech-site/issues"
   },
   "homepage": "https://github.com/nazarioa/niztech-site#readme",
   "devDependencies": {
-    "http-server": "latest",
-    "parcel": "1.12.4",
-    "parcel-bundler": "1.12.4"
+    "parcel": "2.2.1"
   }
 }
