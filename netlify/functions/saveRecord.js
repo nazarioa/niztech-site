@@ -1,4 +1,4 @@
-const {GoogleSpreadsheet} = require('google-spreadsheet');
+const {GoogleSpreadsheet} = require('../../node_modules/google-spreadsheet');
 
 const getSpreadsheet = async (sheetId, email, privateKey) => {
   const doc = new GoogleSpreadsheet(sheetId);
