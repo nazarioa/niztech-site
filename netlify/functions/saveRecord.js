@@ -18,14 +18,14 @@ exports.handler = async function (event, context) {
   try {
     doc = await getSpreadsheet(process.env.GOOGLE_CONTACTSHEET_ID, process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, process.env.GOOGLE_PRIVATE_KEY);
   } catch (err) {
-    return {statusCode: 500, body: err.toString()};
+    return {statusCode: 501, body: err.toString()};
   }
 
   let data;
   try {
     data = JSON.parse(event?.body ?? {});
   } catch (err) {
-    return {statusCode: 500, body: err.toString()};
+    return {statusCode: 502, body: err.toString()};
   }
 
   const newEntry = {
@@ -37,8 +37,8 @@ exports.handler = async function (event, context) {
   try {
     await doc.sheetsByIndex[0].addRow(newEntry);
   } catch (err) {
-    return {statusCode: 500, body: err.toString()};
+    return {statusCode: 503, body: err.toString()};
   }
-  callback({statusCode: 200, body: 'All is gravy' + JSON.stringify(newEntry)});
+  return({statusCode: 200, body: 'All is gravy' + JSON.stringify(newEntry)});
 };
 
