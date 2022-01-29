@@ -16,7 +16,7 @@ exports.handler = async function (event, context) {
 
   let doc;
   try {
-    doc = getSpreadsheet(process.env.GOOGLE_CONTACTSHEET_ID, process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, process.env.GOOGLE_PRIVATE_KEY);
+    doc = await getSpreadsheet(process.env.GOOGLE_CONTACTSHEET_ID, process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, process.env.GOOGLE_PRIVATE_KEY);
   } catch (err) {
     return {statusCode: 500, body: err.toString()};
   }
