@@ -22,10 +22,18 @@ exports.handler = async function (event, context, callback) {
     return {statusCode: 500, body: err.toString()};
   }
 
+  let data;
+  try {
+    data = JSON.parse(event?.body ?? {});
+  } catch (err) {
+    callback({statusCode: 500, body: err.toString()});
+    return {statusCode: 500, body: err.toString()};
+  }
+
   const newEntry = {
-    Name: JSON.parse(event?.body)?.name ?? 'Petter',
-    Email: JSON.parse(event?.body)?.email ?? 'person@gmail.com',
-    Message: JSON.parse(event?.body).message ?? 'hello! How are you?!'
+    Name: data?.name ?? 'Petter',
+    Email: data?.email ?? 'person@gmail.com',
+    Message: data?.message ?? 'hello! How are you?!'
   };
 
   try {
