@@ -46,6 +46,6 @@ exports.handler = async function (event, context) {
   } catch (err) {
     return {statusCode: 503, body: err.toString()};
   }
-  return({statusCode: 200, body: 'All is gravy' + JSON.stringify(newEntry)});
+  return({statusCode: 200, body: 'All is gravy'});
 };
 
