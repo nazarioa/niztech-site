@@ -15,9 +15,11 @@ exports.handler = async function (event, context) {
   // authengticate sheet
   // store results
 
+  const googleKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, "\n")
+
   let doc;
   try {
-    doc = await getSpreadsheet(process.env.GOOGLE_CONTACTSHEET_ID, process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, process.env.GOOGLE_PRIVATE_KEY);
+    doc = await getSpreadsheet(process.env.GOOGLE_CONTACTSHEET_ID, process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, googleKey);
   } catch (err) {
     return {statusCode: 501, body: `
     err: ${err.toString()}
