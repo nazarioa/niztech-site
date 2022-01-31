@@ -6,6 +6,7 @@ const getSpreadsheet = async (sheetId, email, privateKey) => {
     client_email: email,
     private_key: privateKey,
   });
+  await doc.loadInfo();
   return doc;
 };
 
@@ -28,19 +29,18 @@ exports.handler = async function (event, context) {
 
   let data;
   try {
-    data = JSON.parse(event?.body ?? {});
+    data = JSON.parse(event?.body ?? '{}');
   } catch (err) {
     return {statusCode: 502, body: err.toString()};
   }
 
-  const newEntry = {
-    Name: data?.name ?? 'Petter',
-    Email: data?.email ?? 'person@gmail.com',
-    Message: data?.message ?? 'hello! How are you?!'
-  };
-
   try {
-    await doc.sheetsByIndex[0].addRow(newEntry);
+    const sheet = await doc.sheetsByIndex[0];
+    await sheet.addRow({
+      Name: data?.name ?? '--no-name--',
+      Email: data?.email ?? '--no-email--',
+      Message: data?.message ?? '--no-message--'
+    });
   } catch (err) {
     return {statusCode: 503, body: err.toString()};
   }
