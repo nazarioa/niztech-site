@@ -10,7 +10,7 @@ const getSpreadsheet = async (sheetId, email, privateKey) => {
   return doc;
 };
 
-exports.handler = async function (event, context) {
+exports.handler = async function (event) {
   // validate input
   // authengticate sheet
   // store results
