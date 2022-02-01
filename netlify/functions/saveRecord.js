@@ -15,7 +15,14 @@ exports.handler = async function (event, context) {
   // authengticate sheet
   // store results
 
-  const googleKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, "\n")
+  let data;
+  try {
+    data = JSON.parse(event?.body ?? '{}');
+  } catch (err) {
+    return {statusCode: 502, body: err.toString()};
+  }
+
+  const googleKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, "\n");
 
   let doc;
   try {
@@ -23,17 +30,7 @@ exports.handler = async function (event, context) {
   } catch (err) {
     return {statusCode: 501, body: `
     err: ${err.toString()}
-    GOOGLE_CONTACTSHEET_ID: ${process.env.GOOGLE_CONTACTSHEET_ID}
-    GOOGLE_SERVICE_ACCOUNT_EMAIL: ${process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL} 
-    GOOGLE_PRIVATE_KEY: ${process.env.GOOGLE_PRIVATE_KEY}
     `};
-  }
-
-  let data;
-  try {
-    data = JSON.parse(event?.body ?? '{}');
-  } catch (err) {
-    return {statusCode: 502, body: err.toString()};
   }
 
   try {
