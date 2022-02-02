@@ -1,32 +1,31 @@
-
 .process-steps {
   list-style: none;
   padding: 0;
   margin: 0;
-}
 
-.process-steps .desc {
-  margin-bottom: 2em;
-  text-align: center;
-}
+  .desc {
+    margin-bottom: 2em;
+    text-align: center;
+  }
 
-.process-steps .step {
-  font-size: 2em;
-  line-height: 2.2em;
-  font-family: 'Arvo';
-  font-weight: 600;
-  text-align: center;
-}
+  .step {
+    font-size: 2em;
+    line-height: 2.2em;
+    font-family: 'Arvo';
+    font-weight: 600;
+    text-align: center;
+  }
 
-.process-steps .v-line {
-  background-image: url('../img/DottedLine.png');
-  background-repeat: repeat-y;
-  background-size: 9px 12px;
-  background-position: center;
-  max-width: 100px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 1px dashed;
+  .v-line {
+    background-image: url('../img/DottedLine.png');
+    background-repeat: repeat-y;
+    background-size: 9px 12px;
+    background-position: center;
+    max-width: 100px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dashed;
+  }
 }
