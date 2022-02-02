@@ -1,22 +1,22 @@
 .circle {
-  background-size: 100px 100px;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
-  font-size: 2em;
-  line-height: 3.2em;
+  background-size: 100px 100px;
+  color: #231B23;
   font-family: 'Arvo';
+  font-size: 2em;
   font-style: italic;
   font-weight: 700;
-  text-align: center;
-  color: #231B23;
+  height: 100px;
+  line-height: 3.2em;
   margin: 0 auto 0 auto;
-}
+  text-align: center;
+  width: 100px;
 
-.circle.light {
-  background-image: url('../img/Circle_light.svg');
-}
+  &.light {
+    background-image: url('../img/Circle_light.svg');
+  }
 
-.circle.dark {
-  background-image: url('../img/Circle_dark.svg');
+  &.dark {
+    background-image: url('../img/Circle_dark.svg');
+  }
 }
