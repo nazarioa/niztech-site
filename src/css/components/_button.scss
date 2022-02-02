@@ -1,0 +1,20 @@
+.button.visit {
+  padding: .1em 1em .1em 1em;
+  border: 1px solid rgba(35, 27, 36, .8);
+  background-color: rgba(35, 27, 36, .5);
+  color: #f9f9f9;
+  font-size: .8em;
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+  transition: color .5s, background-color .5s;
+}
+
+.button.visit:hover {
+  background-color: rgba(35, 27, 36, .83);
+}
+
+.button.visit img {
+  height: .9em;
+  width: .9em;
+  margin-top: -.3em;
+}

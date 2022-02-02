@@ -1,0 +1,114 @@
+
+#work .sub-select {
+  cursor: pointer;
+}
+
+#work .sub-select li {
+  padding: 1em .1em;
+  border-radius: 10px;
+  transition: background-color .5s;
+}
+
+#work .sub-select li:hover, #work .sub-select li.active {
+  background-color: rgba(250, 250, 250, .3);
+}
+
+#work .sub-select .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Arvo', serif;
+  border-bottom: 1px solid #231B23;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 5em;
+}
+
+#work .sub-select .desc {
+  text-align: center;
+}
+
+#work img.bit {
+  width: 65px;
+  height: 65px;
+}
+
+#work .examples figure {
+  float: left;
+  margin-left: 0;
+  display: inline-block;
+  margin-bottom: auto;
+}
+
+#work .examples .title {
+  text-transform: uppercase;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+}
+
+#work .examples .logo {
+  width: 8em;
+}
+
+#work .before-after {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+#work .before-after ul {
+  padding: 0;
+  margin: 0;
+  list-style: inside;
+}
+
+#work .before-after .title {
+  font-weight: bolder;
+  font-size: .8em;
+}
+
+#work .before-after-arrow {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  display: inline-flex;
+  background-image: url('../img/Chevron_right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 4em;
+}
+
+#work .before, #work .after {
+  background-color: #C8C6C1;
+  padding: 1em;
+  height: inherit;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+
+}
+
+#work .before {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work .after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#work .examples iframe {
+  width: 100%;
+  height: 20em;
+  border: 0 none;
+  overflow: hidden;
+}

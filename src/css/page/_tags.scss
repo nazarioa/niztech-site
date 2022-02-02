@@ -1,0 +1,23 @@
+#tags ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#tags ul li {
+  color: rgba(255, 255, 255, .5);
+  display: inline-block;
+  list-style-type: none;
+  font-style: normal;
+  padding-left: .4em;
+  padding-right: .4em;
+  margin: .2em;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, .1);
+  transition: color .5s, background-color .5s;
+}
+
+#tags li:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
