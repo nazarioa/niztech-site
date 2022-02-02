@@ -1,33 +1,35 @@
-#social .sub-select {
-  margin: 0;
-  padding: 0;
-}
+.social-section {
+  .sub-select {
+    margin: 0;
+    padding: 0;
+  }
 
-#social .sub-select li {
-  display: inline-block;
-  width: 32%;
-  margin: 0;
-  padding: 0;
+  .sub-select li {
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+    padding: 0;
 
-}
+  }
 
-#social .sub-select .circle {
-  width: 4.5em;
-  height: 4.5em;
-  background-size: 4.5em;
-}
+  .sub-select .circle {
+    width: 4.5em;
+    height: 4.5em;
+    background-size: 4.5em;
+  }
 
-#social img.linkedin {
-  width: 3em; /*291, 79*/
-  margin-top: 1.2em;
-}
+  img.linkedin {
+    width: 3em; /*291, 79*/
+    margin-top: 1.2em;
+  }
 
-#social img.github {
-  width: 3em; /*291, 79*/
-  margin-top: 1em;
-}
+  img.github {
+    width: 3em; /*291, 79*/
+    margin-top: 1em;
+  }
 
-#social img.resume {
-  width: 3em; /*291, 79*/
-  margin-top: .75em;
+  img.resume {
+    width: 3em; /*291, 79*/
+    margin-top: .75em;
+  }
 }
