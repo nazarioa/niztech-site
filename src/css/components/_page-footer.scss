@@ -1,14 +1,14 @@
-#pagefooter {
+.page-footer {
   text-align: center;
   font-family: 'Arvo', serif;
   background-color: rgba(35, 27, 36, .93);
   color: rgb(247, 247, 237);
   padding: 2em;
   border-top: 1px dashed #f9f9f9;
-}
 
-#pagefooter .niztech-logo {
-  width: 2em;
-  height: 2em;
-  margin: 1.5em auto 0 auto;
+  .niztech-logo {
+    width: 2em;
+    height: 2em;
+    margin: 1.5em auto 0 auto;
+  }
 }
