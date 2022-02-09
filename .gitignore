@@ -3,6 +3,7 @@ src/.parcel-cache/
 src/Client/
 dist/
 RAW/
+_NOTES/
 
 .DS_Store
 .AppleDouble
