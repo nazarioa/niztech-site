@@ -28,7 +28,7 @@ if (!fs.existsSync(DIST_WELL_KNOWN_PATH)){
 }
 
 [
-  {source: RESOURCE_APPLE_ASSOCIATION_PATH, destination: DIST_APPLE_ASSOCIATION_PATH},
+  // {source: RESOURCE_APPLE_ASSOCIATION_PATH, destination: DIST_APPLE_ASSOCIATION_PATH},
   {source: RESOURCE_HUMANS, destination: DIST_HUMANS},
   {source: RESOURCE_ROBOTS, destination: DIST_ROBOTS},
 ].forEach(entry => {
