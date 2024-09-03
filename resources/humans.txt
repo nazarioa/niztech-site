@@ -3,7 +3,6 @@
 
 # TEAM
 
-    <name> -- <role>
     Nazario A. Ayala -- WebDev
     Nazario A. Ayala -- Owner
     Martin Maldonado -- Graphic Artist
@@ -13,7 +12,7 @@
     Janis Bell
     Marisela Castañeda
     Jodi Freedman
-    Marianne Utulo
+    Paloma Gutierrez
     Niklas Dalqvist
 
     Issac Newton
