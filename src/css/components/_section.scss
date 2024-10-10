@@ -48,11 +48,11 @@
     padding-bottom: .5em;
   }
 
-  .dark a {
+  &.dark a {
     color: #f9f9f9;
   }
 
-  .light a {
+  &.light a {
     color: #231B23;
   }
 }
