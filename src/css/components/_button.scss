@@ -1,0 +1,44 @@
+.button {
+  &.visit {
+    padding: .1em 1em .1em 1em;
+    border: 1px solid rgba(35, 27, 36, .8);
+    background-color: rgba(35, 27, 36, .5);
+    font-size: .9em;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+    transition: color .5s, background-color .5s;
+
+    & img {
+      height: .9em;
+      width: .9em;
+      margin-top: -.3em;
+    }
+  }
+}
+
+.dark {
+  .button.visit {
+    color: #231B23;
+
+    &:hover {
+      background-color: rgba(249, 249, 249, .83);
+    }
+  }
+
+  a {
+    color: #f9f9f9;
+  }
+}
+
+.light  {
+  .button.visit {
+    color: #f9f9f9;
+
+    &:hover {
+      background-color: rgba(35, 27, 36, .83);
+    }
+  }
+  a {
+    color: #231B23;
+  }
+}

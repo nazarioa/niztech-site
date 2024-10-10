@@ -1,0 +1,22 @@
+.circle {
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  color: #231B23;
+  font-family: 'Arvo';
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 700;
+  height: 100px;
+  line-height: 3.2em;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 100px;
+
+  &.light {
+    background-image: url('../img/Circle_light.svg');
+  }
+
+  &.dark {
+    background-image: url('../img/Circle_dark.svg');
+  }
+}

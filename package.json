@@ -11,7 +11,8 @@
     "google-spreadsheet": "^3.2.0",
     "jquery": "3.5.1",
     "jquery-smooth-scroll": "2.2.0",
-    "modern-normalize": "1.0.0"
+    "modern-normalize": "1.0.0",
+    "netlify-cli": "^17.36.4"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/nazarioa/niztech-site#readme",
   "devDependencies": {
-    "parcel": "2.2.1"
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
   }
 }

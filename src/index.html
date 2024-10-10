@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Nazario (niz)</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,21 +13,15 @@
   <link rel="preconnect" href="https://google-analytics.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../node_modules/modern-normalize/modern-normalize.css">
-  <link rel="stylesheet" href="css/iframe.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.scss">
 </head>
 
 <body>
-<!--[if lt IE 8]>
-<p class="browser-upgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <!-- start content -->
 <div id="wrapper" class="shadow">
 
-  <header id="page-header">
+  <header class="page-header">
     <div class="niztech-logo"></div>
     <h1 class="mast"><span>Niz</span></h1>
     <div class="tagline"><span>web developer</span><span>problem solver</span><span>code craftsman</span></div>
@@ -36,7 +29,7 @@
 
   <main id="page">
 
-    <section id="about_me" class="light">
+    <section id="about_me" class="section light">
       <h2 class="visuallyhidden">About Me</h2>
       <div class="content">
         <div class="my-ugly-mug">
@@ -51,16 +44,16 @@
       </div>
       <footer>
         <hr>
-        <div id="calvin-hobbes-bk" class="img-div"
+        <div class="calvin-hobbes-bk img-div"
              style="background-image: url('img/calvin-hobbes-bk.png');  height: 115px; width: 115px;">
-          <div id="calvin-hobbes-cart" class="img-div"
+          <div class="calvin-hobbes-cart img-div"
                style="background-image: url('img/calvin-hobbes-cart.png'); height: 115px; width: 115px;">&nbsp;
           </div>
         </div>
       </footer>
     </section>
 
-    <section id="social" class="dark">
+    <section class="social-section section dark">
       <h2>#social</h2>
       <div class="content">
         <ul class="sub-select">
@@ -83,7 +76,7 @@
       </div>
     </section>
 
-    <section id="tags" class="dark">
+    <section class="section-tags section dark">
       <h2 class="visuallyhidden">tags</h2>
       <ul>
         <li>Angular2+</li>
@@ -100,7 +93,7 @@
       </ul>
     </section>
 
-    <section id="work" class="light">
+    <section id="work" class="section light">
       <h2>work</h2>
       <div class="content">
         <p><span class="drop-cap">W</span>ith technology ever changing, I have been involved in many creative
@@ -109,17 +102,17 @@
           some examples. Challenge me: what can I do for you?</p>
         <ul class="sub-select">
           <li class="websites">
-            <div class="img circle dark"><img alt="Websites" src="img/Websites_light.svg" class="bit"/></div>
+            <div class="img circle dark"><img alt="" src="img/Websites_light.svg" class="bit"/></div>
             <div class="title">Websites</div>
             <div class="desc">A sample of a few sites I have built, some by hand and others CMS-backed.</div>
           </li>
           <li class="plugins">
-            <div class="img circle dark"><img alt="Plugins" src="img/Plugins_light.svg" class="bit"/></div>
+            <div class="img circle dark"><img alt="" src="img/Plugins_light.svg" class="bit"/></div>
             <div class="title">Plug-ins</div>
             <div class="desc">A few web components that I have made for CMS and non-CMS-based sites.</div>
           </li>
           <li class="misc">
-            <div class="img circle dark"><img alt="Collaborations" src="img/Collabos_light.svg" class="bit"/></div>
+            <div class="img circle dark"><img alt="" src="img/Collabos_light.svg" class="bit"/></div>
             <div class="title">Misc.</div>
             <div class="desc">An assortment of things that do not fit in the first two categories.</div>
           </li>
@@ -139,7 +132,7 @@
                   suggestions.</p>
                 <p>You can check out the commit history on Github.</p>
               </div>
-              <div class="clearfix">
+              <div>
                 <a href="https://github.com/nazarioa/niztech-site" class="visit button">Git Repo <img alt="send arrow"
                                                                                                       src="img/Chevron_right.svg"/></a>
               </div>
@@ -156,7 +149,7 @@
                   site leverages CMACSS using SCSS and
                   other goodies.</p>
               </div>
-              <div class="clearfix">
+              <div>
                 <a class="button visit" href="content/wordpress-site-mockup-modified.pdf">Theme &mdash; PDF Mock Up<img
                   alt="send arrow" src="img/Chevron_right.svg"/></a>
               </div>
@@ -173,7 +166,7 @@
                   completed integration with PayPal
                   and have a few more features in the works.</p>
               </div>
-              <div class="clearfix">
+              <div>
                 <a class="button visit" href="https://www.thespermbankofca.org/">Sperm Bank of California &mdash; Live
                   Site <img alt="send arrow" src="img/Chevron_right.svg"/></a>
               </div>
@@ -190,7 +183,7 @@
                 <p>On occasion, I experiment with sites I have built. I like working within the boundaries of a site's
                   purpose.</p>
               </div>
-              <div class="clearfix">
+              <div>
                 <a class="button visit" href="//www.janisbell.com">Janis Bell &mdash; Live Site <img alt="send arrow"
                                                                                                      src="img/Chevron_right.svg"/></a><br/>
                 <!--<a class="button visit" href="//www.niztech.com/Client/janisbell">Janis Bell &mdash; Experimental Site <img alt="send arrow" src="img/Chevron_right.svg"/></a>-->
@@ -206,7 +199,7 @@
                 <p>When my mom started a daycare center a few years back, I developed her website. The goal was to make
                   it simple and easy to navigate so that people would be encouraged to come in for a visit.</p>
               </div>
-              <div class="clearfix"><a class="button visit" href="//www.elviaschildcare.com">Elvia's Child Care &mdash;
+              <div><a class="button visit" href="//www.elviaschildcare.com">Elvia's Child Care &mdash;
                 Live Site <img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
             </article>
             <hr>
@@ -222,9 +215,9 @@
                 <p>Speaking of, I am currently "tightening" this website; I am making it more responsive, adding some
                   Posttypes and custom templates to give it a more consistant look.</p>
               </div>
-              <div class="clearfix"><a class="button visit" href="//ritascosmos.com/">Rita's Cosmos &mdash; Live
+              <div><a class="button visit" href="//ritascosmos.com/">Rita's Cosmos &mdash; Live
                 Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
-              <div class="clearfix"><a class="button visit" href="//ratc.dev.niztech.com/">Rita's Cosmos &mdash;
+              <div><a class="button visit" href="//ratc.dev.niztech.com/">Rita's Cosmos &mdash;
                 Experimental Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
 
             </article>
@@ -242,7 +235,7 @@
             <p>With his website I tried new tricks with CSS and JS which at this point are now old tricks. I built the site in a way that my friend could easily tinker with the JS and CSS.</p>
             <p>The site is maintained by Martin. I just taught him the basic and on occasion I still help him out.</p>
           </div>
-          <div class="clearfix"><a class="button visit" href="//www.martymaldo.com/">Marty Maldo &mdash; Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
+          <div><a class="button visit" href="//www.martymaldo.com/">Marty Maldo &mdash; Live Site<img alt="send arrow" src="img/Chevron_right.svg"/></a></div>
         </article>
       -->
           </div>
@@ -263,11 +256,8 @@
                 <p>This code is part of a private repo. Below is a README.md I wrote along with a link to one of the
                   many JFE sites that use my <em>Drupal Age Gate</em> code.</p>
               </div>
-              <div class="clearfix"><a href="//www.edmeades.com/" class="visit button">Edmeades Wine <img
+              <div><a href="//www.edmeades.com/" class="visit button">Edmeades Wine <img
                 alt="send arrow" src="img/Chevron_right.svg"/></a></div>
-              <div class="readme">
-
-              </div>
             </article>
             <hr>
             <article>
@@ -283,11 +273,9 @@
                 <p>This code is also part of a private repo. Below is a README.md I wrote along with a link to one of
                   the many JFE sites that use my <em>Drupal eWinery Cart</em> integration code.</p>
               </div>
-              <div class="clearfix"><a href="//www.arcanumwine.com" class="visit button">Arcanum Wine <img
+              <div><a href="//www.arcanumwine.com" class="visit button">Arcanum Wine <img
                 alt="send arrow" src="img/Chevron_right.svg"/></a></div>
-              <div class="readme">
-
-              </div>
+<!--              <div class="readme"></div>-->
             </article>
           </div>
           <!-- Plugins End -->
@@ -369,62 +357,7 @@
       </div>
     </section>
 
-    <section id="process" class="dark">
-      <h2>process</h2>
-      <div class="content">
-        <p><span class="drop-cap">S</span>ort of. I call it a process so that it is easier to explain. Before a single
-          line of code hits my screen, I listen to your needs and concerns. This initial discussion sets a feeling what
-          is important to
-          you. My creative side picks out what I need to focus on during the iterative "process" that will make for a
-          great experience for you the customer.</p>
-        <!-- <hr> -->
-        <ol class="process-steps">
-          <li>
-            <div class="step">Plan</div>
-            <div class="v-line">
-              <div class="circle light">0</div>
-            </div>
-            <div class="desc">The usual: who, what, when, where, how, and why. Why? I want to become an extension of
-              you. <em>My skill and quality is at your disposal.</em> I want to bolt on your knowledge and your wishes.
-            </div>
-          </li>
-          <li>
-            <div class="step">Develop</div>
-            <div class="v-line">
-              <div class="circle light">1</div>
-            </div>
-            <div class="desc">This does not mean that I just write code, although that is involved as well. I take what
-              I have learned from you, and I add to it experience. I create a mental and practical approach.
-            </div>
-          </li>
-          <li>
-            <div class="step">Deliver</div>
-            <div class="v-line">
-              <div class="circle light">2</div>
-            </div>
-            <div class="desc">As a creative process that web-development is, steps one and two happen a few times before
-              a finished product is released. However, delivery can be check-ins, intermediate goals, etc.
-            </div>
-          </li>
-          <li>
-            <div class="step">Review</div>
-            <div class="v-line">
-              <div class="circle light">3</div>
-            </div>
-            <div class="desc">Inter-webs, it is always changing. I like to embody this constant change in my every day
-              work. I feel it is a good idea to reflect, review, and refine a users experience, and the code that
-              produces that experience.
-              People call this "Agile" development. <em><a href="//agilemanifesto.org/">Agile development is my natural
-                development style.</a></em> If I see potential for a small improvement, I'll try it, test it, and
-              communicate the thought
-              process.
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="yellowbrickroad" class="light">
+    <section id="yellowbrickroad" class="section dark">
       <h2>tidbits</h2>
       <div class="content">
         <div class="funfacts">
@@ -436,7 +369,7 @@
   </main>
   <!-- end "page" -->
 
-  <footer id="pagefooter">
+  <footer class="page-footer">
     <div>Fin</div>
     <div class="niztech-logo"></div>
   </footer>

@@ -1,3 +1,4 @@
+.netlify/
 src/node_modules/
 src/.parcel-cache/
 src/Client/
@@ -37,3 +38,6 @@ Temporary Items
 
 # Connection Information
 .ftpconfig
+
+# Local Netlify folder
+.netlify

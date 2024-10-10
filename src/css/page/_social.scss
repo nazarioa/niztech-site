@@ -1,0 +1,35 @@
+.social-section {
+  .sub-select {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-select li {
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .sub-select .circle {
+    width: 4.5em;
+    height: 4.5em;
+    background-size: 4.5em;
+  }
+
+  img.linkedin {
+    width: 3em; /*291, 79*/
+    margin-top: 1.2em;
+  }
+
+  img.github {
+    width: 3em; /*291, 79*/
+    margin-top: 1em;
+  }
+
+  img.resume {
+    width: 3em; /*291, 79*/
+    margin-top: .75em;
+  }
+}

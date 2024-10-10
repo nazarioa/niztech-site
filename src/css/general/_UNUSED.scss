@@ -1,0 +1,19 @@
+.outline, .outline.light {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #231B23;
+}
+
+.outline.dark {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f9f9f9;
+}
+
+.rocket {
+  background-image: url('../img/nasa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}

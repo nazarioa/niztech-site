@@ -1,0 +1,50 @@
+.section {
+  padding: 4.5em 6em 4.5em 6em;
+  font-family: 'Arbutus Slab', serif;
+  font-size: 12pt;
+  line-height: 2em;
+
+  em {
+    font-style: normal;
+    padding-left: .4em;
+    padding-right: .4em;
+    border-radius: 3px;
+  }
+
+  hr {
+    width: 40%;
+    margin: 2em auto 2em auto;
+  }
+
+  &.dark {
+    background-color: rgba(35, 27, 36, .93);
+    color: #f9f9f9;
+  }
+
+  &.dark hr {
+    border-top: 1px dashed #f9f9f9;
+  }
+
+  &.dark em {
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+  &.light {
+    background-color: rgba(247, 247, 237, .87);
+    color: #231B23;
+  }
+
+  &.light em {
+    background-color: rgba(35, 27, 36, .1);
+  }
+
+  &.light hr {
+    border-top: 1px dashed #231B23;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50pt;
+    padding-bottom: .5em;
+  }
+}
