@@ -1,15 +1,14 @@
 {
   "applinks": {
+    "apps": [],
     "details": [
       {
-        "appIDs": ["89DB9R3CN3.com.niztech.deep-link-test"],
+        "appIDs": [
+          "89DB9R3CN3.com.niztech.deep-link-test"
+        ],
         "components": [
           {
-            "/": "/deep/*",
-            "comment": "Matches any URL with a path that starts with /deep/."
-          },
-          {
-            "/": "/*",
+            "/": "/",
             "?": {
               "to": "?*",
               "mh": "?*",
@@ -21,6 +20,3 @@
     ]
   }
 }
-
-
-
