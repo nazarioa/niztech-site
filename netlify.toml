@@ -3,6 +3,19 @@
   command = "npm run build && node ./scripts/post-build.js"
   functions = "netlify/functions"
 
+[[redirects]]
+  from = "/apple-app-site-association"
+  to = "/_well-known/apple-app-site-association.json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.well-known/apple-app-site-association"
+  to = "/_well-known/apple-app-site-association.json"
+  status = 200
+  force = true
+
+
 [[headers]]
   for = "/apple-app-site-association"
   [headers.values]
@@ -29,15 +42,3 @@
       max-age=0'''
   Content-Type = "application/json"
   X-Content-Type-Options = "nosniff"
-
-[[redirects]]
-  from = "/apple-app-site-association"
-  to = "/_well-known/apple-app-site-association.json"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/.well-known/apple-app-site-association"
-  to = "/_well-known/apple-app-site-association.json"
-  status = 200
-  force = true
