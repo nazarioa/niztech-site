@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["89DB9R3CN3.com.niztech.deep-link-test"],
+        "components": [
+          {
+            "/": "/*",
+            "?": {
+              "to": "?*",
+              "mh": "?*"
+            },
+            "comment": "Hopes to match /?to=C&mh=35f0c6753fe6de36696515038aed4f5abfa5de7b11a1105851d260e59b455f29"
+          },
+        ]
+      }
+    ]
+  }
+}
+
+
+
