@@ -5,13 +5,13 @@
 
 [[redirects]]
   from = "/apple-app-site-association"
-  to = "/_well-known/apple-app-site-association.json"
+  to = "/_well-known/apple-app-site-association"
   status = 200
   force = true
 
 [[redirects]]
   from = "/.well-known/apple-app-site-association"
-  to = "/_well-known/apple-app-site-association.json"
+  to = "/_well-known/apple-app-site-association"
   status = 200
   force = true
 
