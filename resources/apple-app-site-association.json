@@ -11,6 +11,10 @@
               "mh": "?*",
               "comment": "Hopes to match something like /?to=C&mh=35f0c6753fe6de36696515038aed4f5abfa5de7b11a1105851d260e59b455f29"
             }
+          },
+          {
+            "/": "/buy/*",
+            "comment": "Matches any URL with a path that starts with /buy/."
           }
         ]
       }
