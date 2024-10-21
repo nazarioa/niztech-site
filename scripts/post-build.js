@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const RESOURCES_PATH = './resources';
 const DIST_PATH = './dist';
-const DIST_WELL_KNOWN_PATH = './dist/.well-known';
+const DIST_WELL_KNOWN_PATH = './dist/_well-known';
 
 
 // Apple App Site Association
