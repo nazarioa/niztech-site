@@ -6,3 +6,10 @@
   -webkit-border-radius: 20px;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 710px) {
+  #wrapper {
+    margin: 0.5rem;
+    width: unset;
+  }
+}
