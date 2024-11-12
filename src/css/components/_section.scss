@@ -1,19 +1,19 @@
 .section {
-  padding: 4.5em 6em 4.5em 6em;
   font-family: 'Arbutus Slab', serif;
   font-size: 12pt;
   line-height: 2em;
+  padding: 4.5em 6em 4.5em 6em;
 
   em {
+    border-radius: 3px;
     font-style: normal;
     padding-left: .4em;
     padding-right: .4em;
-    border-radius: 3px;
   }
 
   hr {
-    width: 40%;
     margin: 2em auto 2em auto;
+    width: 40%;
   }
 
   &.dark {
@@ -43,8 +43,18 @@
   }
 
   h2 {
+    font-size: 3.125rem;
+    padding-bottom: .5rem;
     text-align: center;
-    font-size: 50pt;
-    padding-bottom: .5em;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .section {
+    padding: 1rem 2rem;
+
+    h2 {
+      padding-bottom: .35rem;
+    }
   }
 }
