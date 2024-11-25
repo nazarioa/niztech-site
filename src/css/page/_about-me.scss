@@ -1,9 +1,13 @@
-.my-ugly-mug {
-  margin: 0 auto 3em auto;
-  text-align: center;
+#about_me {
+  background-color: rgba(var(--primary-dark), .93);
 
-  .img-circle {
-    animation-name: pop;
-    animation-duration: .5s;
+  .my-ugly-mug {
+    margin: 0 auto 3em auto;
+    text-align: center;
+
+    .img-circle {
+      animation-name: pop;
+      animation-duration: .5s;
+    }
   }
 }
