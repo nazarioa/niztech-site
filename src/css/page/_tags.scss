@@ -5,8 +5,8 @@
     padding: 0;
   }
 
-  ul li {
-    color: rgba(255, 255, 255, .5);
+  li {
+    color: rgba(var(--grey-3), .5);
     display: inline-block;
     list-style-type: none;
     font-style: normal;
@@ -14,12 +14,13 @@
     padding-right: .4em;
     margin: .2em;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, .1);
-    transition: color .5s, background-color .5s;
+    background-color: rgba(var(--grey-3), .1);
   }
+}
 
-  li:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0);
+.section-tags.light {
+  li {
+    color: var(--primary-dark);
+    background-color: rgba(var(--primary-dark), .1);
   }
 }

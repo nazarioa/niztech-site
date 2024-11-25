@@ -10,18 +10,18 @@
   display: block;
   margin-top: 1em;
   text-align: center;
-  background-color: rgba(35, 27, 36, .5);
+  background-color: rgba(var(--primary-dark), .5);
   color: white;
   transition: color .5s, background-color .5s;
 }
 
 #contact button {
-  border: 1px solid rgba(35, 27, 36, .8);
+  border: 1px solid rgba(var(--primary-dark), .8);
   width: 100%;
 }
 
 #contact button:hover {
-  background-color: rgba(35, 27, 36, .83);
+  background-color: rgba(var(--primary-dark), .83);
 }
 
 #contact button img {
@@ -35,7 +35,7 @@
   width: 100%;
   border: 0 none;
   padding: .5em;
-  color: #231B23;
+  color: rgb(var(--primary-dark));
   transition: border .5s, background-color .5s, color .5s;
 }
 
@@ -56,12 +56,12 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: rgba(35, 27, 36, .93);
+  background-color: rgba(var(--primary-dark), .93);
   text-align: center;
 }
 
 #contact .overlay > div {
-  background-color: #f9f9f9;
+  background-color: rgb(var(--grey-2));
   position: relative;
   margin-top: 22%;
   margin-left: auto;

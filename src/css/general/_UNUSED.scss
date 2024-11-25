@@ -1,13 +1,13 @@
 .outline, .outline.light {
   border-width: 1px;
   border-style: solid;
-  border-color: #231B23;
+  border-color: rgb(var(--primary-dark));
 }
 
 .outline.dark {
   border-width: 1px;
   border-style: solid;
-  border-color: #f9f9f9;
+  border-color: rgb(var(--grey-2));
 }
 
 .rocket {
