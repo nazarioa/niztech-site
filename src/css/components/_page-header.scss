@@ -3,45 +3,24 @@
   background-color: rgba(var(--primary-dark), .93);
   color: white;
 
-  .niztech-logo {
-    height: 3em;
-    left: 3em;
-    top: 2.5em;
-    width: 3em;
-  }
-
-  h1.mast {
-    margin-top: 1.5em;
+  .mast {
+    font-family: 'Arvo', serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
     text-align: center;
-
+    text-transform: uppercase;
     span {
-      border-bottom: 5px dotted white;
-      font-family: 'Arvo', serif;
-      font-size: 1.5em;
-      font-weight: 700;
-      padding-bottom: .5em;
-      padding-left: 1em;
-      padding-right: 1em;
-      text-transform: uppercase;
+      border-bottom: 5px dotted rgba(var(--grey-2), .6);
     }
   }
 
   .tagline {
-    padding-bottom: 3.5em;
-    padding-top: 3.5em;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
     text-align: center;
-
-    span {
-      font-family: 'Arbutus Slab', serif;
-      font-size: .75em;
-
-      &::after {
-        content: ' \\\\ ';
-      }
-
-      &:last-child:after {
-        content: '';
-      }
-    }
   }
 }
