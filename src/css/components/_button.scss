@@ -24,7 +24,7 @@
 }
 
 a {
-  color: #4b55af;
+  color: rgb(var(--secondary-dark));
   text-decoration: none;
 
   &:hover {
