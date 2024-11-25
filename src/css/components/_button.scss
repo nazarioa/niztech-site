@@ -1,10 +1,10 @@
 .button {
   &.visit {
-    background-color: rgba(35, 27, 36, 0.1);
+    background-color: rgba(var(--primary-dark), 0.1);
     border-radius: 4px;
-    border: 1px solid rgba(35, 27, 36, .8);
+    border: 1px solid rgba(var(--primary-dark), .8);
     box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
-    color: #231B23;
+    color: rgb(var(--primary-dark));
     font-family: 'Arvo', serif;
     font-size: .9em;
     padding: .1em 1em .1em 1em;

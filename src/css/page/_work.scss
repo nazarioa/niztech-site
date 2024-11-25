@@ -22,7 +22,7 @@
     }
 
     .title {
-      border-bottom: 1px solid #231B23;
+      border-bottom: 1px solid var(--primary-dark);
       font-family: 'Arvo', serif;
       grid-area: title;
       justify-self: center;

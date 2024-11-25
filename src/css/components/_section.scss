@@ -17,7 +17,7 @@
   }
 
   &.dark {
-    background-color: rgba(35, 27, 36, .93);
+    background-color: rgba(var(--primary-dark, .93));
     color: #f9f9f9;
   }
 
@@ -30,16 +30,16 @@
   }
 
   &.light {
-    background-color: rgba(247, 247, 237, .87);
-    color: #231B23;
+    background-color: rgba(var(--primary-light), .87);
+    color: rgb(var(--primary-dark));
   }
 
   &.light em {
-    background-color: rgba(35, 27, 36, .1);
+    background-color: rgba(var(--primary-dark), .1);
   }
 
   &.light hr {
-    border-top: 1px dashed #231B23;
+    border-top: 1px dashed var(--primary-dark);
   }
 
   h2 {
