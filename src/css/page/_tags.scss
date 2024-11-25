@@ -5,7 +5,7 @@
     padding: 0;
   }
 
-  ul li {
+  li {
     color: rgba(var(--grey-3), .5);
     display: inline-block;
     list-style-type: none;
@@ -15,11 +15,12 @@
     margin: .2em;
     border-radius: 3px;
     background-color: rgba(var(--grey-3), .1);
-    transition: color .5s, background-color .5s;
   }
+}
 
-  li:hover {
-    color: white;
-    background-color: rgba(var(--grey-3), 0);
+.section-tags.light {
+  li {
+    color: var(--primary-dark);
+    background-color: rgba(var(--primary-dark), .1);
   }
 }
