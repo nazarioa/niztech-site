@@ -11,6 +11,11 @@ Purplish Color: #231B23 -- rgba(35,27,36, .93);
 :root {
   --primary-dark: 35, 27, 36;
   --primary-light: 247, 247, 237;
+
+  --grey-0: 140, 140, 140;
+  --grey-1: 185, 185, 185;
+  --grey-2: 249, 249, 249; /* #f9f9f9 */
+  --grey-3: 255, 255, 255; /* #ffffff */
 }
 
 body {

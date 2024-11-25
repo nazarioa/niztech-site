@@ -18,15 +18,15 @@
 
   &.dark {
     background-color: rgba(var(--primary-dark, .93));
-    color: #f9f9f9;
+    color: rgb(var(--grey-2));
   }
 
   &.dark hr {
-    border-top: 1px dashed #f9f9f9;
+    border-top: 1px dashed rgb(var(--grey-2));
   }
 
   &.dark em {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(var(--grey-3), .3);
   }
 
   &.light {
