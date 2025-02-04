@@ -12,7 +12,7 @@
     "jquery": "3.5.1",
     "jquery-smooth-scroll": "2.2.0",
     "modern-normalize": "1.0.0",
-    "netlify-cli": "^17.36.4"
+    "netlify-cli": "^17.38.1"
   },
   "repository": {
     "type": "git",
