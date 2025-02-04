@@ -29,5 +29,8 @@
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
     "prettier": "3.4.2"
+  },
+  "engines": {
+    "node": "20.18"
   }
 }
