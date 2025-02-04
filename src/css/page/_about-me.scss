@@ -1,5 +1,5 @@
 #about_me {
-  background-color: rgba(var(--primary-dark), .93);
+  background-color: rgba(var(--primary-dark), 0.93);
 
   .my-ugly-mug {
     margin: 0 auto 3em auto;
@@ -7,7 +7,7 @@
 
     .img-circle {
       animation-name: pop;
-      animation-duration: .5s;
+      animation-duration: 0.5s;
     }
   }
 }

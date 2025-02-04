@@ -7,8 +7,8 @@
   em {
     border-radius: 3px;
     font-style: normal;
-    padding-left: .4em;
-    padding-right: .4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
   }
 
   hr {
@@ -17,7 +17,7 @@
   }
 
   &.dark {
-    background-color: rgba(var(--primary-dark, .93));
+    background-color: rgba(var(--primary-dark, 0.93));
     color: rgb(var(--grey-2));
   }
 
@@ -26,16 +26,16 @@
   }
 
   &.dark em {
-    background-color: rgba(var(--grey-3), .3);
+    background-color: rgba(var(--grey-3), 0.3);
   }
 
   &.light {
-    background-color: rgba(var(--primary-light), .87);
+    background-color: rgba(var(--primary-light), 0.87);
     color: rgb(var(--primary-dark));
   }
 
   &.light em {
-    background-color: rgba(var(--primary-dark), .1);
+    background-color: rgba(var(--primary-dark), 0.1);
   }
 
   &.light hr {
@@ -44,7 +44,7 @@
 
   h2 {
     font-size: 3.125rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
   }
 }
@@ -54,7 +54,7 @@
     padding: 1rem 2rem;
 
     h2 {
-      padding-bottom: .35rem;
+      padding-bottom: 0.35rem;
     }
   }
 }

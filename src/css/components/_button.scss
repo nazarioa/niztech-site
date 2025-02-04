@@ -2,19 +2,21 @@
   &.visit {
     background-color: rgba(var(--primary-dark), 0.1);
     border-radius: 4px;
-    border: 1px solid rgba(var(--primary-dark), .8);
+    border: 1px solid rgba(var(--primary-dark), 0.8);
     box-shadow: 0 3px 5px rgba(var(--grey-0), 0.5);
     color: rgb(var(--primary-dark));
     font-family: 'Arvo', serif;
-    font-size: .9em;
-    padding: .1em 1em .1em 1em;
+    font-size: 0.9em;
+    padding: 0.1em 1em 0.1em 1em;
     text-decoration: none;
-    transition: color .5s, background-color .5s;
+    transition:
+      color 0.5s,
+      background-color 0.5s;
 
     & img {
-      height: .9em;
-      width: .9em;
-      margin-top: -.3em;
+      height: 0.9em;
+      width: 0.9em;
+      margin-top: -0.3em;
     }
 
     &:hover {

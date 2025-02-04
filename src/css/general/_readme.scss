@@ -26,13 +26,13 @@
     background-color: #ebebeb;
     font-family: monospace;
     border-radius: 4px;
-    padding: .2em;
+    padding: 0.2em;
     margin-top: 1em;
     display: inline-block;
   }
 
   & .function {
-    color: #B23F3F;
+    color: #b23f3f;
   }
 
   & .parameter {
@@ -40,10 +40,10 @@
   }
 
   & .variable {
-    color: #B497BD;
+    color: #b497bd;
   }
 
   & .string {
-    color: #DE1849;
+    color: #de1849;
   }
 }

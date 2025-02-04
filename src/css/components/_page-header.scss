@@ -1,5 +1,5 @@
 .page-header {
-  background-color: rgba(var(--primary-dark), .93);
+  background-color: rgba(var(--primary-dark), 0.93);
   color: white;
 
   .mast {
@@ -11,7 +11,7 @@
     text-align: center;
     text-transform: uppercase;
     span {
-      border-bottom: 5px dotted rgba(var(--grey-2), .6);
+      border-bottom: 5px dotted rgba(var(--grey-2), 0.6);
     }
   }
 
